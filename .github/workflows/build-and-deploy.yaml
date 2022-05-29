@@ -1,0 +1,104 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - live
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        name: Setup NodeJS
+        with:
+          node-version: 18
+
+      - uses: pnpm/action-setup@v2.2.2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7.9.4
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - uses: actions/cache@v2
+        name: "Next JS Cache"
+        with:
+          path: |
+            ~/.npm
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - run: pnpm build 
+      - run: |           
+            mkdir dist
+            mkdir -p app/standalone/public
+            cp ./package.json app
+            cp -r .next/standalone app
+            cp .next/static app/standalone/.next/ -r
+            cp -r public/* app/standalone/public/
+            cp ecosystem.config.js app
+            tar -cJf dist/standalone-dist.tar.xz app
+        name: Create artifact
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: nodejs-app
+          path: ./dist/standalone-dist.tar.xz
+          retention-days: 3
+  deploy:
+    needs: 'build'
+    name: Deploy to server
+    if: github.ref == 'refs/heads/live'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: nodejs-app
+
+      - name: Copy artifact to the server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "standalone-dist.tar.xz"
+          target: "/srv/http/pnf/"
+
+      - name: Setup Node JS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: | 
+            rm -rf app && tar --overwrite -xvf standalone-dist.tar.xz
+            cd app && pm2 restart ecosystem.config.js
+      

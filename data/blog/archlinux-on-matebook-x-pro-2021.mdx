@@ -1,0 +1,177 @@
+---
+title: Arch Linux on Huawei Matebook X Pro 2021
+date: '2022-09-11'
+tags: 
+ - archlinux
+ - guide
+draft: false
+lang: 'en'
+summary: 'In this article I will describe how I set up a mirror for Arch Linux'
+authors: ['default']
+---
+## Introduction
+
+Installing Arch linux with GPT, dm-crypt, LUKS, LVM and systemd-boot.
+I cannot recommend to use the archlinux installer until it is currently too buggy to make a nice disk setup with encryption.
+
+<TOCInline toc={props.toc} exclude="Overview" toHeading={3} />
+
+## USB media
+
+Create a bootable USB stick:
+
+```bash
+dd if=~/Downloads/archlinux.iso of=/dev/sdx status=progress
+```
+
+## Boot into USB stick
+
+### Wifi
+Configure Wifi with `ìwd`
+
+I used to the following command to connect to my AP:
+```bash
+iwd
+[iwd]# station <dev> connect <SSID>
+```
+### Disk setup
+Part your disk using gdisk, use a GPT partition layout. It is a dual boot with a Windows 10 (`/dev/nvme0n1p{1,2,3}` are Windows partitions)
+
+We need two partiotions, one for the boot partition and one for the encrypted LVM partition (`/` and `/home` and for swap)
+I use 120 MB for /boot (`/dev/nvme0n1p5`) and the rest of the free space for the second partition (`/dev/nvme0n1p6`)
+
+```bash
+fdisk -l
+```
+```
+Disk /dev/nvme0n1: 476.94 GiB, 512110190592 bytes, 1000215216 sectors
+Disk model: KPART512GBC2DVT                         
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 878C49A4-61B1-459B-A6DA-925729098BBC
+
+Device             Start        End   Sectors   Size Type
+/dev/nvme0n1p1      2048     206847    204800   100M EFI System
+/dev/nvme0n1p2    206848     239615     32768    16M Microsoft reserved
+/dev/nvme0n1p3    239616  203532287 203292672  96.9G Microsoft basic data
+/dev/nvme0n1p4 203532288  204799999   1267712   619M Windows recovery environment
+/dev/nvme0n1p5 204800000  205045759    245760   120M EFI System
+/dev/nvme0n1p6 205045760 1000214527 795168768 379.2G unknown
+```
+
+### LUKS/LVM setup
+```bash
+cryptsetup -v luksFormat /dev/nvme0n1p6
+cryptsetup luksOpen /dev/nvme0n1p6 luks
+```
+```bash
+pvcreate /dev/mapper/luks
+vgcreate vg00 /dev/mapper/luks
+lvcreate -L 4G vg00 -n swap
+lvcreate -l 40G vg00 -n root
+lvcreate -l +100%FREE vg00 -n home
+```
+### Format /boot, /, /home partitions + swap
+```bash
+mkfs.ext4 /dev/mapper/vg00-root
+mkfs.ext4 /dev/mapper/vg00-home
+
+mount /dev/mapper/vg00-root /mnt
+mount /dev/mapper/vg00-home /mnt/home
+
+mkswap /dev/mapper/vg00-swap
+swapon /dev/mapper/vg00-swap
+
+mkfs.vfat -F32 /dev/nvme0n1p5
+mkdir /mnt/boot
+mount /dev/nvme0n1p5 /mnt/boot
+```
+## Base system setup
+```bash
+pacstrap /mnt base base-devel linux linux-firmware sudo zsh sudo networkmanager
+```
+## Create /etc/fstab
+```bash
+genfstab -pU /mnt >> /mnt/etc/fstab
+```
+```bash
+cat /mnt/etc/fstab
+```
+```
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+
+# UUID=df14e7e7-a944-4d7a-817b-24a1fb5c1fc1
+/dev/mapper/vg0-root    /               ext4            rw,relatime     0 1
+
+# UUID=e7560a43-c721-4016-bec1-00f9dcd6face
+/dev/mapper/vg0-home    /home           ext4            rw,relatime     0 2
+
+# UUID=43A4-190D
+/dev/nvme0n1p5          /boot           vfat            rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro   0 2
+
+# UUID=586c161a-0afe-4843-9f47-2a23fc97740a
+/dev/mapper/vg0-swap    none            swap            defaults        0 0
+```
+You may use `noattime` instead of `relatime` if you use SSD
+
+## Chrooting into new system
+### Preparation
+```bash
+arch-chroot /mnt
+timedatectl set-ntp true
+timedatectl set-timezone Europe/Berlin
+hostnamectl set-hostname matebook
+
+# Root pw
+passwd
+# User setup ("bh")
+
+useradd -m -G wheel -s /usr/bin/zsh bh
+passwd bh
+
+# locales
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+locale-gen
+```
+### Adjust /etc/mkinitcpio.conf
+```
+[...]
+# The order of the hooks is very important
+HOOKS="base udev autodetect modconf block keymap encrypt lvm2 resume filesystems keyboard fsck"
+```
+### Install and setup bootloader
+```bash
+bootctl --path=/boot install
+```
+Create `/boot/loader/entries/archlinux.conf`
+```
+title	Arch Linux
+linux	/vmlinuz-linux
+initrd	/initramfs-linux.img
+options cryptdevice=UUID=<PARTUUID>:lvm:allow-discards resume=/dev/mapper/vg00-swap root=/dev/mapper/vg00-root rw quiet splash
+```
+Replace `<PARTUUID>` with the UUID of root partition: `df14e7e7-a944-4d7a-817b-24a1fb5c1fc1`
+
+Edit `/boot/loader/loader.conf`
+```
+timeout 5
+default archlinux
+editor 0
+# HiDPI stuff
+console-mode max
+```
+### Post Setup
+```bash
+mkinitcpio -p linux
+```
+## Leave chroot and reboot
+```bash
+exit
+umount -R /mnt
+reboot
+```

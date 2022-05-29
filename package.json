@@ -1,0 +1,85 @@
+{
+  "name": "pagenotfound.de",
+  "private": true,
+  "scripts": {
+    "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
+    "dev": "next dev",
+    "build": "next build && node ./scripts/generate-sitemap.mjs",
+    "serve": "next start",
+    "analyze": "cross-env ANALYZE=true next build",
+    "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.12",
+    "@fontsource/noto-sans-mono": "^4.5.10",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@prefresh/babel-plugin": "^0.4.3",
+    "@tailwindcss/typography": "^0.5.7",
+    "autoprefixer": "^10.4.11",
+    "github-slugger": "^1.4.0",
+    "gray-matter": "^4.0.3",
+    "image-size": "^1.0.2",
+    "mdx-bundler": "^9.0.1",
+    "next": "^12.3.0",
+    "next-plugin-preact": "^3.0.7",
+    "next-themes": "^0.0.14",
+    "postcss": "^8.4.16",
+    "preact": "^10.11.0",
+    "preact-render-to-string": "^5.2.4",
+    "preact-ssr-prepass": "^1.2.0",
+    "react": "npm:@preact/compat@^17.1.1",
+    "react-dom": "npm:@preact/compat@^17.1.1",
+    "reading-time": "^1.5.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-preset-minify": "6.0.0",
+    "rehype-prism-plus": "^1.5.0",
+    "rehype-slug": "^5.0.1",
+    "remark-footnotes": "^4.0.1",
+    "remark-gfm": "^3.0.1",
+    "sharp": "^0.31.0",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.8.3",
+    "unist-util-visit": "^4.1.1",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^12.3.0",
+    "@svgr/webpack": "^6.3.1",
+    "cross-env": "^7.0.3",
+    "dedent": "^0.7.0",
+    "esbuild": "^0.14.54",
+    "eslint": "^8.23.1",
+    "eslint-config-next": "^12.3.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "globby": "^13.1.2",
+    "inquirer": "^9.1.1",
+    "js-yaml": "^4.1.0",
+    "lint-staged": "^13.0.3",
+    "mdast-util-to-string": "^3.1.0",
+    "next-remote-watch": "^1.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13"
+  },
+  "lint-staged": {
+    "*.+(js|jsx|ts|tsx)": [
+      "eslint --fix"
+    ],
+    "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "@prefresh/babel-plugin": "^0.4.0",
+    "esbuild": "^0.14",
+    "preact-ssr-prepass": ">=1",
+    "typescript": ">=3.3.1",
+    "webpack": "^4.0.0"
+  }
+}

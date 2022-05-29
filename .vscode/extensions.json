@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"bradlc.vscode-tailwindcss", 
+		"esbenp.prettier-vscode", 
+		"unifiedjs.vscode-mdx", 
+		"zaaack.markdown-editor"
+	
+	]
+}
