@@ -50,7 +50,7 @@
     "@svgr/webpack": "^6.3.1",
     "cross-env": "^7.0.3",
     "dedent": "^0.7.0",
-    "esbuild": "^0.14.54",
+    "esbuild": "^0.15.0",
     "eslint": "^8.23.1",
     "eslint-config-next": "^12.3.0",
     "eslint-config-prettier": "^8.5.0",
@@ -77,7 +77,7 @@
   },
   "peerDependencies": {
     "@prefresh/babel-plugin": "^0.4.0",
-    "esbuild": "^0.14",
+    "esbuild": "^0.15.0",
     "preact-ssr-prepass": ">=1",
     "typescript": ">=3.3.1",
     "webpack": "^4.0.0"
