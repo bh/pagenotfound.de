@@ -43,7 +43,7 @@ I use 120 MB for /boot (`/dev/nvme0n1p5`) and the rest of the free space for the
 ```bash
 fdisk -l
 ```
-```
+```text {14-15} showLineNumbers
 Disk /dev/nvme0n1: 476.94 GiB, 512110190592 bytes, 1000215216 sectors
 Disk model: KPART512GBC2DVT                         
 Units: sectors of 1 * 512 = 512 bytes
@@ -198,7 +198,7 @@ For the latest [microcode](https://wiki.archlinux.org/title/Microcode) updates
 - `yay -S intel-ucode`
 
 Adjust `/boot/loader/entries/arch.conf`:
-```
+```text {2} showLineNumbers
 [...]
 initrd /intel-ucode.img
 initrd /initramfs-linux.img
@@ -218,7 +218,7 @@ Currently [not supported](https://gitlab.freedesktop.org/libfprint/wiki/-/wikis/
 ```bash
 lsusb
 ```
-```
+```text {3} showLineNumbers
 Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 Bus 003 Device 003: ID 05c8:03f1 Cheng Uei Precision Industry Co., Ltd (Foxlink) HD Camera
 Bus 003 Device 002: ID 27c6:5125 Shenzhen Goodix Technology Co.,Ltd. Goodix Fingerprint Device 
