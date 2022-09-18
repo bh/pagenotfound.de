@@ -204,3 +204,26 @@ initrd /intel-ucode.img
 initrd /initramfs-linux.img
 [...]
 ```
+### SSD
+[Don't](https://wiki.archlinux.org/title/Dm-crypt/Specialties#Discard/TRIM_support_for_solid_state_drives_(SSD)) use `discard` in `/etc/fstab`.
+
+Instead use:
+```bash
+sudo systemctl enable fstrim.timer
+sudo systemctl start fstrim.timer
+```
+
+### Fingerprint reader
+Currently [not supported](https://gitlab.freedesktop.org/libfprint/wiki/-/wikis/Unsupported%20Devices)
+```bash
+lsusb
+```
+```
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 003: ID 05c8:03f1 Cheng Uei Precision Industry Co., Ltd (Foxlink) HD Camera
+Bus 003 Device 002: ID 27c6:5125 Shenzhen Goodix Technology Co.,Ltd. Goodix Fingerprint Device 
+Bus 003 Device 004: ID 8087:0026 Intel Corp. AX201 Bluetooth
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+````
