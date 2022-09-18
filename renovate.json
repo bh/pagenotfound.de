@@ -9,5 +9,10 @@
     "on Friday",
     "every weekend"
   ],
-  "timezone": "Europe/Berlin"
+  "timezone": "Europe/Berlin",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^esbuild", "^webpack"]
+    }
+  ]
 }
