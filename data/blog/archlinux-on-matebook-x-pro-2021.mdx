@@ -129,12 +129,12 @@ hostnamectl set-hostname matebook
 
 # Root pw
 passwd
-# User setup ("bh")
 
+# User setup ("bh")
 useradd -m -G wheel -s /usr/bin/zsh bh
 passwd bh
 
-# locales
+# Locales
 echo LANG=en_US.UTF-8 > /etc/locale.conf
 locale-gen
 ```
@@ -174,4 +174,33 @@ mkinitcpio -p linux
 exit
 umount -R /mnt
 reboot
+```
+
+## Post Install
+Some packages I hat to install:
+### Video
+- `yay -S xf86-video-intel`
+
+For [hardware acceleration](https://wiki.archlinux.org/title/Hardware_video_acceleration)
+- `yay -S libvdpau-va-gl`
+- `yay -S intel-media-driver`
+
+Adjust `/etc/environment`:
+```
+LIBVA_DRIVER_NAME=iHD
+VDPAU_DRIVER=va_gl
+```
+### Sound
+- `yay -S sof-firmware`
+
+### CPU
+For the latest [microcode](https://wiki.archlinux.org/title/Microcode) updates
+- `yay -S intel-ucode`
+
+Adjust `/boot/loader/entries/arch.conf`:
+```
+[...]
+initrd /intel-ucode.img
+initrd /initramfs-linux.img
+[...]
 ```
