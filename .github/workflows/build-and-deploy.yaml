@@ -99,6 +99,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: | 
-            rm -rf app && tar --overwrite -xvf standalone-dist.tar.xz
+            rm -rf app && tar --overwrite -xf standalone-dist.tar.xz
             cd app && pm2 restart ecosystem.config.js
       
