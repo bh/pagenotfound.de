@@ -1,5 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
+import { Email } from 'react-obfuscate-email'
 
 export default function Imprint() {
   return (
@@ -15,10 +16,15 @@ export default function Imprint() {
           </h1>
         </div>
         <div className="container py-12">
-          <div className="">
+          <div>
             <p>Benjamin Hedrich</p>
             <p>An der Wildbahn 72</p>
             <p>13503 Berlin</p>
+            <br />
+            <p>Kontakt:</p>
+            <p>
+              Email: <Email email="ixdfscawfrc@ca.pagenotfound.de" />
+            </p>
           </div>
         </div>
       </div>
