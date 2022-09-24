@@ -2,7 +2,7 @@
   "name": "pagenotfound.de",
   "private": true,
   "scripts": {
-    "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
+    "start": "next-remote-watch ./data",
     "dev": "next dev",
     "build": "next build && node ./scripts/generate-sitemap.mjs",
     "serve": "next start",
