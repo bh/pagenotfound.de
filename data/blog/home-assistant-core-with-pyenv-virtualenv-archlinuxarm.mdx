@@ -1,0 +1,152 @@
+---
+title: Install Home Assistant Core on Archlinux (ARM)
+date: '2022-09-24'
+tags:
+ - archlinux
+ - setup
+ - homeassistant
+draft: false
+lang: 'en'
+summary: 'Setup Home Assistant Core on Archlinux ARM'
+authors: ['default']
+---
+## Introduction
+How to install HASS Core on a Raspberry PI 4 using Pyenv and Virtualenv
+
+<TOCInline toc={props.toc} exclude="Introduction" toHeading={3} />
+
+## Create User
+```bash
+useradd -m -s /bin/bash homeassistant
+```
+## Setup Pyenv
+### Preparation
+```bash
+yay -S pyenv pyenv-virtualenv
+sudo -u homeassistant -i
+```
+Adjust your `~/.bashrc` to enable Pyenv:
+```bash {11-13} showLineNumbers
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+```
+Reload your Shell to reload `~/.bashrc`:
+```bash
+. ~/.bashrc
+```
+### Build Python
+Install several packages to enable binary modules:
+```bash
+yay -S libpng libjpeg bzip2 expat gdbm libffi libnsl libxcrypt openssl zlib
+```
+Build Python 3.10.6
+```bash
+pyenv install 3.10.6 -vvvvv
+```
+If it was successful, you should this version when you run:
+```bash
+pyenv versions
+```
+```text {2} showLineNumbers
+* system
+  3.10.6
+```
+### Create Virtualenv named `ha` using Pyenv-Virtualenv
+```bash
+pyenv virtualenv 3.10.6 ha
+```
+```bash
+pyenv versions
+```
+... should print this:
+```text {2-4} showLineNumbers
+* system
+  3.10.6
+  3.10.6/envs/ha
+  ha
+```
+## Install HA
+Create a root folder for HA:
+```bash
+mkdir ~/ha
+cd ~/ha
+```
+Create a `.python-version` file to auto load the Virtualenv when you enter `~/ha`
+```bash
+pyenv local ha
+```
+
+## Database
+### Install Mariadb
+```bash
+yay -S mariadb mariadb-clients mariadb-libs
+systemctl enable mariadb
+systemctl start mariadb
+mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+```
+### Add database for HA
+Username: homeassistant
+Password: homeassistant
+DB name: homeassistant
+
+```bash
+mysql -uroot -p
+```
+```sql
+CREATE DATABASE homeassistant DEFAULT CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci';
+GRANT ALL PRIVILEGES ON homeassistant.* TO 'homeassistant'@'localhost' IDENTIFIED BY 'homeassistant';
+FLUSH PRIVILEGES;
+```
+We need to install a Python MySQL client inside the Virtualenv
+```bash
+pip install mysqlclient
+```
+
+For later, use the following config section for your `configuration.yaml`:
+```yaml
+recorder:
+  db_url: mysql://homeassistant:homeassistant@127.0.0.1:3306/homeassistant?charset=utf8
+```
+
+## Install Home Assistant
+```bash
+pip install --upgrade homeassistant
+```
+
+### Create a systemd unit to start HA:
+Create `/etc/systemd/system/ha.service` with the following content:
+```text
+[Unit]
+Description=Home Assistant
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/homeassistant/ha
+ExecStart=/home/homeassistant/.pyenv/versions/ha/bin/hass -c=./homeassistant/
+
+[Install]
+WantedBy=multi-user.target
+```
+```bash
+systemctl enable ha
+systemctl start mariadb
+```
+
+
+
+## Try!
+Open `http://$hostname:8123` to see if it's working
+
