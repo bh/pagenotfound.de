@@ -37,7 +37,7 @@ iwd
 ### Disk setup
 Part your disk using gdisk, use a GPT partition layout. It is a dual boot with a Windows 10 (`/dev/nvme0n1p{1,2,3}` are Windows partitions)
 
-We need two partiotions, one for the boot partition and one for the encrypted LVM partition (`/` and `/home` and for swap)
+We need two partitions, one for the boot partition and one for the encrypted LVM partition (`/` and `/home` and for swap)
 I use 120 MB for /boot (`/dev/nvme0n1p5`) and the rest of the free space for the second partition (`/dev/nvme0n1p6`)
 
 ```bash
