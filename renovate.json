@@ -11,9 +11,5 @@
     "every weekend"
   ],
   "timezone": "Europe/Berlin",
-  "packageRules": [
-    {
-      "matchPackagePatterns": ["^esbuild", "^webpack"]
-    }
-  ]
+  "ignoreDeps": ["esbuild"]
 }
