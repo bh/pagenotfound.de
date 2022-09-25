@@ -4,10 +4,10 @@
   "scripts": {
     "start": "next-remote-watch ./data",
     "dev": "next dev",
-    "build": "next build && node ./scripts/generate-sitemap.mjs",
+    "build": "next build && next-sitemap",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
-    "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts"
+    "lint": "next lint --fix --dir . --dir pages --dir components --dir lib --dir layouts --dir scripts"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.12",
@@ -25,6 +25,7 @@
     "mdx-bundler": "^9.0.1",
     "next": "^12.3.1",
     "next-plugin-preact": "^3.0.7",
+    "next-sitemap": "^3.1.22",
     "next-themes": "^0.2.1",
     "postcss": "^8.4.16",
     "preact": "^10.11.0",

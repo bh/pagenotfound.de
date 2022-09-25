@@ -31,6 +31,7 @@ specifiers:
   next: ^12.3.1
   next-plugin-preact: ^3.0.7
   next-remote-watch: ^2.0.0
+  next-sitemap: ^3.1.22
   next-themes: ^0.2.1
   postcss: ^8.4.16
   preact: ^10.11.0
@@ -68,6 +69,7 @@ dependencies:
   mdx-bundler: 9.0.1_esbuild@0.14.54
   next: 12.3.1_zh6t43rhftlymcf7fn6djsbfea
   next-plugin-preact: 3.0.7_yykzcbfmbfg6pcm2c25qgeo54m
+  next-sitemap: 3.1.22_mna6xsgplvxkrmeg4ftolwenke
   next-themes: 0.2.1_qklr2krpjw7dev5yf6vwg2aqyy
   postcss: 8.4.16
   preact: 10.11.0
@@ -1359,6 +1361,10 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
 
+  /@corex/deepmerge/4.0.29:
+    resolution: {integrity: sha512-q/yVUnqckA8Do+EvAfpy7RLdumnBy9ZsducMUtZTvpdbJC7azEf1hGtnYYxm0QfphYxjwggv6XtH64prvS1W+A==}
+    dev: false
+
   /@esbuild-plugins/node-resolve/0.1.4_esbuild@0.14.54:
     resolution: {integrity: sha512-haFQ0qhxEpqtWWY0kx1Y5oE3sMyO1PcoSiWEPrAw6tm/ZOOLXjSs6Q+v1v9eyuVF0nNt50YEvrcrvENmyoMv5g==}
     peerDependencies:
@@ -1941,13 +1947,13 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.6
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: false
 
   /@types/eslint/8.4.6:
     resolution: {integrity: sha512-/fqTbjxyFUaYNO7VcW5g+4npmqVACz1bB7RTHYuLj+PRjw9hrCwrUXVQFpChUS0JsyEFvMZ7U/PfmvWgxJhI9g==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
     dev: false
 
@@ -5575,6 +5581,20 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /next-sitemap/3.1.22_mna6xsgplvxkrmeg4ftolwenke:
+    resolution: {integrity: sha512-aykbwYTNJ2GKSuxYpXgKK7m/a1Qao03ekUlsNLHvO8XuTTVZDAOe2hGcJtr2vQfXnLeZuSpNUs2IP6hCr4xVZA==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@next/env': '*'
+      next: '*'
+    dependencies:
+      '@corex/deepmerge': 4.0.29
+      '@next/env': 12.3.1
+      minimist: 1.2.6
+      next: 12.3.1_zh6t43rhftlymcf7fn6djsbfea
+    dev: false
 
   /next-themes/0.2.1_qklr2krpjw7dev5yf6vwg2aqyy:
     resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
