@@ -1,5 +1,3 @@
-const projectsData = [
-
-]
+const projectsData = []
 
 export default projectsData
