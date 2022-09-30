@@ -5,7 +5,6 @@
     "helpers:pinGitHubActionDigests",
     ":dependencyDashboard"
   ],
-  "pinVersions": false,
   "schedule": [
     "on Friday",
     "every weekend"
