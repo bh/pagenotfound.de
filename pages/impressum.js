@@ -8,6 +8,7 @@ export default function Imprint() {
       <PageSEO
         title={`Impressum - ${siteMetadata.author}`}
         description={siteMetadata.description}
+        index={false}
       />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
@@ -19,7 +20,7 @@ export default function Imprint() {
             <p>An der Wildbahn 72</p>
             <p>13503 Berlin</p>
             <br />
-            <p>Kontakt:</p>
+            <h2>Kontakt</h2>
             <p>
               Email: <Email email={siteMetadata.email} />
             </p>
