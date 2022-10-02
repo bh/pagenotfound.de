@@ -21,7 +21,7 @@ export default function Imprint() {
             <br />
             <p>Kontakt:</p>
             <p>
-              Email: <Email email="ixdfscawfrc@ca.pagenotfound.de" />
+              Email: <Email email={siteMetadata.email} />
             </p>
           </div>
         </div>
