@@ -10,5 +10,16 @@
     "every weekend"
   ],
   "timezone": "Europe/Berlin",
-  "ignoreDeps": ["esbuild"]
+  "ignoreDeps": ["esbuild"],
+  "rebaseWhen": "behind-base-branch",
+  "packageRules": [
+    {
+      "updateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    }
+  ]
+
 }
