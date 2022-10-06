@@ -39,7 +39,7 @@ specifiers:
   preact-ssr-prepass: 1.2.0
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.1.13
-  react: npm:@preact/compat@17.1.1
+  react: npm:@preact/compat@17.1.2
   react-dom: npm:@preact/compat@17.1.1
   react-obfuscate-email: 1.0.16
   reading-time: 1.5.0
@@ -59,7 +59,7 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 6.2.0
   '@fortawesome/free-brands-svg-icons': 6.2.0
   '@fortawesome/free-solid-svg-icons': 6.2.0
-  '@fortawesome/react-fontawesome': 0.2.0_vm2ci2wi2nty2tjqgxuq66rcm4
+  '@fortawesome/react-fontawesome': 0.2.0_vr3n4zj2isz2ldzdgpmybn2nfq
   '@prefresh/babel-plugin': 0.4.3
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.1.8
   autoprefixer: 10.4.12_postcss@8.4.17
@@ -67,17 +67,17 @@ dependencies:
   gray-matter: 4.0.3
   image-size: 1.0.2
   mdx-bundler: 9.0.1_esbuild@0.14.54
-  next: 12.3.1_zh6t43rhftlymcf7fn6djsbfea
+  next: 12.3.1_qsudbuzqlygpnzyzjlxg3qmwvy
   next-plugin-preact: 3.0.7_yykzcbfmbfg6pcm2c25qgeo54m
   next-sitemap: 3.1.23_mna6xsgplvxkrmeg4ftolwenke
-  next-themes: 0.2.1_qklr2krpjw7dev5yf6vwg2aqyy
+  next-themes: 0.2.1_ouymlxqrqjxqtdjtlhpzqz3zwa
   postcss: 8.4.17
   preact: 10.11.0
   preact-render-to-string: 5.2.4_preact@10.11.0
   preact-ssr-prepass: 1.2.0_preact@10.11.0
-  react: /@preact/compat/17.1.1_preact@10.11.0
+  react: /@preact/compat/17.1.2_preact@10.11.0
   react-dom: /@preact/compat/17.1.1_preact@10.11.0
-  react-obfuscate-email: 1.0.16_@preact+compat@17.1.1
+  react-obfuscate-email: 1.0.16_@preact+compat@17.1.2
   reading-time: 1.5.0
   rehype-autolink-headings: 6.1.1
   rehype-preset-minify: 6.0.0
@@ -1446,7 +1446,7 @@ packages:
       '@fortawesome/fontawesome-common-types': 6.2.0
     dev: false
 
-  /@fortawesome/react-fontawesome/0.2.0_vm2ci2wi2nty2tjqgxuq66rcm4:
+  /@fortawesome/react-fontawesome/0.2.0_vr3n4zj2isz2ldzdgpmybn2nfq:
     resolution: {integrity: sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw==}
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ~1 || ~6
@@ -1454,7 +1454,7 @@ packages:
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.2.0
       prop-types: 15.8.1
-      react: /@preact/compat/17.1.1_preact@10.11.0
+      react: /@preact/compat/17.1.2_preact@10.11.0
     dev: false
 
   /@humanwhocodes/config-array/0.10.5:
@@ -1708,6 +1708,13 @@ packages:
     dependencies:
       preact: 10.11.0
 
+  /@preact/compat/17.1.2_preact@10.11.0:
+    resolution: {integrity: sha512-7pOZN9lMDDRQ+6aWvjwTp483KR8/zOpfS83wmOo3zfuLKdngS8/5RLbsFWzFZMGdYlotAhX980hJ75bjOHTwWg==}
+    peerDependencies:
+      preact: '*'
+    dependencies:
+      preact: 10.11.0
+
   /@prefresh/babel-plugin/0.4.3:
     resolution: {integrity: sha512-fYAWbU1WDSLn108kKY4eDaaeUcnszFqXjgaGKYXNZ5NLulpRTpsrY+Sbfo9q8LDpWrBpqIgzjrwNnvglWI1xNQ==}
     dev: false
@@ -1731,7 +1738,7 @@ packages:
       '@prefresh/core': 1.4.1_preact@10.11.0
       '@prefresh/utils': 1.1.3
       '@prefresh/webpack': 3.3.4_lqsote77zyaguv7gpjgjoclk4q
-      next: 12.3.1_zh6t43rhftlymcf7fn6djsbfea
+      next: 12.3.1_qsudbuzqlygpnzyzjlxg3qmwvy
       preact: 10.11.0
       webpack: 5.74.0_esbuild@0.14.54
     dev: false
@@ -5566,7 +5573,7 @@ packages:
       chokidar: 3.5.3
       commander: 5.1.0
       express: 4.18.1
-      next: 12.3.1_zh6t43rhftlymcf7fn6djsbfea
+      next: 12.3.1_qsudbuzqlygpnzyzjlxg3qmwvy
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5582,22 +5589,22 @@ packages:
       '@corex/deepmerge': 4.0.29
       '@next/env': 12.3.1
       minimist: 1.2.6
-      next: 12.3.1_zh6t43rhftlymcf7fn6djsbfea
+      next: 12.3.1_qsudbuzqlygpnzyzjlxg3qmwvy
     dev: false
 
-  /next-themes/0.2.1_qklr2krpjw7dev5yf6vwg2aqyy:
+  /next-themes/0.2.1_ouymlxqrqjxqtdjtlhpzqz3zwa:
     resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
     peerDependencies:
       next: '*'
       react: '*'
       react-dom: '*'
     dependencies:
-      next: 12.3.1_zh6t43rhftlymcf7fn6djsbfea
-      react: /@preact/compat/17.1.1_preact@10.11.0
+      next: 12.3.1_qsudbuzqlygpnzyzjlxg3qmwvy
+      react: /@preact/compat/17.1.2_preact@10.11.0
       react-dom: /@preact/compat/17.1.1_preact@10.11.0
     dev: false
 
-  /next/12.3.1_zh6t43rhftlymcf7fn6djsbfea:
+  /next/12.3.1_qsudbuzqlygpnzyzjlxg3qmwvy:
     resolution: {integrity: sha512-l7bvmSeIwX5lp07WtIiP9u2ytZMv7jIeB8iacR28PuUEFG5j0HGAPnMqyG5kbZNBG2H7tRsrQ4HCjuMOPnANZw==}
     engines: {node: '>=12.22.0'}
     hasBin: true
@@ -5619,10 +5626,10 @@ packages:
       '@swc/helpers': 0.4.11
       caniuse-lite: 1.0.30001412
       postcss: 8.4.14
-      react: /@preact/compat/17.1.1_preact@10.11.0
+      react: /@preact/compat/17.1.2_preact@10.11.0
       react-dom: /@preact/compat/17.1.1_preact@10.11.0
-      styled-jsx: 5.0.7_s6xlwr6qnwgupobfbhkx4ssire
-      use-sync-external-store: 1.2.0_@preact+compat@17.1.1
+      styled-jsx: 5.0.7_m6bl4d7ijgbsr2f5xbrkynzhju
+      use-sync-external-store: 1.2.0_@preact+compat@17.1.2
     optionalDependencies:
       '@next/swc-android-arm-eabi': 12.3.1
       '@next/swc-android-arm64': 12.3.1
@@ -6173,13 +6180,13 @@ packages:
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  /react-obfuscate-email/1.0.16_@preact+compat@17.1.1:
+  /react-obfuscate-email/1.0.16_@preact+compat@17.1.2:
     resolution: {integrity: sha512-uNdo7Iu1D7b4fkPM0qBxKFZOnjLTnowlSkVOV2SAduyrjZSWv+BfLQ9tVpFIT7u6ZWykHl+bZTotKA/V7IZF1Q==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16'
     dependencies:
-      react: /@preact/compat/17.1.1_preact@10.11.0
+      react: /@preact/compat/17.1.2_preact@10.11.0
     dev: false
 
   /read-cache/1.0.0:
@@ -7064,7 +7071,7 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
-  /styled-jsx/5.0.7_s6xlwr6qnwgupobfbhkx4ssire:
+  /styled-jsx/5.0.7_m6bl4d7ijgbsr2f5xbrkynzhju:
     resolution: {integrity: sha512-b3sUzamS086YLRuvnaDigdAewz1/EFYlHpYBP5mZovKEdQQOIIYq8lApylub3HHZ6xFjV051kkGU7cudJmrXEA==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
@@ -7078,7 +7085,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.19.1
-      react: /@preact/compat/17.1.1_preact@10.11.0
+      react: /@preact/compat/17.1.2_preact@10.11.0
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
@@ -7463,12 +7470,12 @@ packages:
     dependencies:
       punycode: 2.1.1
 
-  /use-sync-external-store/1.2.0_@preact+compat@17.1.1:
+  /use-sync-external-store/1.2.0_@preact+compat@17.1.2:
     resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      react: /@preact/compat/17.1.1_preact@10.11.0
+      react: /@preact/compat/17.1.2_preact@10.11.0
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
