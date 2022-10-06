@@ -4,6 +4,7 @@ on:
     branches:
       - live
       - main
+      - 'renovate/**'
 
 jobs:
   build:
