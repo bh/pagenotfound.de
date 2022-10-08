@@ -31,7 +31,7 @@ specifiers:
   next: 12.3.1
   next-plugin-preact: 3.0.7
   next-remote-watch: 2.0.0
-  next-sitemap: 3.1.23
+  next-sitemap: 3.1.24
   next-themes: 0.2.1
   postcss: 8.4.17
   preact: 10.11.1
@@ -69,7 +69,7 @@ dependencies:
   mdx-bundler: 9.0.1_esbuild@0.14.54
   next: 12.3.1_gahw7unmd7qhcfe6wmc2nboqbe
   next-plugin-preact: 3.0.7_36vtnfcg3ayg34mrn7fidov6g4
-  next-sitemap: 3.1.23_mna6xsgplvxkrmeg4ftolwenke
+  next-sitemap: 3.1.24_mna6xsgplvxkrmeg4ftolwenke
   next-themes: 0.2.1_kutqlgpsldwnstqlguubz3eb2e
   postcss: 8.4.17
   preact: 10.11.1
@@ -5566,8 +5566,8 @@ packages:
       - supports-color
     dev: true
 
-  /next-sitemap/3.1.23_mna6xsgplvxkrmeg4ftolwenke:
-    resolution: {integrity: sha512-szQ5uvxn4/7P01U/rvzEccOcYk0Nm+kI3BGzHheREV+HDcj+IilrhXCuNqv4dBWy49eqsgCmjHuEDINx3/teMQ==}
+  /next-sitemap/3.1.24_mna6xsgplvxkrmeg4ftolwenke:
+    resolution: {integrity: sha512-dEFOI6cnNffDcmxis/1IVNK2JI1wtxxGoj2ipP7L8xDVbxjyuuH2V8MEajHPPrIhybfGk6gyZ5HDpXgVcTv9QA==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
