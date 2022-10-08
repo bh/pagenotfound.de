@@ -142,7 +142,7 @@ locale-gen
 ```
 [...]
 # The order of the hooks is very important
-HOOKS="base udev autodetect modconf block keymap encrypt lvm2 resume filesystems keyboard fsck"
+HOOKS=(base udev autodetect keyboard keymap consolefont modconf block encrypt lvm2 resume filesystems fsck)
 ```
 ### Install and setup bootloader
 ```bash
