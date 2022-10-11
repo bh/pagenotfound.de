@@ -1,0 +1,100 @@
+---
+title: Update Conbee 2 Firmware
+date: '2022-08-23'
+tags:
+ - archlinux
+ - zigbee
+draft: false
+lang: 'en'
+summary: 'How to update the firmware of Conbee II Zigbee stick'
+authors: ['default']
+---
+
+## Introduction
+How to update the firmware of [Conbee II](https://phoscon.de/de/conbee2) Zigbee stick using
+[gcfflasher](https://github.com/dresden-elektronik/gcfflasher) on Archlinux ARM (Raspberry 4).
+
+<TOCInline toc={props.toc} exclude="Introduction" toHeading={3} />
+
+
+## Build `gcfflasher`
+Use [this](https://aur.archlinux.org/packages/gcfflasher) AUR package to build `gcfflasher`
+
+### Use yay (recommended)
+```bash
+$ yay -S gcfflasher
+```
+### Via `makepkg`
+```bash
+$ mkdir ~/build
+$ cd ~/build
+$ wget https://aur.archlinux.org/cgit/aur.git/snapshot/gcfflasher.tar.gz
+$ tar xf gcfflasher.tar.gz
+$ cd gcfflasher
+$ makepkg -i
+```
+If the following error occur:
+```
+==> ERROR: gcfflasher is not available for the 'aarch64' architecture.
+```
+use:
+```bash
+$ makepkg -i --ignorearch
+```
+or modify the PKGBUILD:
+```diff
+diff --git a/PKGBUILD b/PKGBUILD
+index 3044731..961f4f0 100644
+--- a/PKGBUILD
++++ b/PKGBUILD
+@@ -4,7 +4,7 @@ pkgname=gcfflasher
+ pkgver=4.0.3_beta
+ pkgrel=1
+ pkgdesc="Tool to program the firmware of dresden elektronik's Zigbee products."
+-arch=('i686' 'x86_64' 'armv6h' 'armv7h')
++arch=('i686' 'x86_64' 'armv6h' 'armv7h' 'aarch64')
+ url="https://github.com/dresden-elektronik/gcfflasher"
+ license=(BSD)
+ depends=(libgpiod)
+```
+## Get latest firmware file
+Download the latest firmware from https://deconz.dresden-elektronik.de/deconz-firmware/:
+
+```
+[...]
+deCONZ_ConBeeII_0x26780700.bin.GCF                 15-May-2022 23:40              163244
+deCONZ_ConBeeII_0x26780700.bin.GCF.md5             15-May-2022 23:41                  69
+[...]
+```
+
+Download (+ the md5 file):
+```bash
+$ wget https://deconz.dresden-elektronik.de/deconz-firmware/deCONZ_ConBeeII_0x26780700.bin.GCF{,.md5}
+```
+Check the integerity of deCONZ_ConBeeII_0x26780700.bin.GCF:
+```bash
+$ md5sum deCONZ_ConBeeII_0x26780700.bin.GCF -c deCONZ_ConBeeII_0x26780700.bin.GCF.md5
+deCONZ_ConBeeII_0x26780700.bin.GCF: OK
+```
+
+## Flashing
+Check if the stick is listed:
+```bash
+$ GCFFlasher -l
+1 devices found
+DEV [0]: name: ConBee_II (DE2472043),path: /dev/ttyACM0 --> /dev/serial/by-id/usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2472043-if00
+```
+
+Flash
+```bash
+$ sudo GCFFlasher -d /dev/ttyACM0 -f deCONZ_ConBeeII_0x26780700.bin.GCF
+read file success: deCONZ_ConBeeII_0x26780700.bin.GCF (163244 bytes)
+flash firmware
+command reset done
+retry connect bootloader /dev/ttyACM0
+query bootloader id V1
+bootloader detected (60)
+ 100 %ding ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+done, wait validation...
+firmware successful written
+```
