@@ -10,8 +10,8 @@
     "lint": "next lint --fix --dir . --dir pages --dir components --dir lib --dir layouts --dir scripts"
   },
   "dependencies": {
-    "@fontsource/inter": "4.5.13",
-    "@fontsource/noto-sans-mono": "4.5.11",
+    "@fontsource/inter": "4.5.14",
+    "@fontsource/noto-sans-mono": "4.5.12",
     "@fortawesome/fontawesome-svg-core": "6.2.0",
     "@fortawesome/free-brands-svg-icons": "6.2.0",
     "@fortawesome/free-solid-svg-icons": "6.2.0",
@@ -28,7 +28,7 @@
     "next-sitemap": "3.1.25",
     "next-themes": "0.2.1",
     "postcss": "8.4.18",
-    "preact": "10.11.1",
+    "preact": "10.11.2",
     "preact-render-to-string": "5.2.5",
     "preact-ssr-prepass": "1.2.0",
     "react": "npm:@preact/compat@17.1.2",
