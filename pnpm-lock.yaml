@@ -50,7 +50,7 @@ specifiers:
   remark-footnotes: 4.0.1
   remark-gfm: 3.0.1
   sharp: 0.31.1
-  tailwindcss: 3.2.0
+  tailwindcss: 3.2.1
   unist-util-visit: 4.1.1
 
 dependencies:
@@ -61,7 +61,7 @@ dependencies:
   '@fortawesome/free-solid-svg-icons': 6.2.0
   '@fortawesome/react-fontawesome': 0.2.0_vr3n4zj2isz2ldzdgpmybn2nfq
   '@prefresh/babel-plugin': 0.4.4
-  '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.0
+  '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
   autoprefixer: 10.4.12_postcss@8.4.18
   github-slugger: 1.4.0
   gray-matter: 4.0.3
@@ -86,7 +86,7 @@ dependencies:
   remark-footnotes: 4.0.1
   remark-gfm: 3.0.1
   sharp: 0.31.1
-  tailwindcss: 3.2.0_postcss@8.4.18
+  tailwindcss: 3.2.1_postcss@8.4.18
   unist-util-visit: 4.1.1
 
 devDependencies:
@@ -1930,7 +1930,7 @@ packages:
     dependencies:
       tslib: 2.4.0
 
-  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.0:
+  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.1:
     resolution: {integrity: sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -1939,7 +1939,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.0_postcss@8.4.18
+      tailwindcss: 3.2.1_postcss@8.4.18
     dev: false
 
   /@trysound/sax/0.2.0:
@@ -7135,8 +7135,8 @@ packages:
       stable: 0.1.8
     dev: true
 
-  /tailwindcss/3.2.0_postcss@8.4.18:
-    resolution: {integrity: sha512-ARh/W0uH5UlWIC2nn02V0+5fyF0k6qZliyt4QYic2upOhPUE/Spu1EURNc9txJ3+4j8OEmdigqfDpw4d2tA4vA==}
+  /tailwindcss/3.2.1_postcss@8.4.18:
+    resolution: {integrity: sha512-Uw+GVSxp5CM48krnjHObqoOwlCt5Qo6nw1jlCRwfGy68dSYb/LwS9ZFidYGRiM+w6rMawkZiu1mEMAsHYAfoLg==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
@@ -7152,6 +7152,7 @@ packages:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       lilconfig: 2.0.6
+      micromatch: 4.0.5
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.0
