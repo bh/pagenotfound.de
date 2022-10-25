@@ -308,7 +308,7 @@ Server = file:///srv/http/mirror/archlinux/$repo/os/$arch
 ```
 
 ## Update 17.09.2022
-I had a performing rsync deamon. I found out, that Rsyncd tried to resolve the PTR records
+I had a bad performing rsync deamon. I found out, that Rsyncd tried to resolve the PTR records
 of the clients through DNS. But there are big delays resolving these kind of DNS queries.
 Until I find out what the issue is, I disable DNSSEC temporarily in `/etc/systemd/resolve.conf`:
 ```bash
