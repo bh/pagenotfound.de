@@ -19,7 +19,7 @@ specifiers:
   eslint-config-next: 12.3.1
   eslint-config-prettier: 8.5.0
   eslint-plugin-prettier: 4.2.1
-  github-slugger: 1.4.0
+  github-slugger: 1.5.0
   globby: 13.1.2
   gray-matter: 4.0.3
   image-size: 1.0.2
@@ -63,7 +63,7 @@ dependencies:
   '@prefresh/babel-plugin': 0.4.4
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
   autoprefixer: 10.4.12_postcss@8.4.18
-  github-slugger: 1.4.0
+  github-slugger: 1.5.0
   gray-matter: 4.0.3
   image-size: 1.0.2
   mdx-bundler: 9.0.1_esbuild@0.14.54
@@ -4064,8 +4064,8 @@ packages:
     resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
     dev: false
 
-  /github-slugger/1.4.0:
-    resolution: {integrity: sha512-w0dzqw/nt51xMVmlaV1+JRzN+oCa1KfcgGEWhxUG16wbdA+Xnt/yoFO8Z8x/V82ZcZ0wy6ln9QDup5avbhiDhQ==}
+  /github-slugger/1.5.0:
+    resolution: {integrity: sha512-wIh+gKBI9Nshz2o46B0B3f5k/W+WI9ZAv6y5Dn5WJ5SK1t0TnDimB4WE5rmTD05ZAIn8HALCZVmCsvj0w0v0lw==}
     dev: false
 
   /glob-parent/5.1.2:
@@ -6577,7 +6577,7 @@ packages:
     resolution: {integrity: sha512-X5v3wV/meuOX9NFcGhJvUpEjIvQl2gDvjg3z40RVprYFt7q3th4qMmYLULiu3gXvbNX1ppx+oaa6JyY1W67pTA==}
     dependencies:
       '@types/hast': 2.3.4
-      github-slugger: 1.4.0
+      github-slugger: 1.5.0
       hast-util-has-property: 2.0.0
       hast-util-heading-rank: 2.1.0
       hast-util-to-string: 2.0.0
