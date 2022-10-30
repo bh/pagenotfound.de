@@ -19,7 +19,7 @@ specifiers:
   eslint-config-next: 12.3.2
   eslint-config-prettier: 8.5.0
   eslint-plugin-prettier: 4.2.1
-  github-slugger: 1.5.0
+  github-slugger: 2.0.0
   globby: 13.1.2
   gray-matter: 4.0.3
   image-size: 1.0.2
@@ -63,7 +63,7 @@ dependencies:
   '@prefresh/babel-plugin': 0.4.4
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
   autoprefixer: 10.4.13_postcss@8.4.18
-  github-slugger: 1.5.0
+  github-slugger: 2.0.0
   gray-matter: 4.0.3
   image-size: 1.0.2
   mdx-bundler: 9.0.1_esbuild@0.14.54
@@ -4066,6 +4066,10 @@ packages:
 
   /github-slugger/1.5.0:
     resolution: {integrity: sha512-wIh+gKBI9Nshz2o46B0B3f5k/W+WI9ZAv6y5Dn5WJ5SK1t0TnDimB4WE5rmTD05ZAIn8HALCZVmCsvj0w0v0lw==}
+    dev: false
+
+  /github-slugger/2.0.0:
+    resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
     dev: false
 
   /glob-parent/5.1.2:
