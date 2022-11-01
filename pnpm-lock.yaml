@@ -31,7 +31,7 @@ specifiers:
   next: 12.3.2
   next-plugin-preact: 3.0.7
   next-remote-watch: 2.0.0
-  next-sitemap: 3.1.29
+  next-sitemap: 3.1.30
   next-themes: 0.2.1
   postcss: 8.4.18
   preact: 10.11.2
@@ -46,7 +46,7 @@ specifiers:
   rehype-autolink-headings: 6.1.1
   rehype-preset-minify: 6.0.0
   rehype-prism-plus: 1.5.0
-  rehype-slug: 5.0.1
+  rehype-slug: 5.1.0
   remark-footnotes: 4.0.1
   remark-gfm: 3.0.1
   sharp: 0.31.1
@@ -69,7 +69,7 @@ dependencies:
   mdx-bundler: 9.0.1_esbuild@0.14.54
   next: 12.3.2_fbp3ao57bxbafv2zmlmpbvbyga
   next-plugin-preact: 3.0.7_lprdrm6nhisd6nru7oemz7byvi
-  next-sitemap: 3.1.29_us5jojdyjjwvps4i2w5h6k4jfq
+  next-sitemap: 3.1.30_us5jojdyjjwvps4i2w5h6k4jfq
   next-themes: 0.2.1_qygikvuaicip7andufgjommk64
   postcss: 8.4.18
   preact: 10.11.2
@@ -82,7 +82,7 @@ dependencies:
   rehype-autolink-headings: 6.1.1
   rehype-preset-minify: 6.0.0
   rehype-prism-plus: 1.5.0
-  rehype-slug: 5.0.1
+  rehype-slug: 5.1.0
   remark-footnotes: 4.0.1
   remark-gfm: 3.0.1
   sharp: 0.31.1
@@ -4064,10 +4064,6 @@ packages:
     resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
     dev: false
 
-  /github-slugger/1.5.0:
-    resolution: {integrity: sha512-wIh+gKBI9Nshz2o46B0B3f5k/W+WI9ZAv6y5Dn5WJ5SK1t0TnDimB4WE5rmTD05ZAIn8HALCZVmCsvj0w0v0lw==}
-    dev: false
-
   /github-slugger/2.0.0:
     resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
     dev: false
@@ -5594,8 +5590,8 @@ packages:
       - supports-color
     dev: true
 
-  /next-sitemap/3.1.29_us5jojdyjjwvps4i2w5h6k4jfq:
-    resolution: {integrity: sha512-7UQyfpI7obOdB11aCswWYfqRn5CR0YSmWHo1r/uarrFfZD5PyyAWtQlgP6jNqDW0eX1ZJWERBwmJ2dLjl4nT8Q==}
+  /next-sitemap/3.1.30_us5jojdyjjwvps4i2w5h6k4jfq:
+    resolution: {integrity: sha512-mZqq9xWrTp/tgUM7+Oz/qxT6x2vnJhwQ3AGke2GjypRbUo44QaTb+4Cp1uX9GwXBaiuuuXDoWyS5VxJP3pJljw==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
@@ -6577,11 +6573,11 @@ packages:
       unist-util-visit: 4.1.1
     dev: false
 
-  /rehype-slug/5.0.1:
-    resolution: {integrity: sha512-X5v3wV/meuOX9NFcGhJvUpEjIvQl2gDvjg3z40RVprYFt7q3th4qMmYLULiu3gXvbNX1ppx+oaa6JyY1W67pTA==}
+  /rehype-slug/5.1.0:
+    resolution: {integrity: sha512-Gf91dJoXneiorNEnn+Phx97CO7oRMrpi+6r155tTxzGuLtm+QrI4cTwCa9e1rtePdL4i9tSO58PeSS6HWfgsiw==}
     dependencies:
       '@types/hast': 2.3.4
-      github-slugger: 1.5.0
+      github-slugger: 2.0.0
       hast-util-has-property: 2.0.0
       hast-util-heading-rank: 2.1.0
       hast-util-to-string: 2.0.0
