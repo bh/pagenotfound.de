@@ -1,0 +1,135 @@
+---
+title: Restic on Hetzner Storage Boxes
+date: '2022-11-17'
+tags:
+ - restic
+ - backups
+ - snippets
+ - homeassistant
+draft: false
+lang: 'en'
+summary: 'How to run a Restic repository on a Hetzner Storage Box'
+authors: ['default']
+---
+
+## Introduction
+Setup a [Restic](https://restic.net/) repository on a [Hetzner Storage Box](https://www.hetzner.com/storage/storage-box) using SFTP.
+
+<TOCInline toc={props.toc} exclude="Introduction" toHeading={3} />
+
+## Install Restic
+```bash
+$ yay -S community/restic
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) restic-0.14.0-1
+
+Total Download Size:    6.65 MiB
+Total Installed Size:  23.28 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ restic-0.14.0-1-x86_64                         6.7 MiB  15.8 MiB/s 00:00 [#########################################] 100%
+(1/1) checking keys in keyring                                            [#########################################] 100%
+(1/1) checking package integrity                                          [#########################################] 100%
+(1/1) loading package files                                               [#########################################] 100%
+(1/1) checking for file conflicts                                         [#########################################] 100%
+(1/1) checking available disk space                                       [#########################################] 100%
+:: Processing package changes...
+(1/1) installing restic                                                   [#########################################] 100%
+Optional dependencies for restic
+    fuse2: mount archive [installed]
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+```
+
+## SSH
+### Create SSH Keys for authentication
+```bash
+$ ssh-keygen
+```
+### Copy Keys to the Storage Box host
+```bash
+$ ssh-copy-id -s -p23 $user@$user.your-storagebox.de
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+$user@$user.your-storagebox.de's password: 
+sftp> -get .ssh/authorized_keys /root/.ssh/ssh-copy-id.lGCBvKFFJS7/authorized_keys
+sftp> -mkdir .ssh
+remote mkdir "/home/.ssh": Failure
+sftp> chmod 700 .ssh
+sftp> put /root/.ssh/ssh-copy-id.lGCBvKFFJS7/authorized_keys .ssh/authorized_keys
+sftp> chmod 600 .ssh/authorized_keys
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "sftp -p '23' '$user@$user.your-storagebox.de'"
+and check to make sure that only the key(s) you wanted were added.
+```
+### Try login without using a password
+```bash
+$ ssh -p23 $user@$user.your-storagebox.de
+Last login: Sun Nov 27 20:05:01 2022 from 2a02:8109:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx
++------------------------------------------------------------------+
+| Welcome to your Storage Box.                                     |
+|                                                                  |
+| Please note that this is only a restricted shell environment and |
+| therefore some shell features like pipes and redirects are not   |
+| supported.                                                       |
++------------------------------------------------------------------+
+$user /home > exit
+```
+
+## Setup restic repository
+```bash
+$ restic -r sftp://$user@[$user.your-storagebox.de]:23/restic init
+enter password for new repository: 
+enter password again: 
+created restic repository cc911a5e39 at sftp://$user@[$user.your-storagebox.de]:23/restic
+
+Please note that knowledge of your password is required to access
+the repository. Losing your password means that your data is
+irrecoverably lost.
+```
+
+## Backup Script for Home Assistant
+I've created a backup script to backup my <a href="/tags/homeassistant">HA</a> stuff.
+
+```bash
+$ mkdir ~/bin
+$ cat ~/bin/backup.sh
+#!/bin/bash
+export RESTIC_PASSWORD=XXX
+
+restic --tag homeassistant -q -r sftp://$user@[$user.your-storagebox.de]:23/restic backup /home/homeassistant/ha/homeassistant/backups
+```
+Make it execuable and put it to your `Crontab`. The following example will run once a day.
+```bash
+$ chmod +x ~/bin/backup.sh
+$ crontab -l
+@daily /usr/bin/bash /home/homeassistant/bin/backup.sh >/dev/null 2>&1
+```
+
+## Check if it works
+```bash
+$ ~/bin/backup.sh
+$ restic -r sftp://$user@[$user.your-storagebox.de]:23/restic snapshots
+enter password for repository: 
+repository cc911a5e opened (repository version 2) successfully, password is correct
+ID        Time                 Host             Tags           Paths
+-----------------------------------------------------------------------------------------------------------
+007457e3  2022-11-27 21:59:32  helium           homeassistant  /home/homeassistant/ha/homeassistant/backups
+-----------------------------------------------------------------------------------------------------------
+1 snapshot
+```
+## CNAME for your Storage Box
+I've created a CNAME for my Storage Box host. Just edit the DNS zone of your domain.
+
+| Name      | Type | Value | Prio | TTL |
+| --------- | ---- | ----- | ---- | --- |
+| restic | CNAME | $user.your-storagebox.de. | | 3600 |
+
+So you can replace all `$user.your-storagebox.de` occurances with `restic.pagenotfound.de`.
+
