@@ -23,7 +23,7 @@
     "gray-matter": "4.0.3",
     "image-size": "1.0.2",
     "mdx-bundler": "9.0.1",
-    "next": "12.3.3",
+    "next": "12.3.4",
     "next-plugin-preact": "3.0.7",
     "next-sitemap": "3.1.32",
     "next-themes": "0.2.1",
@@ -46,23 +46,23 @@
     "unist-util-visit": "4.1.1"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "12.3.3",
+    "@next/bundle-analyzer": "12.3.4",
     "@svgr/webpack": "6.5.1",
     "cross-env": "7.0.3",
     "dedent": "0.7.0",
     "esbuild": "^0.14.54",
     "eslint": "8.28.0",
-    "eslint-config-next": "12.3.3",
+    "eslint-config-next": "12.3.4",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
     "globby": "13.1.2",
     "inquirer": "9.1.4",
     "js-yaml": "4.1.0",
-    "lint-staged": "13.0.3",
+    "lint-staged": "13.0.4",
     "mdast-util-to-string": "3.1.0",
     "next-remote-watch": "2.0.0",
-    "prettier": "2.7.1",
-    "prettier-plugin-tailwindcss": "0.1.13"
+    "prettier": "2.8.0",
+    "prettier-plugin-tailwindcss": "0.2.0"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
