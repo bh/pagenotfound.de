@@ -1,0 +1,107 @@
+---
+title: Boot Raspberry PI 4 from SSD
+date: '2022-12-17'
+tags:
+ - ssd
+ - snippets
+ - raspberry
+ - archlinux
+draft: false
+lang: 'en'
+summary: 'Use a SSD instead of SD card for a Raspberry PI 4 on Archlinux ARM'
+authors: ['default']
+---
+
+## Introduction
+Use a SSD instead of SD card for a Raspberry PI 4 on Archlinux ARM
+
+<TOCInline toc={props.toc} exclude="Introduction" toHeading={3} />
+
+## Change bootorder while on RPI
+Add `BOOT_ORDER=0xf41` with the following command to adjust the boot order:
+```bash
+$ sudo rpi-eeprom-config -e
+```
+Running:
+```bash
+$ sudo rpi-eeprom-config
+```
+should print something like this:
+```text {4} showLineNumbers
+BOOT_UART=0
+WAKE_ON_GPIO=1
+POWER_OFF_ON_HALT=0
+BOOT_ORDER=0xf41  
+```   
+
+## Backup partion table
+```bash
+$ mkdir stuff
+$ cd stuff
+$ sfdisk -d /dev/sda > part_table_sd_card
+```
+
+## Create images 
+Now we create images of the boot (`/dev/sda1`) and root (`/dev/sda2`) partion
+```bash
+$ sudo dd if=/dev/sda1 of=sda1.img status=progress bs=2M                     
+411041792 bytes (411 MB, 392 MiB) copied, 28 s, 14.6 MB/s
+$ sudo dd if=/dev/sda2 of=sda2.img status=progress bs=2M
+57002688512 bytes (57 GB, 53 GiB) copied, 3978 s, 14.3 MB/s
+```
+
+## Restore the partion table to the SSD
+```bash
+$ sudo sfdisk /dev/sdb < part_table_sd_card
+```
+
+## Restore images to SSD
+```bash
+$ sudo dd if=sda1.img of=/dev/sdb1 status=progress
+$ sudo dd if=sda2.img of=/dev/sdb2 status=progress
+```
+
+## Change some stuff needed to boot from SSD
+### Mount SD partions temporary
+```bash
+$ mkdir boot root
+$ sudo mount /dev/sdb1 boot
+$ sudo mount /dev/sdb2 root
+```
+### Change configs
+Change `root=` to `/dev/sda2`
+```bash
+$ cat boot/cmdline.txt
+root=/dev/sda2 rw rootwait console=serial0,115200 console=tty1 fsck.repair=yes
+```
+```bash
+$ cat root/ets/fstab
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+/dev/sda1  /boot   vfat    defaults        0       0
+```
+### Boot from USB 3
+If you want to boot your SSD via USB 3, I had to adjust this boot parameters in `boot/cmdline.txt`
+
+#### Get the `idVendor` and `idProduct` of USB SATA adapter
+Plug it in, call `dmesg`. 
+At the bottom, there should be the following output:
+
+```text {1} showLineNumbers
+[    2.461535] usb 2-2: New USB device found, idVendor=152d, idProduct=1561, bcdDevice= 2.04
+[    2.461566] usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    2.461587] usb 2-2: Product: SABRENT
+[    2.461603] usb 2-2: Manufacturer: SABRENT
+[    2.461619] usb 2-2: SerialNumber: DB9876543214E
+```
+
+The important part are the values of `idVendor`and `idProduct` in line 1.
+
+Add `usb-storage.quirks=$idVendor:$idProduct:u` to kernel command line.
+For me this should result in:
+```bash
+$ cat boot/cmdline.txt
+usb-storage.quirks=152d:1561:u root=/dev/sda2 rw rootwait console=serial0,115200 console=tty1 fsck.repair=yes
+```
