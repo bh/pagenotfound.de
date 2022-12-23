@@ -25,7 +25,7 @@
     "mdx-bundler": "9.0.1",
     "next": "12.3.4",
     "next-plugin-preact": "3.0.7",
-    "next-sitemap": "3.1.42",
+    "next-sitemap": "3.1.43",
     "next-themes": "0.2.1",
     "postcss": "8.4.20",
     "preact": "10.11.3",
@@ -41,7 +41,7 @@
     "rehype-slug": "5.1.0",
     "remark-footnotes": "4.0.1",
     "remark-gfm": "3.0.1",
-    "sharp": "0.31.2",
+    "sharp": "0.31.3",
     "tailwindcss": "3.2.4",
     "unist-util-visit": "4.1.1"
   },
