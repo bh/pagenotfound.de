@@ -27,7 +27,7 @@ specifiers:
   js-yaml: 4.1.0
   lint-staged: 13.1.0
   mdast-util-to-string: 3.1.0
-  mdx-bundler: 9.0.1
+  mdx-bundler: 9.2.1
   next: 12.3.4
   next-plugin-preact: 3.0.7
   next-remote-watch: 2.0.0
@@ -66,7 +66,7 @@ dependencies:
   github-slugger: 2.0.0
   gray-matter: 4.0.3
   image-size: 1.0.2
-  mdx-bundler: 9.0.1_esbuild@0.14.54
+  mdx-bundler: 9.2.1_esbuild@0.14.54
   next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
   next-plugin-preact: 3.0.7_lov4rn3e2faihnytez6bde2mfa
   next-sitemap: 3.1.43_ard6s3rhe5f3frnbkpgpbhsgn4
@@ -5053,11 +5053,11 @@ packages:
     resolution: {integrity: sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==}
     dev: true
 
-  /mdx-bundler/9.0.1_esbuild@0.14.54:
-    resolution: {integrity: sha512-/ktO4WTwrZszPOISh9qU0Ud/WXlTZHqA9grErUZGc7WGd7mooJiCCxejkkzHy7TQf1PS83jGECLrTeSVUkqEkQ==}
-    engines: {node: '>=12', npm: '>=6'}
+  /mdx-bundler/9.2.1_esbuild@0.14.54:
+    resolution: {integrity: sha512-hWEEip1KU9MCNqeH2rqwzAZ1pdqPPbfkx9OTJjADqGPQz4t9BO85fhI7AP9gVYrpmfArf9/xJZUN0yBErg/G/Q==}
+    engines: {node: '>=14', npm: '>=6'}
     peerDependencies:
-      esbuild: 0.11.x || 0.12.x || 0.13.x || 0.14.x
+      esbuild: 0.*
     dependencies:
       '@babel/runtime': 7.19.0
       '@esbuild-plugins/node-resolve': 0.1.4_esbuild@0.14.54
@@ -5068,6 +5068,7 @@ packages:
       remark-frontmatter: 4.0.1
       remark-mdx-frontmatter: 1.1.1
       uuid: 8.3.2
+      vfile: 5.3.5
     transitivePeerDependencies:
       - supports-color
     dev: false
