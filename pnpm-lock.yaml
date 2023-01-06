@@ -17,7 +17,7 @@ specifiers:
   esbuild: ^0.14.54
   eslint: 8.31.0
   eslint-config-next: 12.3.4
-  eslint-config-prettier: 8.5.0
+  eslint-config-prettier: 8.6.0
   eslint-plugin-prettier: 4.2.1
   github-slugger: 2.0.0
   globby: 13.1.3
@@ -31,7 +31,7 @@ specifiers:
   next: 12.3.4
   next-plugin-preact: 3.0.7
   next-remote-watch: 2.0.0
-  next-sitemap: 3.1.43
+  next-sitemap: 3.1.44
   next-themes: 0.2.1
   postcss: 8.4.20
   preact: 10.11.3
@@ -69,7 +69,7 @@ dependencies:
   mdx-bundler: 9.2.1_esbuild@0.14.54
   next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
   next-plugin-preact: 3.0.7_lov4rn3e2faihnytez6bde2mfa
-  next-sitemap: 3.1.43_ard6s3rhe5f3frnbkpgpbhsgn4
+  next-sitemap: 3.1.44_ard6s3rhe5f3frnbkpgpbhsgn4
   next-themes: 0.2.1_ny5in3rraiqalmpmjjtznyftnu
   postcss: 8.4.20
   preact: 10.11.3
@@ -97,8 +97,8 @@ devDependencies:
   esbuild: 0.14.54
   eslint: 8.31.0
   eslint-config-next: 12.3.4_2dzgwy5zqpbqnlebe4vtikzq4i
-  eslint-config-prettier: 8.5.0_eslint@8.31.0
-  eslint-plugin-prettier: 4.2.1_xtjuwoibeoaqavcvkna3ocxxbu
+  eslint-config-prettier: 8.6.0_eslint@8.31.0
+  eslint-plugin-prettier: 4.2.1_32m5uc2milwdw3tnkcq5del26y
   globby: 13.1.3
   inquirer: 9.1.4
   js-yaml: 4.1.0
@@ -3450,8 +3450,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-config-prettier/8.5.0_eslint@8.31.0:
-    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
+  /eslint-config-prettier/8.6.0_eslint@8.31.0:
+    resolution: {integrity: sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -3566,7 +3566,7 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_xtjuwoibeoaqavcvkna3ocxxbu:
+  /eslint-plugin-prettier/4.2.1_32m5uc2milwdw3tnkcq5del26y:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -3578,7 +3578,7 @@ packages:
         optional: true
     dependencies:
       eslint: 8.31.0
-      eslint-config-prettier: 8.5.0_eslint@8.31.0
+      eslint-config-prettier: 8.6.0_eslint@8.31.0
       prettier: 2.8.1
       prettier-linter-helpers: 1.0.0
     dev: true
@@ -5589,8 +5589,8 @@ packages:
       - supports-color
     dev: true
 
-  /next-sitemap/3.1.43_ard6s3rhe5f3frnbkpgpbhsgn4:
-    resolution: {integrity: sha512-TshDAP69OjHwvszedQ/jBvOjzqy7Gm9NU3ZIP30X3e1qXsNVOVF5uzi9kQOI6v0uBG08QUOk9wKNSIk3zI/wjQ==}
+  /next-sitemap/3.1.44_ard6s3rhe5f3frnbkpgpbhsgn4:
+    resolution: {integrity: sha512-dg+qGfOpQemAb+LGShJmaJHyuf36rVqsIbkCBt0ldu10sAx+eMowVx6DzEtf2HoIIGWc7J+kfy//YsBCPdj47Q==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
