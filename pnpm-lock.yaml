@@ -10,7 +10,7 @@ specifiers:
   '@next/bundle-analyzer': 12.3.4
   '@prefresh/babel-plugin': 0.4.4
   '@svgr/webpack': 6.5.1
-  '@tailwindcss/typography': 0.5.8
+  '@tailwindcss/typography': 0.5.9
   autoprefixer: 10.4.13
   cross-env: 7.0.3
   dedent: 0.7.0
@@ -31,7 +31,7 @@ specifiers:
   next: 12.3.4
   next-plugin-preact: 3.0.7
   next-remote-watch: 2.0.0
-  next-sitemap: 3.1.44
+  next-sitemap: 3.1.45
   next-themes: 0.2.1
   postcss: 8.4.21
   preact: 10.11.3
@@ -61,7 +61,7 @@ dependencies:
   '@fortawesome/free-solid-svg-icons': 6.2.1
   '@fortawesome/react-fontawesome': 0.2.0_tlci6fibpholhkuaflgshl5uae
   '@prefresh/babel-plugin': 0.4.4
-  '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
+  '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
   autoprefixer: 10.4.13_postcss@8.4.21
   github-slugger: 2.0.0
   gray-matter: 4.0.3
@@ -69,7 +69,7 @@ dependencies:
   mdx-bundler: 9.2.1_esbuild@0.14.54
   next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
   next-plugin-preact: 3.0.7_lov4rn3e2faihnytez6bde2mfa
-  next-sitemap: 3.1.44_ard6s3rhe5f3frnbkpgpbhsgn4
+  next-sitemap: 3.1.45_ard6s3rhe5f3frnbkpgpbhsgn4
   next-themes: 0.2.1_ny5in3rraiqalmpmjjtznyftnu
   postcss: 8.4.21
   preact: 10.11.3
@@ -1930,8 +1930,8 @@ packages:
     dependencies:
       tslib: 2.4.0
 
-  /@tailwindcss/typography/0.5.8_tailwindcss@3.2.4:
-    resolution: {integrity: sha512-xGQEp8KXN8Sd8m6R4xYmwxghmswrd0cPnNI2Lc6fmrC3OojysTBJJGSIVwPV56q4t6THFUK3HJ0EaWwpglSxWw==}
+  /@tailwindcss/typography/0.5.9_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-t8Sg3DyynFysV9f4JDOVISGsjazNb48AeIYQwcL+Bsq5uf4RYL75C1giZ43KISjeDGBaTN3Kxh7Xj/vRSMJUUg==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
@@ -5589,8 +5589,8 @@ packages:
       - supports-color
     dev: true
 
-  /next-sitemap/3.1.44_ard6s3rhe5f3frnbkpgpbhsgn4:
-    resolution: {integrity: sha512-dg+qGfOpQemAb+LGShJmaJHyuf36rVqsIbkCBt0ldu10sAx+eMowVx6DzEtf2HoIIGWc7J+kfy//YsBCPdj47Q==}
+  /next-sitemap/3.1.45_ard6s3rhe5f3frnbkpgpbhsgn4:
+    resolution: {integrity: sha512-8vyvWC8KT8RIEUL9Vfiae9yGuIIiJ1IpepzbFtwZx43BaKsoi/Zk9OlmPKuQouVY726xwN7uLZPtgl2l2U+9Ug==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
