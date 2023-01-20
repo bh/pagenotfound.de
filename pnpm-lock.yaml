@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fontsource/inter': 4.5.14
-  '@fontsource/noto-sans-mono': 4.5.12
+  '@fontsource/inter': 4.5.15
+  '@fontsource/noto-sans-mono': 4.5.13
   '@fortawesome/fontawesome-svg-core': 6.2.1
   '@fortawesome/free-brands-svg-icons': 6.2.1
   '@fortawesome/free-solid-svg-icons': 6.2.1
@@ -54,8 +54,8 @@ specifiers:
   unist-util-visit: 4.1.1
 
 dependencies:
-  '@fontsource/inter': 4.5.14
-  '@fontsource/noto-sans-mono': 4.5.12
+  '@fontsource/inter': 4.5.15
+  '@fontsource/noto-sans-mono': 4.5.13
   '@fortawesome/fontawesome-svg-core': 6.2.1
   '@fortawesome/free-brands-svg-icons': 6.2.1
   '@fortawesome/free-solid-svg-icons': 6.2.1
@@ -1408,12 +1408,12 @@ packages:
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
     dev: false
 
-  /@fontsource/inter/4.5.14:
-    resolution: {integrity: sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==}
+  /@fontsource/inter/4.5.15:
+    resolution: {integrity: sha512-FzleM9AxZQK2nqsTDtBiY0PMEVWvnKnuu2i09+p6DHvrHsuucoV2j0tmw+kAT3L4hvsLdAIDv6MdGehsPIdT+Q==}
     dev: false
 
-  /@fontsource/noto-sans-mono/4.5.12:
-    resolution: {integrity: sha512-XOP4O2tIwzy5CQNBmzgsiymdzVJlwq5QBDNQT5P6eDQEghkUxoxQ0SjlgQHDAN6QDtCbfDK3JXQqt4t1x+YG+A==}
+  /@fontsource/noto-sans-mono/4.5.13:
+    resolution: {integrity: sha512-b2gTUIFvLtDtOtKzjd9b5dXUGWNQeItuoaR9D0vNYV03PwUL+vjbi3x9yFRkL15X4SeoiWJCPBQ7bKz+51HC4Q==}
     dev: false
 
   /@fortawesome/fontawesome-common-types/6.2.1:
