@@ -43,7 +43,7 @@
     "remark-gfm": "3.0.1",
     "sharp": "0.31.3",
     "tailwindcss": "3.2.4",
-    "unist-util-visit": "4.1.1"
+    "unist-util-visit": "4.1.2"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "12.3.4",
@@ -59,10 +59,10 @@
     "inquirer": "9.1.4",
     "js-yaml": "4.1.0",
     "lint-staged": "13.1.0",
-    "mdast-util-to-string": "3.1.0",
+    "mdast-util-to-string": "3.1.1",
     "next-remote-watch": "2.0.0",
     "prettier": "2.8.3",
-    "prettier-plugin-tailwindcss": "0.2.1"
+    "prettier-plugin-tailwindcss": "0.2.2"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [

@@ -26,7 +26,7 @@ specifiers:
   inquirer: 9.1.4
   js-yaml: 4.1.0
   lint-staged: 13.1.0
-  mdast-util-to-string: 3.1.0
+  mdast-util-to-string: 3.1.1
   mdx-bundler: 9.2.1
   next: 12.3.4
   next-plugin-preact: 3.0.7
@@ -38,7 +38,7 @@ specifiers:
   preact-render-to-string: 5.2.6
   preact-ssr-prepass: 1.2.0
   prettier: 2.8.3
-  prettier-plugin-tailwindcss: 0.2.1
+  prettier-plugin-tailwindcss: 0.2.2
   react: npm:@preact/compat@17.1.2
   react-dom: npm:@preact/compat@17.1.2
   react-obfuscate-email: 1.0.16
@@ -51,7 +51,7 @@ specifiers:
   remark-gfm: 3.0.1
   sharp: 0.31.3
   tailwindcss: 3.2.4
-  unist-util-visit: 4.1.1
+  unist-util-visit: 4.1.2
 
 dependencies:
   '@fontsource/inter': 4.5.15
@@ -87,7 +87,7 @@ dependencies:
   remark-gfm: 3.0.1
   sharp: 0.31.3
   tailwindcss: 3.2.4_postcss@8.4.21
-  unist-util-visit: 4.1.1
+  unist-util-visit: 4.1.2
 
 devDependencies:
   '@next/bundle-analyzer': 12.3.4
@@ -103,10 +103,10 @@ devDependencies:
   inquirer: 9.1.4
   js-yaml: 4.1.0
   lint-staged: 13.1.0
-  mdast-util-to-string: 3.1.0
+  mdast-util-to-string: 3.1.1
   next-remote-watch: 2.0.0_next@12.3.4
   prettier: 2.8.3
-  prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.3
+  prettier-plugin-tailwindcss: 0.2.2_prettier@2.8.3
 
 packages:
 
@@ -1547,7 +1547,7 @@ packages:
       unified: 10.1.2
       unist-util-position-from-estree: 1.1.1
       unist-util-stringify-position: 3.0.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
       vfile: 5.3.5
     transitivePeerDependencies:
       - supports-color
@@ -2005,7 +2005,6 @@ packages:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
     dependencies:
       '@types/unist': 2.0.6
-    dev: false
 
   /@types/mdx/2.0.2:
     resolution: {integrity: sha512-mJGfgj4aWpiKb8C0nnJJchs1sHBHn0HugkVfqqyQi7Wn6mBRksLeQsPOFvih/Pu8L1vlDzfe/LidhVHBeUk3aQ==}
@@ -2037,7 +2036,6 @@ packages:
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
-    dev: false
 
   /@typescript-eslint/parser/5.38.1_jmpkdi7ay2vsezmdyqr4vb7mqm:
     resolution: {integrity: sha512-LDqxZBVFFQnQRz9rUZJhLmox+Ep5kdUmLatLQnCRR6523YV+XhRjfYzStQ4MheFA8kMAfUlclHSbu+RKdRwQKw==}
@@ -4296,7 +4294,7 @@ packages:
       nth-check: 2.1.1
       property-information: 6.1.1
       space-separated-tokens: 2.0.1
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
       zwitch: 2.0.2
     dev: false
 
@@ -4871,7 +4869,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.10
       '@types/unist': 2.0.6
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /mdast-util-find-and-replace/2.2.1:
@@ -4896,7 +4894,7 @@ packages:
       '@types/mdast': 3.0.10
       '@types/unist': 2.0.6
       decode-named-character-reference: 1.0.2
-      mdast-util-to-string: 3.1.0
+      mdast-util-to-string: 3.1.1
       micromark: 3.0.10
       micromark-util-decode-numeric-character-reference: 1.0.0
       micromark-util-decode-string: 1.0.2
@@ -5031,7 +5029,7 @@ packages:
       unist-builder: 3.0.0
       unist-util-generated: 2.0.0
       unist-util-position: 4.0.3
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /mdast-util-to-markdown/1.3.0:
@@ -5040,14 +5038,16 @@ packages:
       '@types/mdast': 3.0.10
       '@types/unist': 2.0.6
       longest-streak: 3.0.1
-      mdast-util-to-string: 3.1.0
+      mdast-util-to-string: 3.1.1
       micromark-util-decode-string: 1.0.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
       zwitch: 2.0.2
     dev: false
 
-  /mdast-util-to-string/3.1.0:
-    resolution: {integrity: sha512-n4Vypz/DZgwo0iMHLQL49dJzlp7YtAJP+N07MZHpjPf/5XJuHUWstviF4Mn2jEiR/GNmtnRRqnwsXExk3igfFA==}
+  /mdast-util-to-string/3.1.1:
+    resolution: {integrity: sha512-tGvhT94e+cVnQt8JWE9/b3cUQZWS732TJxXHktvP+BYo62PpYD53Ls/6cC60rW21dW+txxiM4zMdc6abASvZKA==}
+    dependencies:
+      '@types/mdast': 3.0.10
 
   /mdn-data/2.0.14:
     resolution: {integrity: sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==}
@@ -6087,11 +6087,54 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-tailwindcss/0.2.1_prettier@2.8.3:
-    resolution: {integrity: sha512-aIO8IguumORyRsmT+E7JfJ3A9FEoyhqZR7Au7TBOege3VZkgMvHJMkufeYp4zjnDK2iq4ktkvGMNOQR9T8lisQ==}
+  /prettier-plugin-tailwindcss/0.2.2_prettier@2.8.3:
+    resolution: {integrity: sha512-5RjUbWRe305pUpc48MosoIp6uxZvZxrM6GyOgsbGLTce+ehePKNm7ziW2dLG2air9aXbGuXlHVSQQw4Lbosq3w==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
+      '@prettier/plugin-php': '*'
+      '@prettier/plugin-pug': '*'
+      '@shopify/prettier-plugin-liquid': '*'
+      '@shufo/prettier-plugin-blade': '*'
+      '@trivago/prettier-plugin-sort-imports': '*'
       prettier: '>=2.2.0'
+      prettier-plugin-astro: '*'
+      prettier-plugin-css-order: '*'
+      prettier-plugin-import-sort: '*'
+      prettier-plugin-jsdoc: '*'
+      prettier-plugin-organize-attributes: '*'
+      prettier-plugin-organize-imports: '*'
+      prettier-plugin-style-order: '*'
+      prettier-plugin-svelte: '*'
+      prettier-plugin-twig-melody: '*'
+    peerDependenciesMeta:
+      '@prettier/plugin-php':
+        optional: true
+      '@prettier/plugin-pug':
+        optional: true
+      '@shopify/prettier-plugin-liquid':
+        optional: true
+      '@shufo/prettier-plugin-blade':
+        optional: true
+      '@trivago/prettier-plugin-sort-imports':
+        optional: true
+      prettier-plugin-astro:
+        optional: true
+      prettier-plugin-css-order:
+        optional: true
+      prettier-plugin-import-sort:
+        optional: true
+      prettier-plugin-jsdoc:
+        optional: true
+      prettier-plugin-organize-attributes:
+        optional: true
+      prettier-plugin-organize-imports:
+        optional: true
+      prettier-plugin-style-order:
+        optional: true
+      prettier-plugin-svelte:
+        optional: true
+      prettier-plugin-twig-melody:
+        optional: true
     dependencies:
       prettier: 2.8.3
     dev: true
@@ -6299,7 +6342,7 @@ packages:
       hast-util-heading-rank: 2.1.0
       hast-util-is-element: 2.1.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-attribute-whitespace/3.0.0:
@@ -6310,7 +6353,7 @@ packages:
       hast-util-is-element: 2.1.2
       hast-util-is-event-handler: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-css-style/3.0.0:
@@ -6322,7 +6365,7 @@ packages:
       hast-util-is-css-style: 2.0.0
       hast-util-to-string: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-enumerated-attribute/4.1.0:
@@ -6335,7 +6378,7 @@ packages:
       property-information: 6.1.1
       space-separated-tokens: 2.0.1
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-event-handler/3.0.0:
@@ -6346,7 +6389,7 @@ packages:
       hast-util-is-event-handler: 2.0.0
       uglify-js: 3.17.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-javascript-script/4.0.0:
@@ -6359,7 +6402,7 @@ packages:
       hast-util-to-string: 2.0.0
       uglify-js: 3.17.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-javascript-url/4.0.0:
@@ -6371,7 +6414,7 @@ packages:
       html-url-attributes: 2.0.0
       uglify-js: 3.17.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-json-script/3.0.0:
@@ -6382,7 +6425,7 @@ packages:
       hast-util-is-element: 2.1.2
       hast-util-to-string: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-language/2.0.0:
@@ -6392,7 +6435,7 @@ packages:
       bcp-47-normalize: 2.1.0
       hast-util-has-property: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-media-attribute/3.0.0:
@@ -6402,7 +6445,7 @@ packages:
       clean-css: 5.3.1
       hast-util-is-element: 2.1.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-meta-color/3.0.0:
@@ -6413,7 +6456,7 @@ packages:
       hast-util-has-property: 2.0.0
       hast-util-is-element: 2.1.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-meta-content/3.0.0:
@@ -6424,7 +6467,7 @@ packages:
       hast-util-has-property: 2.0.0
       hast-util-is-element: 2.1.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-style-attribute/3.0.0:
@@ -6434,7 +6477,7 @@ packages:
       clean-css: 5.3.1
       hast-util-has-property: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-minify-whitespace/5.0.1:
@@ -6455,7 +6498,7 @@ packages:
       hast-util-has-property: 2.0.0
       hast-util-is-element: 2.1.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-parse/8.0.4:
@@ -6503,7 +6546,7 @@ packages:
       refractor: 4.8.0
       rehype-parse: 8.0.4
       unist-util-filter: 4.0.0
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-remove-comments/5.0.0:
@@ -6521,7 +6564,7 @@ packages:
       '@types/hast': 2.3.4
       hast-util-is-element: 2.1.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-remove-empty-attribute/3.0.0:
@@ -6531,7 +6574,7 @@ packages:
       hast-util-is-element: 2.1.2
       hast-util-is-event-handler: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-remove-external-script-content/3.0.0:
@@ -6541,7 +6584,7 @@ packages:
       hast-util-has-property: 2.0.0
       hast-util-is-javascript: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-remove-meta-http-equiv/3.0.0:
@@ -6550,7 +6593,7 @@ packages:
       hast-util-has-property: 2.0.0
       space-separated-tokens: 2.0.1
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-remove-script-type-javascript/3.0.0:
@@ -6559,7 +6602,7 @@ packages:
       '@types/hast': 2.3.4
       hast-util-is-javascript: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-remove-style-type-css/3.0.0:
@@ -6569,7 +6612,7 @@ packages:
       hast-util-is-css-link: 2.0.0
       hast-util-is-css-style: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-slug/5.1.0:
@@ -6581,7 +6624,7 @@ packages:
       hast-util-heading-rank: 2.1.0
       hast-util-to-string: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-sort-attribute-values/4.0.0:
@@ -6590,7 +6633,7 @@ packages:
       '@types/hast': 2.3.4
       hast-util-is-element: 2.1.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /rehype-sort-attributes/4.0.0:
@@ -6598,7 +6641,7 @@ packages:
     dependencies:
       '@types/hast': 2.3.4
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /remark-footnotes/4.0.1:
@@ -7438,7 +7481,7 @@ packages:
     resolution: {integrity: sha512-0yDkppiIhDlPrfHELgB+NLQD5mfjup3a8UYclHruTJWmY74je8g+CIFr79x5f6AkmzSwlvKLbs63hC0meOMowQ==}
     dependencies:
       '@types/unist': 2.0.6
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: false
 
   /unist-util-stringify-position/3.0.2:
@@ -7454,8 +7497,8 @@ packages:
       unist-util-is: 5.1.1
     dev: false
 
-  /unist-util-visit/4.1.1:
-    resolution: {integrity: sha512-n9KN3WV9k4h1DxYR1LoajgN93wpEi/7ZplVe02IoB4gH5ctI1AaF2670BLHQYbwj+pY83gFtyeySFiyMHJklrg==}
+  /unist-util-visit/4.1.2:
+    resolution: {integrity: sha512-MSd8OUGISqHdVvfY9TPhyK2VdUrPgxkUtWSuMHF6XAAFuL4LokseigBnZtPnJMu+FbynTkFNnFlyjxpVKujMRg==}
     dependencies:
       '@types/unist': 2.0.6
       unist-util-is: 5.1.1
