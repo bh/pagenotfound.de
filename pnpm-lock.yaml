@@ -3,9 +3,9 @@ lockfileVersion: 5.4
 specifiers:
   '@fontsource/inter': 4.5.15
   '@fontsource/noto-sans-mono': 4.5.13
-  '@fortawesome/fontawesome-svg-core': 6.2.1
-  '@fortawesome/free-brands-svg-icons': 6.2.1
-  '@fortawesome/free-solid-svg-icons': 6.2.1
+  '@fortawesome/fontawesome-svg-core': 6.3.0
+  '@fortawesome/free-brands-svg-icons': 6.3.0
+  '@fortawesome/free-solid-svg-icons': 6.3.0
   '@fortawesome/react-fontawesome': 0.2.0
   '@next/bundle-analyzer': 12.3.4
   '@prefresh/babel-plugin': 0.4.4
@@ -25,19 +25,19 @@ specifiers:
   image-size: 1.0.2
   inquirer: 9.1.4
   js-yaml: 4.1.0
-  lint-staged: 13.1.0
+  lint-staged: 13.1.1
   mdast-util-to-string: 3.1.1
   mdx-bundler: 9.2.1
   next: 12.3.4
   next-plugin-preact: 3.0.7
   next-remote-watch: 2.0.0
-  next-sitemap: 3.1.49
+  next-sitemap: 3.1.50
   next-themes: 0.2.1
   postcss: 8.4.21
-  preact: 10.11.3
+  preact: 10.12.0
   preact-render-to-string: 5.2.6
   preact-ssr-prepass: 1.2.0
-  prettier: 2.8.3
+  prettier: 2.8.4
   prettier-plugin-tailwindcss: 0.2.2
   react: npm:@preact/compat@17.1.2
   react-dom: npm:@preact/compat@17.1.2
@@ -50,33 +50,33 @@ specifiers:
   remark-footnotes: 4.0.1
   remark-gfm: 3.0.1
   sharp: 0.31.3
-  tailwindcss: 3.2.4
+  tailwindcss: 3.2.6
   unist-util-visit: 4.1.2
 
 dependencies:
   '@fontsource/inter': 4.5.15
   '@fontsource/noto-sans-mono': 4.5.13
-  '@fortawesome/fontawesome-svg-core': 6.2.1
-  '@fortawesome/free-brands-svg-icons': 6.2.1
-  '@fortawesome/free-solid-svg-icons': 6.2.1
-  '@fortawesome/react-fontawesome': 0.2.0_tlci6fibpholhkuaflgshl5uae
+  '@fortawesome/fontawesome-svg-core': 6.3.0
+  '@fortawesome/free-brands-svg-icons': 6.3.0
+  '@fortawesome/free-solid-svg-icons': 6.3.0
+  '@fortawesome/react-fontawesome': 0.2.0_dff2fycnjpadn23vzgzlwglqd4
   '@prefresh/babel-plugin': 0.4.4
-  '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
+  '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.6
   autoprefixer: 10.4.13_postcss@8.4.21
   github-slugger: 2.0.0
   gray-matter: 4.0.3
   image-size: 1.0.2
   mdx-bundler: 9.2.1_esbuild@0.14.54
   next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
-  next-plugin-preact: 3.0.7_lov4rn3e2faihnytez6bde2mfa
-  next-sitemap: 3.1.49_ard6s3rhe5f3frnbkpgpbhsgn4
+  next-plugin-preact: 3.0.7_6xkyrflg3z5knlsdi6niuof6hq
+  next-sitemap: 3.1.50_ard6s3rhe5f3frnbkpgpbhsgn4
   next-themes: 0.2.1_ny5in3rraiqalmpmjjtznyftnu
   postcss: 8.4.21
-  preact: 10.11.3
-  preact-render-to-string: 5.2.6_preact@10.11.3
-  preact-ssr-prepass: 1.2.0_preact@10.11.3
-  react: /@preact/compat/17.1.2_preact@10.11.3
-  react-dom: /@preact/compat/17.1.2_preact@10.11.3
+  preact: 10.12.0
+  preact-render-to-string: 5.2.6_preact@10.12.0
+  preact-ssr-prepass: 1.2.0_preact@10.12.0
+  react: /@preact/compat/17.1.2_preact@10.12.0
+  react-dom: /@preact/compat/17.1.2_preact@10.12.0
   react-obfuscate-email: 1.0.16_@preact+compat@17.1.2
   reading-time: 1.5.0
   rehype-autolink-headings: 6.1.1
@@ -86,7 +86,7 @@ dependencies:
   remark-footnotes: 4.0.1
   remark-gfm: 3.0.1
   sharp: 0.31.3
-  tailwindcss: 3.2.4_postcss@8.4.21
+  tailwindcss: 3.2.6_postcss@8.4.21
   unist-util-visit: 4.1.2
 
 devDependencies:
@@ -98,15 +98,15 @@ devDependencies:
   eslint: 8.33.0
   eslint-config-next: 12.3.4_buarabag6qazzmwwk4hkryl6vm
   eslint-config-prettier: 8.6.0_eslint@8.33.0
-  eslint-plugin-prettier: 4.2.1_jqplj6qf3uqpxpu4gdyhwwasnq
+  eslint-plugin-prettier: 4.2.1_qa2thblfovmfepmgrc7z2owbo4
   globby: 13.1.3
   inquirer: 9.1.4
   js-yaml: 4.1.0
-  lint-staged: 13.1.0
+  lint-staged: 13.1.1
   mdast-util-to-string: 3.1.1
   next-remote-watch: 2.0.0_next@12.3.4
-  prettier: 2.8.3
-  prettier-plugin-tailwindcss: 0.2.2_prettier@2.8.3
+  prettier: 2.8.4
+  prettier-plugin-tailwindcss: 0.2.2_prettier@2.8.4
 
 packages:
 
@@ -1416,45 +1416,45 @@ packages:
     resolution: {integrity: sha512-b2gTUIFvLtDtOtKzjd9b5dXUGWNQeItuoaR9D0vNYV03PwUL+vjbi3x9yFRkL15X4SeoiWJCPBQ7bKz+51HC4Q==}
     dev: false
 
-  /@fortawesome/fontawesome-common-types/6.2.1:
-    resolution: {integrity: sha512-Sz07mnQrTekFWLz5BMjOzHl/+NooTdW8F8kDQxjWwbpOJcnoSg4vUDng8d/WR1wOxM0O+CY9Zw0nR054riNYtQ==}
+  /@fortawesome/fontawesome-common-types/6.3.0:
+    resolution: {integrity: sha512-4BC1NMoacEBzSXRwKjZ/X/gmnbp/HU5Qqat7E8xqorUtBFZS+bwfGH5/wqOC2K6GV0rgEobp3OjGRMa5fK9pFg==}
     engines: {node: '>=6'}
     requiresBuild: true
     dev: false
 
-  /@fortawesome/fontawesome-svg-core/6.2.1:
-    resolution: {integrity: sha512-HELwwbCz6C1XEcjzyT1Jugmz2NNklMrSPjZOWMlc+ZsHIVk+XOvOXLGGQtFBwSyqfJDNgRq4xBCwWOaZ/d9DEA==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dependencies:
-      '@fortawesome/fontawesome-common-types': 6.2.1
-    dev: false
-
-  /@fortawesome/free-brands-svg-icons/6.2.1:
-    resolution: {integrity: sha512-L8l4MfdHPmZlJ72PvzdfwOwbwcCAL0vx48tJRnI6u1PJXh+j2f3yDoKyQgO3qjEsgD5Fr2tQV/cPP8F/k6aUig==}
+  /@fortawesome/fontawesome-svg-core/6.3.0:
+    resolution: {integrity: sha512-uz9YifyKlixV6AcKlOX8WNdtF7l6nakGyLYxYaCa823bEBqyj/U2ssqtctO38itNEwXb8/lMzjdoJ+aaJuOdrw==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 6.2.1
+      '@fortawesome/fontawesome-common-types': 6.3.0
     dev: false
 
-  /@fortawesome/free-solid-svg-icons/6.2.1:
-    resolution: {integrity: sha512-oKuqrP5jbfEPJWTij4sM+/RvgX+RMFwx3QZCZcK9PrBDgxC35zuc7AOFsyMjMd/PIFPeB2JxyqDr5zs/DZFPPw==}
+  /@fortawesome/free-brands-svg-icons/6.3.0:
+    resolution: {integrity: sha512-xI0c+a8xnKItAXCN8rZgCNCJQiVAd2Y7p9e2ND6zN3J3ekneu96qrePieJ7yA7073C1JxxoM3vH1RU7rYsaj8w==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 6.2.1
+      '@fortawesome/fontawesome-common-types': 6.3.0
     dev: false
 
-  /@fortawesome/react-fontawesome/0.2.0_tlci6fibpholhkuaflgshl5uae:
+  /@fortawesome/free-solid-svg-icons/6.3.0:
+    resolution: {integrity: sha512-x5tMwzF2lTH8pyv8yeZRodItP2IVlzzmBuD1M7BjawWgg9XAvktqJJ91Qjgoaf8qJpHQ8FEU9VxRfOkLhh86QA==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.3.0
+    dev: false
+
+  /@fortawesome/react-fontawesome/0.2.0_dff2fycnjpadn23vzgzlwglqd4:
     resolution: {integrity: sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw==}
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ~1 || ~6
       react: '>=16.3'
     dependencies:
-      '@fortawesome/fontawesome-svg-core': 6.2.1
+      '@fortawesome/fontawesome-svg-core': 6.3.0
       prop-types: 15.8.1
-      react: /@preact/compat/17.1.2_preact@10.11.3
+      react: /@preact/compat/17.1.2_preact@10.12.0
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:
@@ -1697,12 +1697,12 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@preact/compat/17.1.2_preact@10.11.3:
+  /@preact/compat/17.1.2_preact@10.12.0:
     resolution: {integrity: sha512-7pOZN9lMDDRQ+6aWvjwTp483KR8/zOpfS83wmOo3zfuLKdngS8/5RLbsFWzFZMGdYlotAhX980hJ75bjOHTwWg==}
     peerDependencies:
       preact: '*'
     dependencies:
-      preact: 10.11.3
+      preact: 10.12.0
 
   /@prefresh/babel-plugin/0.4.3:
     resolution: {integrity: sha512-fYAWbU1WDSLn108kKY4eDaaeUcnszFqXjgaGKYXNZ5NLulpRTpsrY+Sbfo9q8LDpWrBpqIgzjrwNnvglWI1xNQ==}
@@ -1712,15 +1712,15 @@ packages:
     resolution: {integrity: sha512-/EvgIFMDL+nd20WNvMO0JQnzIl1EJPgmSaSYrZUww7A+aSdKsi37aL07TljrZR1cBMuzFxcr4xvqsUQLFJEukw==}
     dev: false
 
-  /@prefresh/core/1.4.1_preact@10.11.3:
+  /@prefresh/core/1.4.1_preact@10.12.0:
     resolution: {integrity: sha512-og1vaBj3LMJagVncNrDb37Gqc0cWaUcDbpVt5hZtsN4i2Iwzd/5hyTsDHvlMirhSym3wL9ihU0Xa2VhSaOue7g==}
     peerDependencies:
       preact: ^10.0.0
     dependencies:
-      preact: 10.11.3
+      preact: 10.12.0
     dev: false
 
-  /@prefresh/next/1.6.0_6aiqtpntibprxwbc5elgiemz4u:
+  /@prefresh/next/1.6.0_ipvfvcg4zx6vp3feqhazih3w74:
     resolution: {integrity: sha512-78P3QJ75v9GZX4Yx/mREFgq2UWLf9Sj28Vpbwz0oqAL4ZPaRpEAfTyV6kZutUpiGGrpKa79EOjVYMScpM60/5Q==}
     peerDependencies:
       next: ^9.4.0 || ^10.0.0 || ^11.0.0 || ^12.0.0
@@ -1728,11 +1728,11 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
       '@prefresh/babel-plugin': 0.4.3
-      '@prefresh/core': 1.4.1_preact@10.11.3
+      '@prefresh/core': 1.4.1_preact@10.12.0
       '@prefresh/utils': 1.1.3
-      '@prefresh/webpack': 3.3.4_ekt2fafv4a6u2z5tmvv3ahng7q
+      '@prefresh/webpack': 3.3.4_oqsltehvkfi3fxygsqnwvnfurq
       next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
-      preact: 10.11.3
+      preact: 10.12.0
       webpack: 5.74.0_esbuild@0.14.54
     dev: false
 
@@ -1740,7 +1740,7 @@ packages:
     resolution: {integrity: sha512-Mb9abhJTOV4yCfkXrMrcgFiFT7MfNOw8sDa+XyZBdq/Ai2p4Zyxqsb3EgHLOEdHpMj6J9aiZ54W8H6FTam1u+A==}
     dev: false
 
-  /@prefresh/webpack/3.3.4_ekt2fafv4a6u2z5tmvv3ahng7q:
+  /@prefresh/webpack/3.3.4_oqsltehvkfi3fxygsqnwvnfurq:
     resolution: {integrity: sha512-RiXS/hvXDup5cQw/267kxkKie81kxaAB7SFbkr8ppshobDEzwgUN1tbGbHNx6Uari0Ql2XByC6HIgQGpaq2Q7w==}
     peerDependencies:
       '@prefresh/babel-plugin': ^0.4.0
@@ -1748,13 +1748,13 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
       '@prefresh/babel-plugin': 0.4.3
-      '@prefresh/core': 1.4.1_preact@10.11.3
+      '@prefresh/core': 1.4.1_preact@10.12.0
       '@prefresh/utils': 1.1.3
-      preact: 10.11.3
+      preact: 10.12.0
       webpack: 5.74.0_esbuild@0.14.54
     dev: false
 
-  /@prefresh/webpack/3.3.4_qhnvov4knskarg2pcyziit3uka:
+  /@prefresh/webpack/3.3.4_tmu2yzuynhp7xrhurokdl2dlky:
     resolution: {integrity: sha512-RiXS/hvXDup5cQw/267kxkKie81kxaAB7SFbkr8ppshobDEzwgUN1tbGbHNx6Uari0Ql2XByC6HIgQGpaq2Q7w==}
     peerDependencies:
       '@prefresh/babel-plugin': ^0.4.0
@@ -1762,9 +1762,9 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
       '@prefresh/babel-plugin': 0.4.4
-      '@prefresh/core': 1.4.1_preact@10.11.3
+      '@prefresh/core': 1.4.1_preact@10.12.0
       '@prefresh/utils': 1.1.3
-      preact: 10.11.3
+      preact: 10.12.0
       webpack: 5.74.0_esbuild@0.14.54
     dev: false
 
@@ -1930,7 +1930,7 @@ packages:
     dependencies:
       tslib: 2.4.0
 
-  /@tailwindcss/typography/0.5.9_tailwindcss@3.2.4:
+  /@tailwindcss/typography/0.5.9_tailwindcss@3.2.6:
     resolution: {integrity: sha512-t8Sg3DyynFysV9f4JDOVISGsjazNb48AeIYQwcL+Bsq5uf4RYL75C1giZ43KISjeDGBaTN3Kxh7Xj/vRSMJUUg==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -1939,7 +1939,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.4_postcss@8.4.21
+      tailwindcss: 3.2.6_postcss@8.4.21
     dev: false
 
   /@trysound/sax/0.2.0:
@@ -3564,7 +3564,7 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_jqplj6qf3uqpxpu4gdyhwwasnq:
+  /eslint-plugin-prettier/4.2.1_qa2thblfovmfepmgrc7z2owbo4:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -3577,7 +3577,7 @@ packages:
     dependencies:
       eslint: 8.33.0
       eslint-config-prettier: 8.6.0_eslint@8.33.0
-      prettier: 2.8.3
+      prettier: 2.8.4
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -4748,8 +4748,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/13.1.0:
-    resolution: {integrity: sha512-pn/sR8IrcF/T0vpWLilih8jmVouMlxqXxKuAojmbiGX5n/gDnz+abdPptlj0vYnbfE0SQNl3CY/HwtM0+yfOVQ==}
+  /lint-staged/13.1.1:
+    resolution: {integrity: sha512-LLJLO0Kdbcv2a+CvSF4p1M7jBZOajKSMpBUvyR8+bXccsqPER0/NxTFQSpNHjqwV9kM3tkHczYerTB5wI+bksQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -5549,7 +5549,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next-plugin-preact/3.0.7_lov4rn3e2faihnytez6bde2mfa:
+  /next-plugin-preact/3.0.7_6xkyrflg3z5knlsdi6niuof6hq:
     resolution: {integrity: sha512-8Xl+SJT3FCZHS7R/6Gana6e95o09UpiyCsK0cw8P/KW2M+lQcYIwIt4ZLZd+K9TW3JZx6KJDLqVbq0Kd6KZsIg==}
     requiresBuild: true
     peerDependencies:
@@ -5557,12 +5557,12 @@ packages:
       preact-render-to-string: '>=5'
       preact-ssr-prepass: '>=1'
     dependencies:
-      '@prefresh/next': 1.6.0_6aiqtpntibprxwbc5elgiemz4u
-      '@prefresh/webpack': 3.3.4_qhnvov4knskarg2pcyziit3uka
+      '@prefresh/next': 1.6.0_ipvfvcg4zx6vp3feqhazih3w74
+      '@prefresh/webpack': 3.3.4_tmu2yzuynhp7xrhurokdl2dlky
       module-alias: 2.2.2
-      preact: 10.11.3
-      preact-render-to-string: 5.2.6_preact@10.11.3
-      preact-ssr-prepass: 1.2.0_preact@10.11.3
+      preact: 10.12.0
+      preact-render-to-string: 5.2.6_preact@10.12.0
+      preact-ssr-prepass: 1.2.0_preact@10.12.0
     transitivePeerDependencies:
       - '@prefresh/babel-plugin'
       - next
@@ -5585,8 +5585,8 @@ packages:
       - supports-color
     dev: true
 
-  /next-sitemap/3.1.49_ard6s3rhe5f3frnbkpgpbhsgn4:
-    resolution: {integrity: sha512-bxBq+MQdi580PKn/8ert4X0RL8Kp9scvyiq6TmIpkCQC3bd4DResTyxHY2AuCGKz83ut2udHwKMZu3ztj3aq3w==}
+  /next-sitemap/3.1.50_ard6s3rhe5f3frnbkpgpbhsgn4:
+    resolution: {integrity: sha512-BnxAbjOK1zVcYvpZ4sYfhPXcL3ajLh/AIJLR39YKrhFxrD92KkiAGuVaKhfpoQLUf+ldsGBkGpdml2N5Qdd1KA==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
@@ -5607,8 +5607,8 @@ packages:
       react-dom: '*'
     dependencies:
       next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
-      react: /@preact/compat/17.1.2_preact@10.11.3
-      react-dom: /@preact/compat/17.1.2_preact@10.11.3
+      react: /@preact/compat/17.1.2_preact@10.12.0
+      react-dom: /@preact/compat/17.1.2_preact@10.12.0
     dev: false
 
   /next/12.3.4_fbp3ao57bxbafv2zmlmpbvbyga:
@@ -5633,8 +5633,8 @@ packages:
       '@swc/helpers': 0.4.11
       caniuse-lite: 1.0.30001426
       postcss: 8.4.14
-      react: /@preact/compat/17.1.2_preact@10.11.3
-      react-dom: /@preact/compat/17.1.2_preact@10.11.3
+      react: /@preact/compat/17.1.2_preact@10.12.0
+      react-dom: /@preact/compat/17.1.2_preact@10.12.0
       styled-jsx: 5.0.7_z7hw6gxg26aog2oz4ajrhgrmhu
       use-sync-external-store: 1.2.0_@preact+compat@17.1.2
     optionalDependencies:
@@ -6000,11 +6000,19 @@ packages:
       postcss: ^8.2.14
     dependencies:
       postcss: 8.4.21
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: false
 
   /postcss-selector-parser/6.0.10:
     resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+    dev: false
+
+  /postcss-selector-parser/6.0.11:
+    resolution: {integrity: sha512-zbARubNdogI9j7WY4nQJBiNqQf3sLS3wCP4WfOidu+p28LofJqDH1tcXypGrcmMHhDk2t9wGhCsYe/+szLTy1g==}
     engines: {node: '>=4'}
     dependencies:
       cssesc: 3.0.0
@@ -6032,25 +6040,25 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /preact-render-to-string/5.2.6_preact@10.11.3:
+  /preact-render-to-string/5.2.6_preact@10.12.0:
     resolution: {integrity: sha512-JyhErpYOvBV1hEPwIxc/fHWXPfnEGdRKxc8gFdAZ7XV4tlzyzG847XAyEZqoDnynP88akM4eaHcSOzNcLWFguw==}
     peerDependencies:
       preact: '>=10'
     dependencies:
-      preact: 10.11.3
+      preact: 10.12.0
       pretty-format: 3.8.0
     dev: false
 
-  /preact-ssr-prepass/1.2.0_preact@10.11.3:
+  /preact-ssr-prepass/1.2.0_preact@10.12.0:
     resolution: {integrity: sha512-UKz6FB2+KepjHQ6aGqiTUMZfGgdoTunxtByczdUNho9UvSRTJw31Np9J+wUSAlJ1kALJGX1BpcBLvO3iohQUSA==}
     peerDependencies:
       preact: '>=10 || ^10.0.0-beta.0 || ^10.0.0-alpha.0'
     dependencies:
-      preact: 10.11.3
+      preact: 10.12.0
     dev: false
 
-  /preact/10.11.3:
-    resolution: {integrity: sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==}
+  /preact/10.12.0:
+    resolution: {integrity: sha512-+w8ix+huD8CNZemheC53IPjMUFk921i02o30u0K6h53spMX41y/QhVDnG/nU2k42/69tvqWmVsgNLIiwRAcmxg==}
 
   /prebuild-install/7.1.1:
     resolution: {integrity: sha512-jAXscXWMcCK8GgCoHOfIr0ODh5ai8mj63L2nWrjuAgXE6tDyYGnx4/8o/rCgU+B4JSyZBKbeZqzhtwtC3ovxjw==}
@@ -6083,7 +6091,7 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-tailwindcss/0.2.2_prettier@2.8.3:
+  /prettier-plugin-tailwindcss/0.2.2_prettier@2.8.4:
     resolution: {integrity: sha512-5RjUbWRe305pUpc48MosoIp6uxZvZxrM6GyOgsbGLTce+ehePKNm7ziW2dLG2air9aXbGuXlHVSQQw4Lbosq3w==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
@@ -6132,11 +6140,11 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      prettier: 2.8.3
+      prettier: 2.8.4
     dev: true
 
-  /prettier/2.8.3:
-    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -6236,7 +6244,7 @@ packages:
     peerDependencies:
       react: '>=16'
     dependencies:
-      react: /@preact/compat/17.1.2_preact@10.11.3
+      react: /@preact/compat/17.1.2_preact@10.12.0
     dev: false
 
   /read-cache/1.0.0:
@@ -7135,7 +7143,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.19.6
-      react: /@preact/compat/17.1.2_preact@10.11.3
+      react: /@preact/compat/17.1.2_preact@10.12.0
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
@@ -7179,8 +7187,8 @@ packages:
       stable: 0.1.8
     dev: true
 
-  /tailwindcss/3.2.4_postcss@8.4.21:
-    resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
+  /tailwindcss/3.2.6_postcss@8.4.21:
+    resolution: {integrity: sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
@@ -7205,7 +7213,7 @@ packages:
       postcss-js: 4.0.0_postcss@8.4.21
       postcss-load-config: 3.1.4_postcss@8.4.21
       postcss-nested: 6.0.0_postcss@8.4.21
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
       postcss-value-parser: 4.2.0
       quick-lru: 5.1.1
       resolve: 1.22.1
@@ -7526,7 +7534,7 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      react: /@preact/compat/17.1.2_preact@10.11.3
+      react: /@preact/compat/17.1.2_preact@10.12.0
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
