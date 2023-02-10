@@ -31,10 +31,10 @@ specifiers:
   next: 12.3.4
   next-plugin-preact: 3.0.7
   next-remote-watch: 2.0.0
-  next-sitemap: 3.1.50
+  next-sitemap: 3.1.52
   next-themes: 0.2.1
   postcss: 8.4.21
-  preact: 10.12.0
+  preact: 10.12.1
   preact-render-to-string: 5.2.6
   preact-ssr-prepass: 1.2.0
   prettier: 2.8.4
@@ -68,15 +68,15 @@ dependencies:
   image-size: 1.0.2
   mdx-bundler: 9.2.1_esbuild@0.14.54
   next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
-  next-plugin-preact: 3.0.7_6xkyrflg3z5knlsdi6niuof6hq
-  next-sitemap: 3.1.50_ard6s3rhe5f3frnbkpgpbhsgn4
+  next-plugin-preact: 3.0.7_irlbno3fk3kqtaj66n4sup5zii
+  next-sitemap: 3.1.52_ard6s3rhe5f3frnbkpgpbhsgn4
   next-themes: 0.2.1_ny5in3rraiqalmpmjjtznyftnu
   postcss: 8.4.21
-  preact: 10.12.0
-  preact-render-to-string: 5.2.6_preact@10.12.0
-  preact-ssr-prepass: 1.2.0_preact@10.12.0
-  react: /@preact/compat/17.1.2_preact@10.12.0
-  react-dom: /@preact/compat/17.1.2_preact@10.12.0
+  preact: 10.12.1
+  preact-render-to-string: 5.2.6_preact@10.12.1
+  preact-ssr-prepass: 1.2.0_preact@10.12.1
+  react: /@preact/compat/17.1.2_preact@10.12.1
+  react-dom: /@preact/compat/17.1.2_preact@10.12.1
   react-obfuscate-email: 1.0.16_@preact+compat@17.1.2
   reading-time: 1.5.0
   rehype-autolink-headings: 6.1.1
@@ -1454,7 +1454,7 @@ packages:
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.3.0
       prop-types: 15.8.1
-      react: /@preact/compat/17.1.2_preact@10.12.0
+      react: /@preact/compat/17.1.2_preact@10.12.1
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:
@@ -1697,12 +1697,12 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@preact/compat/17.1.2_preact@10.12.0:
+  /@preact/compat/17.1.2_preact@10.12.1:
     resolution: {integrity: sha512-7pOZN9lMDDRQ+6aWvjwTp483KR8/zOpfS83wmOo3zfuLKdngS8/5RLbsFWzFZMGdYlotAhX980hJ75bjOHTwWg==}
     peerDependencies:
       preact: '*'
     dependencies:
-      preact: 10.12.0
+      preact: 10.12.1
 
   /@prefresh/babel-plugin/0.4.3:
     resolution: {integrity: sha512-fYAWbU1WDSLn108kKY4eDaaeUcnszFqXjgaGKYXNZ5NLulpRTpsrY+Sbfo9q8LDpWrBpqIgzjrwNnvglWI1xNQ==}
@@ -1712,15 +1712,15 @@ packages:
     resolution: {integrity: sha512-/EvgIFMDL+nd20WNvMO0JQnzIl1EJPgmSaSYrZUww7A+aSdKsi37aL07TljrZR1cBMuzFxcr4xvqsUQLFJEukw==}
     dev: false
 
-  /@prefresh/core/1.4.1_preact@10.12.0:
+  /@prefresh/core/1.4.1_preact@10.12.1:
     resolution: {integrity: sha512-og1vaBj3LMJagVncNrDb37Gqc0cWaUcDbpVt5hZtsN4i2Iwzd/5hyTsDHvlMirhSym3wL9ihU0Xa2VhSaOue7g==}
     peerDependencies:
       preact: ^10.0.0
     dependencies:
-      preact: 10.12.0
+      preact: 10.12.1
     dev: false
 
-  /@prefresh/next/1.6.0_ipvfvcg4zx6vp3feqhazih3w74:
+  /@prefresh/next/1.6.0_xe3inz3v6kei2bbxosphfopqii:
     resolution: {integrity: sha512-78P3QJ75v9GZX4Yx/mREFgq2UWLf9Sj28Vpbwz0oqAL4ZPaRpEAfTyV6kZutUpiGGrpKa79EOjVYMScpM60/5Q==}
     peerDependencies:
       next: ^9.4.0 || ^10.0.0 || ^11.0.0 || ^12.0.0
@@ -1728,11 +1728,11 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
       '@prefresh/babel-plugin': 0.4.3
-      '@prefresh/core': 1.4.1_preact@10.12.0
+      '@prefresh/core': 1.4.1_preact@10.12.1
       '@prefresh/utils': 1.1.3
-      '@prefresh/webpack': 3.3.4_oqsltehvkfi3fxygsqnwvnfurq
+      '@prefresh/webpack': 3.3.4_7vprfl4zo7fsm2nc33vcctavzm
       next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
-      preact: 10.12.0
+      preact: 10.12.1
       webpack: 5.74.0_esbuild@0.14.54
     dev: false
 
@@ -1740,21 +1740,7 @@ packages:
     resolution: {integrity: sha512-Mb9abhJTOV4yCfkXrMrcgFiFT7MfNOw8sDa+XyZBdq/Ai2p4Zyxqsb3EgHLOEdHpMj6J9aiZ54W8H6FTam1u+A==}
     dev: false
 
-  /@prefresh/webpack/3.3.4_oqsltehvkfi3fxygsqnwvnfurq:
-    resolution: {integrity: sha512-RiXS/hvXDup5cQw/267kxkKie81kxaAB7SFbkr8ppshobDEzwgUN1tbGbHNx6Uari0Ql2XByC6HIgQGpaq2Q7w==}
-    peerDependencies:
-      '@prefresh/babel-plugin': ^0.4.0
-      preact: ^10.4.0
-      webpack: ^4.0.0 || ^5.0.0
-    dependencies:
-      '@prefresh/babel-plugin': 0.4.3
-      '@prefresh/core': 1.4.1_preact@10.12.0
-      '@prefresh/utils': 1.1.3
-      preact: 10.12.0
-      webpack: 5.74.0_esbuild@0.14.54
-    dev: false
-
-  /@prefresh/webpack/3.3.4_tmu2yzuynhp7xrhurokdl2dlky:
+  /@prefresh/webpack/3.3.4_5a7ktvrogcjlsdscvq4aofb4ey:
     resolution: {integrity: sha512-RiXS/hvXDup5cQw/267kxkKie81kxaAB7SFbkr8ppshobDEzwgUN1tbGbHNx6Uari0Ql2XByC6HIgQGpaq2Q7w==}
     peerDependencies:
       '@prefresh/babel-plugin': ^0.4.0
@@ -1762,9 +1748,23 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
       '@prefresh/babel-plugin': 0.4.4
-      '@prefresh/core': 1.4.1_preact@10.12.0
+      '@prefresh/core': 1.4.1_preact@10.12.1
       '@prefresh/utils': 1.1.3
-      preact: 10.12.0
+      preact: 10.12.1
+      webpack: 5.74.0_esbuild@0.14.54
+    dev: false
+
+  /@prefresh/webpack/3.3.4_7vprfl4zo7fsm2nc33vcctavzm:
+    resolution: {integrity: sha512-RiXS/hvXDup5cQw/267kxkKie81kxaAB7SFbkr8ppshobDEzwgUN1tbGbHNx6Uari0Ql2XByC6HIgQGpaq2Q7w==}
+    peerDependencies:
+      '@prefresh/babel-plugin': ^0.4.0
+      preact: ^10.4.0
+      webpack: ^4.0.0 || ^5.0.0
+    dependencies:
+      '@prefresh/babel-plugin': 0.4.3
+      '@prefresh/core': 1.4.1_preact@10.12.1
+      '@prefresh/utils': 1.1.3
+      preact: 10.12.1
       webpack: 5.74.0_esbuild@0.14.54
     dev: false
 
@@ -5549,7 +5549,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next-plugin-preact/3.0.7_6xkyrflg3z5knlsdi6niuof6hq:
+  /next-plugin-preact/3.0.7_irlbno3fk3kqtaj66n4sup5zii:
     resolution: {integrity: sha512-8Xl+SJT3FCZHS7R/6Gana6e95o09UpiyCsK0cw8P/KW2M+lQcYIwIt4ZLZd+K9TW3JZx6KJDLqVbq0Kd6KZsIg==}
     requiresBuild: true
     peerDependencies:
@@ -5557,12 +5557,12 @@ packages:
       preact-render-to-string: '>=5'
       preact-ssr-prepass: '>=1'
     dependencies:
-      '@prefresh/next': 1.6.0_ipvfvcg4zx6vp3feqhazih3w74
-      '@prefresh/webpack': 3.3.4_tmu2yzuynhp7xrhurokdl2dlky
+      '@prefresh/next': 1.6.0_xe3inz3v6kei2bbxosphfopqii
+      '@prefresh/webpack': 3.3.4_5a7ktvrogcjlsdscvq4aofb4ey
       module-alias: 2.2.2
-      preact: 10.12.0
-      preact-render-to-string: 5.2.6_preact@10.12.0
-      preact-ssr-prepass: 1.2.0_preact@10.12.0
+      preact: 10.12.1
+      preact-render-to-string: 5.2.6_preact@10.12.1
+      preact-ssr-prepass: 1.2.0_preact@10.12.1
     transitivePeerDependencies:
       - '@prefresh/babel-plugin'
       - next
@@ -5585,8 +5585,8 @@ packages:
       - supports-color
     dev: true
 
-  /next-sitemap/3.1.50_ard6s3rhe5f3frnbkpgpbhsgn4:
-    resolution: {integrity: sha512-BnxAbjOK1zVcYvpZ4sYfhPXcL3ajLh/AIJLR39YKrhFxrD92KkiAGuVaKhfpoQLUf+ldsGBkGpdml2N5Qdd1KA==}
+  /next-sitemap/3.1.52_ard6s3rhe5f3frnbkpgpbhsgn4:
+    resolution: {integrity: sha512-tY469i4QRV1PwM9BoL+HdKYBCJ83IQl3PmUNapG/Hxp0MIYIw1hINU8E+Edf5Kr8vHXfVzPqDoul/Abu2P0vkw==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
@@ -5607,8 +5607,8 @@ packages:
       react-dom: '*'
     dependencies:
       next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
-      react: /@preact/compat/17.1.2_preact@10.12.0
-      react-dom: /@preact/compat/17.1.2_preact@10.12.0
+      react: /@preact/compat/17.1.2_preact@10.12.1
+      react-dom: /@preact/compat/17.1.2_preact@10.12.1
     dev: false
 
   /next/12.3.4_fbp3ao57bxbafv2zmlmpbvbyga:
@@ -5633,8 +5633,8 @@ packages:
       '@swc/helpers': 0.4.11
       caniuse-lite: 1.0.30001426
       postcss: 8.4.14
-      react: /@preact/compat/17.1.2_preact@10.12.0
-      react-dom: /@preact/compat/17.1.2_preact@10.12.0
+      react: /@preact/compat/17.1.2_preact@10.12.1
+      react-dom: /@preact/compat/17.1.2_preact@10.12.1
       styled-jsx: 5.0.7_z7hw6gxg26aog2oz4ajrhgrmhu
       use-sync-external-store: 1.2.0_@preact+compat@17.1.2
     optionalDependencies:
@@ -6040,25 +6040,25 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /preact-render-to-string/5.2.6_preact@10.12.0:
+  /preact-render-to-string/5.2.6_preact@10.12.1:
     resolution: {integrity: sha512-JyhErpYOvBV1hEPwIxc/fHWXPfnEGdRKxc8gFdAZ7XV4tlzyzG847XAyEZqoDnynP88akM4eaHcSOzNcLWFguw==}
     peerDependencies:
       preact: '>=10'
     dependencies:
-      preact: 10.12.0
+      preact: 10.12.1
       pretty-format: 3.8.0
     dev: false
 
-  /preact-ssr-prepass/1.2.0_preact@10.12.0:
+  /preact-ssr-prepass/1.2.0_preact@10.12.1:
     resolution: {integrity: sha512-UKz6FB2+KepjHQ6aGqiTUMZfGgdoTunxtByczdUNho9UvSRTJw31Np9J+wUSAlJ1kALJGX1BpcBLvO3iohQUSA==}
     peerDependencies:
       preact: '>=10 || ^10.0.0-beta.0 || ^10.0.0-alpha.0'
     dependencies:
-      preact: 10.12.0
+      preact: 10.12.1
     dev: false
 
-  /preact/10.12.0:
-    resolution: {integrity: sha512-+w8ix+huD8CNZemheC53IPjMUFk921i02o30u0K6h53spMX41y/QhVDnG/nU2k42/69tvqWmVsgNLIiwRAcmxg==}
+  /preact/10.12.1:
+    resolution: {integrity: sha512-l8386ixSsBdbreOAkqtrwqHwdvR35ID8c3rKPa8lCWuO86dBi32QWHV4vfsZK1utLLFMvw+Z5Ad4XLkZzchscg==}
 
   /prebuild-install/7.1.1:
     resolution: {integrity: sha512-jAXscXWMcCK8GgCoHOfIr0ODh5ai8mj63L2nWrjuAgXE6tDyYGnx4/8o/rCgU+B4JSyZBKbeZqzhtwtC3ovxjw==}
@@ -6244,7 +6244,7 @@ packages:
     peerDependencies:
       react: '>=16'
     dependencies:
-      react: /@preact/compat/17.1.2_preact@10.12.0
+      react: /@preact/compat/17.1.2_preact@10.12.1
     dev: false
 
   /read-cache/1.0.0:
@@ -7143,7 +7143,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.19.6
-      react: /@preact/compat/17.1.2_preact@10.12.0
+      react: /@preact/compat/17.1.2_preact@10.12.1
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
@@ -7534,7 +7534,7 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      react: /@preact/compat/17.1.2_preact@10.12.0
+      react: /@preact/compat/17.1.2_preact@10.12.1
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
