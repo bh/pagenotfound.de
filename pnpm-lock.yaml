@@ -31,7 +31,7 @@ specifiers:
   next: 12.3.4
   next-plugin-preact: 3.0.7
   next-remote-watch: 2.0.0
-  next-sitemap: 4.0.5
+  next-sitemap: 4.0.6
   next-themes: 0.2.1
   postcss: 8.4.21
   preact: 10.13.1
@@ -69,7 +69,7 @@ dependencies:
   mdx-bundler: 9.2.1_esbuild@0.14.54
   next: 12.3.4_fbp3ao57bxbafv2zmlmpbvbyga
   next-plugin-preact: 3.0.7_mt5rcrpptgve6marnhmcpafpee
-  next-sitemap: 4.0.5_ard6s3rhe5f3frnbkpgpbhsgn4
+  next-sitemap: 4.0.6_ard6s3rhe5f3frnbkpgpbhsgn4
   next-themes: 0.2.1_ny5in3rraiqalmpmjjtznyftnu
   postcss: 8.4.21
   preact: 10.13.1
@@ -3068,7 +3068,7 @@ packages:
     dependencies:
       acorn-node: 1.8.2
       defined: 1.0.0
-      minimist: 1.2.7
+      minimist: 1.2.8
     dev: false
 
   /didyoumean/1.2.2:
@@ -4710,7 +4710,7 @@ packages:
     resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==}
     hasBin: true
     dependencies:
-      minimist: 1.2.7
+      minimist: 1.2.8
     dev: true
 
   /json5/2.2.1:
@@ -5510,12 +5510,8 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
-  /minimist/1.2.7:
-    resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
-
   /minimist/1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
-    dev: false
 
   /mkdirp-classic/0.5.3:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
@@ -5608,8 +5604,8 @@ packages:
       - supports-color
     dev: true
 
-  /next-sitemap/4.0.5_ard6s3rhe5f3frnbkpgpbhsgn4:
-    resolution: {integrity: sha512-kIABX4n8wJqY2sttRjivBF2r1MgQ1pg12y87qGT+5meippq0ivxaNSRldMDOj8pIGhXW6uFAsCxyH/JftqkwWQ==}
+  /next-sitemap/4.0.6_ard6s3rhe5f3frnbkpgpbhsgn4:
+    resolution: {integrity: sha512-pZ9tynYe6mRR189qZqcOlWVgM1Gxo07BJQW0AjerKmLwQOt+6FQMdaDgifgCt6jDT3Y3EG/+NUDDZRcd0gbPkA==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
@@ -7361,7 +7357,7 @@ packages:
     dependencies:
       '@types/json5': 0.0.29
       json5: 1.0.1
-      minimist: 1.2.7
+      minimist: 1.2.8
       strip-bom: 3.0.0
     dev: true
 
