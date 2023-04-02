@@ -76,5 +76,6 @@
     "@prefresh/babel-plugin": "^0.4.0",
     "esbuild": "^0.14",
     "preact-ssr-prepass": ">=1"
-  }
+  },
+  "packageManager": "pnpm@8.1.0"
 }
