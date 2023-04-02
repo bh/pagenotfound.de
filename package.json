@@ -77,6 +77,6 @@
     "esbuild": "^0.14",
     "preact-ssr-prepass": ">=1"
   },
-  "packageManager": "pnpm@7.14.1"
+  "packageManager": "pnpm@8.1.0"
 
 }
