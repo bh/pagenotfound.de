@@ -47,8 +47,8 @@ dependencies:
     specifier: 3.0.7
     version: 3.0.7(@prefresh/babel-plugin@0.4.4)(next@12.3.4)(preact-render-to-string@6.0.2)(preact-ssr-prepass@1.2.0)(preact@10.13.2)(webpack@5.74.0)
   next-sitemap:
-    specifier: 4.0.6
-    version: 4.0.6(@next/env@12.3.4)(next@12.3.4)
+    specifier: 4.0.7
+    version: 4.0.7(@next/env@12.3.4)(next@12.3.4)
   next-themes:
     specifier: 0.2.1
     version: 0.2.1(@preact/compat@17.1.2)(@preact/compat@17.1.2)(next@12.3.4)
@@ -5696,8 +5696,8 @@ packages:
       - supports-color
     dev: true
 
-  /next-sitemap@4.0.6(@next/env@12.3.4)(next@12.3.4):
-    resolution: {integrity: sha512-pZ9tynYe6mRR189qZqcOlWVgM1Gxo07BJQW0AjerKmLwQOt+6FQMdaDgifgCt6jDT3Y3EG/+NUDDZRcd0gbPkA==}
+  /next-sitemap@4.0.7(@next/env@12.3.4)(next@12.3.4):
+    resolution: {integrity: sha512-S2g5IwJeO0+ecmFq981fb+Mw9YWmntOuN/qTCxclSkUibOJ8qKIOye0vn6NEJ1S4tKhbY+MTYKgJpNdFZYxLoA==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
