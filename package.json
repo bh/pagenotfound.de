@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "12.3.4",
-    "@svgr/webpack": "7.0.0",
+    "@svgr/webpack": "8.0.1",
     "cross-env": "7.0.3",
     "dedent": "0.7.0",
     "esbuild": "^0.14.54",
