@@ -29,7 +29,7 @@
     "next-themes": "0.2.1",
     "postcss": "8.4.24",
     "preact": "10.15.1",
-    "preact-render-to-string": "6.0.3",
+    "preact-render-to-string": "6.1.0",
     "preact-ssr-prepass": "1.2.0",
     "react": "npm:@preact/compat@17.1.2",
     "react-dom": "npm:@preact/compat@17.1.2",
