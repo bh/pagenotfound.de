@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@fontsource/inter':
-    specifier: 5.0.2
-    version: 5.0.2
+    specifier: 5.0.3
+    version: 5.0.3
   '@fontsource/noto-sans-mono':
-    specifier: 5.0.2
-    version: 5.0.2
+    specifier: 5.0.3
+    version: 5.0.3
   '@fortawesome/fontawesome-svg-core':
     specifier: 6.4.0
     version: 6.4.0
@@ -1488,12 +1488,12 @@ packages:
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
     dev: false
 
-  /@fontsource/inter@5.0.2:
-    resolution: {integrity: sha512-pQ1ms5nbprD+7Dnu5h0T9XOSJi5pvOanLCxi6mA9/5wclXFkkzvZo31ddoD8/Urncx11967qTnvGglPeWEOT+Q==}
+  /@fontsource/inter@5.0.3:
+    resolution: {integrity: sha512-JJvh5xht71F6e0E5r2+Ffu8g+CYAxMvnGJm9ZMg5IIjy8UwxLp+8C99TgPJupdEyBpEJv0wuMG2Rd183z/bV8g==}
     dev: false
 
-  /@fontsource/noto-sans-mono@5.0.2:
-    resolution: {integrity: sha512-ZOO/ihGkI7ymRgctUN/D3lkaRXdBOalvtAtle4Gii4sXbk8IwrNimPAuHo9anibudyBl6k26QK7XzwbgD11fxA==}
+  /@fontsource/noto-sans-mono@5.0.3:
+    resolution: {integrity: sha512-f13x5Z3FIogGMkIW7+gHyIA/Wi14+InTe928GH/0jQvopLqoKeG5nVxtHWwOu1XUjOhdPDktIiz4+K2JZI2DZA==}
     dev: false
 
   /@fortawesome/fontawesome-common-types@6.4.0:
