@@ -55,7 +55,7 @@
     "eslint-config-next": "12.3.4",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
-    "globby": "13.1.4",
+    "globby": "13.2.0",
     "inquirer": "9.2.7",
     "js-yaml": "4.1.0",
     "lint-staged": "13.2.2",
