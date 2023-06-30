@@ -58,7 +58,7 @@
     "globby": "13.2.0",
     "inquirer": "9.2.7",
     "js-yaml": "4.1.0",
-    "lint-staged": "13.2.2",
+    "lint-staged": "13.2.3",
     "mdast-util-to-string": "3.2.0",
     "next-remote-watch": "2.0.0",
     "prettier": "2.8.8",
@@ -77,5 +77,5 @@
     "esbuild": "^0.14",
     "preact-ssr-prepass": ">=1"
   },
-  "packageManager": "pnpm@8.6.3"
+  "packageManager": "pnpm@8.6.5"
 }
