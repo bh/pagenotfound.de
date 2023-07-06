@@ -10,8 +10,8 @@
     "lint": "next lint --fix --dir . --dir pages --dir components --dir lib --dir layouts --dir scripts"
   },
   "dependencies": {
-    "@fontsource/inter": "5.0.3",
-    "@fontsource/noto-sans-mono": "5.0.3",
+    "@fontsource/inter": "5.0.4",
+    "@fontsource/noto-sans-mono": "5.0.4",
     "@fortawesome/fontawesome-svg-core": "6.4.0",
     "@fortawesome/free-brands-svg-icons": "6.4.0",
     "@fortawesome/free-solid-svg-icons": "6.4.0",
@@ -27,7 +27,7 @@
     "next-plugin-preact": "3.0.7",
     "next-sitemap": "4.1.8",
     "next-themes": "0.2.1",
-    "postcss": "8.4.24",
+    "postcss": "8.4.25",
     "preact": "10.15.1",
     "preact-render-to-string": "6.1.0",
     "preact-ssr-prepass": "1.2.0",
@@ -55,7 +55,7 @@
     "eslint-config-next": "12.3.4",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
-    "globby": "13.2.1",
+    "globby": "13.2.2",
     "inquirer": "9.2.7",
     "js-yaml": "4.1.0",
     "lint-staged": "13.2.3",
@@ -77,5 +77,5 @@
     "esbuild": "^0.14",
     "preact-ssr-prepass": ">=1"
   },
-  "packageManager": "pnpm@8.6.5"
+  "packageManager": "pnpm@8.6.6"
 }
