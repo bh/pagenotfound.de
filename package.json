@@ -28,7 +28,7 @@
     "next-sitemap": "4.1.8",
     "next-themes": "0.2.1",
     "postcss": "8.4.25",
-    "preact": "10.15.1",
+    "preact": "10.16.0",
     "preact-render-to-string": "6.1.0",
     "preact-ssr-prepass": "1.2.0",
     "react": "npm:@preact/compat@17.1.2",
