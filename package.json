@@ -27,9 +27,9 @@
     "next-plugin-preact": "3.0.7",
     "next-sitemap": "4.1.8",
     "next-themes": "0.2.1",
-    "postcss": "8.4.25",
+    "postcss": "8.4.26",
     "preact": "10.16.0",
-    "preact-render-to-string": "6.1.0",
+    "preact-render-to-string": "6.2.0",
     "preact-ssr-prepass": "1.2.0",
     "react": "npm:@preact/compat@17.1.2",
     "react-dom": "npm:@preact/compat@17.1.2",
@@ -41,8 +41,8 @@
     "rehype-slug": "5.1.0",
     "remark-footnotes": "4.0.1",
     "remark-gfm": "3.0.1",
-    "sharp": "0.32.1",
-    "tailwindcss": "3.3.2",
+    "sharp": "0.32.2",
+    "tailwindcss": "3.3.3",
     "unist-util-visit": "4.1.2"
   },
   "devDependencies": {
@@ -56,13 +56,13 @@
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
     "globby": "13.2.2",
-    "inquirer": "9.2.7",
+    "inquirer": "9.2.8",
     "js-yaml": "4.1.0",
     "lint-staged": "13.2.3",
     "mdast-util-to-string": "3.2.0",
     "next-remote-watch": "2.0.0",
     "prettier": "2.8.8",
-    "prettier-plugin-tailwindcss": "0.3.0"
+    "prettier-plugin-tailwindcss": "0.4.0"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
@@ -77,5 +77,5 @@
     "esbuild": "^0.14",
     "preact-ssr-prepass": ">=1"
   },
-  "packageManager": "pnpm@8.6.6"
+  "packageManager": "pnpm@8.6.7"
 }
