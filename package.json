@@ -27,7 +27,7 @@
     "next-plugin-preact": "3.0.7",
     "next-sitemap": "4.1.8",
     "next-themes": "0.2.1",
-    "postcss": "8.4.26",
+    "postcss": "8.4.27",
     "preact": "10.16.0",
     "preact-render-to-string": "6.2.0",
     "preact-ssr-prepass": "1.2.0",
@@ -41,7 +41,7 @@
     "rehype-slug": "5.1.0",
     "remark-footnotes": "4.0.1",
     "remark-gfm": "3.0.1",
-    "sharp": "0.32.3",
+    "sharp": "0.32.4",
     "tailwindcss": "3.3.3",
     "unist-util-visit": "4.1.2"
   },
