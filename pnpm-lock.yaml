@@ -119,8 +119,8 @@ devDependencies:
     specifier: 7.0.3
     version: 7.0.3
   dedent:
-    specifier: 0.7.0
-    version: 0.7.0
+    specifier: 1.2.0
+    version: 1.2.0
   esbuild:
     specifier: ^0.14.54
     version: 0.14.54
@@ -3068,8 +3068,13 @@ packages:
       mimic-response: 3.1.0
     dev: false
 
-  /dedent@0.7.0:
-    resolution: {integrity: sha512-Q6fKUPqnAHAyhiUgFU7BUzLiv0kd8saH9al7tnu5Q/okj6dnupxyTgFIBjVzJATdfIAm9NAsvXNzjaKa+bxVyA==}
+  /dedent@1.2.0:
+    resolution: {integrity: sha512-i4tcg0ClgvMUSxwHpt+NHQ01ZJmAkl6eBvDNrSZG9e+oLRTCSHv0wpr/Bzjpf6CwKeIHGevE1M34Y1Axdms5VQ==}
+    peerDependencies:
+      babel-plugin-macros: ^3.1.0
+    peerDependenciesMeta:
+      babel-plugin-macros:
+        optional: true
     dev: true
 
   /deep-extend@0.6.0:
