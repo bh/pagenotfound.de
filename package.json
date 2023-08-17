@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "5.0.8",
-    "@fontsource/noto-sans-mono": "5.0.8",
+    "@fontsource/noto-sans-mono": "5.0.9",
     "@fortawesome/fontawesome-svg-core": "6.4.2",
     "@fortawesome/free-brands-svg-icons": "6.4.2",
     "@fortawesome/free-solid-svg-icons": "6.4.2",
@@ -27,8 +27,8 @@
     "next-plugin-preact": "3.0.7",
     "next-sitemap": "4.2.2",
     "next-themes": "0.2.1",
-    "postcss": "8.4.27",
-    "preact": "10.16.0",
+    "postcss": "8.4.28",
+    "preact": "10.17.0",
     "preact-render-to-string": "6.2.1",
     "preact-ssr-prepass": "1.2.0",
     "react": "npm:@preact/compat@17.1.2",
@@ -41,13 +41,13 @@
     "rehype-slug": "5.1.0",
     "remark-footnotes": "4.0.1",
     "remark-gfm": "3.0.1",
-    "sharp": "0.32.4",
+    "sharp": "0.32.5",
     "tailwindcss": "3.3.3",
     "unist-util-visit": "4.1.2"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "12.3.4",
-    "@svgr/webpack": "8.0.1",
+    "@svgr/webpack": "8.1.0",
     "cross-env": "7.0.3",
     "dedent": "1.5.1",
     "esbuild": "^0.14.54",
@@ -62,7 +62,7 @@
     "mdast-util-to-string": "3.2.0",
     "next-remote-watch": "2.0.0",
     "prettier": "2.8.8",
-    "prettier-plugin-tailwindcss": "0.5.2"
+    "prettier-plugin-tailwindcss": "0.5.3"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
