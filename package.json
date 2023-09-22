@@ -18,7 +18,7 @@
     "@fortawesome/react-fontawesome": "0.2.0",
     "@prefresh/babel-plugin": "0.5.0",
     "@tailwindcss/typography": "0.5.10",
-    "autoprefixer": "10.4.15",
+    "autoprefixer": "10.4.16",
     "github-slugger": "2.0.0",
     "gray-matter": "4.0.3",
     "image-size": "1.0.2",
@@ -27,7 +27,7 @@
     "next-plugin-preact": "3.0.7",
     "next-sitemap": "4.2.3",
     "next-themes": "0.2.1",
-    "postcss": "8.4.29",
+    "postcss": "8.4.30",
     "preact": "10.17.1",
     "preact-render-to-string": "6.2.1",
     "preact-ssr-prepass": "1.2.0",
@@ -41,7 +41,7 @@
     "rehype-slug": "6.0.0",
     "remark-footnotes": "4.0.1",
     "remark-gfm": "3.0.1",
-    "sharp": "0.32.5",
+    "sharp": "0.32.6",
     "tailwindcss": "3.3.3",
     "unist-util-visit": "5.0.0"
   },
@@ -77,5 +77,5 @@
     "esbuild": "^0.14",
     "preact-ssr-prepass": ">=1"
   },
-  "packageManager": "pnpm@8.7.5"
+  "packageManager": "pnpm@8.7.6"
 }
