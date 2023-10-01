@@ -9,8 +9,8 @@ dependencies:
     specifier: 5.0.8
     version: 5.0.8
   '@fontsource/noto-sans-mono':
-    specifier: 5.0.12
-    version: 5.0.12
+    specifier: 5.0.13
+    version: 5.0.13
   '@fortawesome/fontawesome-svg-core':
     specifier: 6.4.2
     version: 6.4.2
@@ -1497,8 +1497,8 @@ packages:
     resolution: {integrity: sha512-28knWH1BfOiRalfLs90U4sge5mpQ8ZH6FS0PTT+IZMKrZ7wNHDHRuKa1kQJg+uHcc6axBppnxll+HXM4c7zo/Q==}
     dev: false
 
-  /@fontsource/noto-sans-mono@5.0.12:
-    resolution: {integrity: sha512-uqWHl4yYSJKTSvN9Cy06/QLiEZaysDS8bmrUeoKrprBJYiRSyMZK5GkibV3OA7TLu6xou4JzWcxKI/IYrViesA==}
+  /@fontsource/noto-sans-mono@5.0.13:
+    resolution: {integrity: sha512-SvHjfBzRFHf1TSax2kIGjmVrI3aeiJx14ZXttOF/xp+bSSCghaRYtc3QNJaJQ3YJDQlUNyV1LuAayVR48TMfgQ==}
     dev: false
 
   /@fortawesome/fontawesome-common-types@6.4.2:
