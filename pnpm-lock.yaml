@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@fontsource/inter':
-    specifier: 5.0.8
-    version: 5.0.8
+    specifier: 5.0.12
+    version: 5.0.12
   '@fontsource/noto-sans-mono':
-    specifier: 5.0.13
-    version: 5.0.13
+    specifier: 5.0.14
+    version: 5.0.14
   '@fortawesome/fontawesome-svg-core':
     specifier: 6.4.2
     version: 6.4.2
@@ -49,7 +49,7 @@ dependencies:
     version: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2)(@preact/compat@17.1.2)
   next-plugin-preact:
     specifier: 3.0.7
-    version: 3.0.7(@prefresh/babel-plugin@0.5.0)(next@12.3.4)(preact-render-to-string@6.2.1)(preact-ssr-prepass@1.2.0)(preact@10.18.1)(webpack@5.74.0)
+    version: 3.0.7(@prefresh/babel-plugin@0.5.0)(next@12.3.4)(preact-render-to-string@6.2.2)(preact-ssr-prepass@1.2.0)(preact@10.18.1)(webpack@5.74.0)
   next-sitemap:
     specifier: 4.2.3
     version: 4.2.3(next@12.3.4)
@@ -63,8 +63,8 @@ dependencies:
     specifier: 10.18.1
     version: 10.18.1
   preact-render-to-string:
-    specifier: 6.2.1
-    version: 6.2.1(preact@10.18.1)
+    specifier: 6.2.2
+    version: 6.2.2(preact@10.18.1)
   preact-ssr-prepass:
     specifier: 1.2.0
     version: 1.2.0(preact@10.18.1)
@@ -158,8 +158,8 @@ devDependencies:
     specifier: 3.0.3
     version: 3.0.3
   prettier-plugin-tailwindcss:
-    specifier: 0.5.4
-    version: 0.5.4(prettier@3.0.3)
+    specifier: 0.5.5
+    version: 0.5.5(prettier@3.0.3)
 
 packages:
 
@@ -1493,12 +1493,12 @@ packages:
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
     dev: false
 
-  /@fontsource/inter@5.0.8:
-    resolution: {integrity: sha512-28knWH1BfOiRalfLs90U4sge5mpQ8ZH6FS0PTT+IZMKrZ7wNHDHRuKa1kQJg+uHcc6axBppnxll+HXM4c7zo/Q==}
+  /@fontsource/inter@5.0.12:
+    resolution: {integrity: sha512-9MCQLyzhMqQW9Ky5k/tcE+t88EyLX6z9VrU54AadHoF6s0dGiqbNVmusMe0/vrLmDxPV1ZDl3DdVyNhR49qbPg==}
     dev: false
 
-  /@fontsource/noto-sans-mono@5.0.13:
-    resolution: {integrity: sha512-SvHjfBzRFHf1TSax2kIGjmVrI3aeiJx14ZXttOF/xp+bSSCghaRYtc3QNJaJQ3YJDQlUNyV1LuAayVR48TMfgQ==}
+  /@fontsource/noto-sans-mono@5.0.14:
+    resolution: {integrity: sha512-glulJywrnw8HizNrt+QoixY3rYGtX4YCBZvRgMgo01iFLHbb08ahqKae/LBcxGERgc6rGe6p5OpCTJ2pVW35CA==}
     dev: false
 
   /@fortawesome/fontawesome-common-types@6.4.2:
@@ -5774,7 +5774,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.0)(next@12.3.4)(preact-render-to-string@6.2.1)(preact-ssr-prepass@1.2.0)(preact@10.18.1)(webpack@5.74.0):
+  /next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.0)(next@12.3.4)(preact-render-to-string@6.2.2)(preact-ssr-prepass@1.2.0)(preact@10.18.1)(webpack@5.74.0):
     resolution: {integrity: sha512-8Xl+SJT3FCZHS7R/6Gana6e95o09UpiyCsK0cw8P/KW2M+lQcYIwIt4ZLZd+K9TW3JZx6KJDLqVbq0Kd6KZsIg==}
     requiresBuild: true
     peerDependencies:
@@ -5786,7 +5786,7 @@ packages:
       '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.0)(preact@10.18.1)(webpack@5.74.0)
       module-alias: 2.2.2
       preact: 10.18.1
-      preact-render-to-string: 6.2.1(preact@10.18.1)
+      preact-render-to-string: 6.2.2(preact@10.18.1)
       preact-ssr-prepass: 1.2.0(preact@10.18.1)
     transitivePeerDependencies:
       - '@prefresh/babel-plugin'
@@ -6286,8 +6286,8 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /preact-render-to-string@6.2.1(preact@10.18.1):
-    resolution: {integrity: sha512-5t7nFeMUextd53igL3GAakAAMaUD+dVWDHaRYaeh1tbPIjQIBtgJnMw6vf8VS/lviV0ggFtkgebatPxvtJsXyQ==}
+  /preact-render-to-string@6.2.2(preact@10.18.1):
+    resolution: {integrity: sha512-YDfXQiVeYZutFR8/DpxLSbW3W6b7GgjBExRBxOOqcjrGq5rA9cziitQdNPMZe4RVMSdfBnf4hYqyeLs/KvtIuA==}
     peerDependencies:
       preact: '>=10'
     dependencies:
@@ -6337,8 +6337,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-tailwindcss@0.5.4(prettier@3.0.3):
-    resolution: {integrity: sha512-QZzzB1bID6qPsKHTeA9qPo1APmmxfFrA5DD3LQ+vbTmAnY40eJI7t9Q1ocqel2EKMWNPLJqdTDWZj1hKYgqSgg==}
+  /prettier-plugin-tailwindcss@0.5.5(prettier@3.0.3):
+    resolution: {integrity: sha512-voy0CjWv/CM8yeaduv5ZwovovpTGMR5LbzlhGF+LtEvMJt9wBeVTVnW781hL38R/RcDXCJwN2rolsgr94B/n0Q==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'

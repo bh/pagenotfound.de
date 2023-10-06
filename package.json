@@ -10,8 +10,8 @@
     "lint": "next lint --fix --dir . --dir pages --dir components --dir lib --dir layouts --dir scripts"
   },
   "dependencies": {
-    "@fontsource/inter": "5.0.8",
-    "@fontsource/noto-sans-mono": "5.0.13",
+    "@fontsource/inter": "5.0.12",
+    "@fontsource/noto-sans-mono": "5.0.14",
     "@fortawesome/fontawesome-svg-core": "6.4.2",
     "@fortawesome/free-brands-svg-icons": "6.4.2",
     "@fortawesome/free-solid-svg-icons": "6.4.2",
@@ -29,7 +29,7 @@
     "next-themes": "0.2.1",
     "postcss": "8.4.31",
     "preact": "10.18.1",
-    "preact-render-to-string": "6.2.1",
+    "preact-render-to-string": "6.2.2",
     "preact-ssr-prepass": "1.2.0",
     "react": "npm:@preact/compat@17.1.2",
     "react-dom": "npm:@preact/compat@17.1.2",
@@ -62,7 +62,7 @@
     "mdast-util-to-string": "4.0.0",
     "next-remote-watch": "2.0.0",
     "prettier": "3.0.3",
-    "prettier-plugin-tailwindcss": "0.5.4"
+    "prettier-plugin-tailwindcss": "0.5.5"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
