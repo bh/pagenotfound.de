@@ -58,7 +58,7 @@
     "globby": "13.2.2",
     "inquirer": "9.2.11",
     "js-yaml": "4.1.0",
-    "lint-staged": "14.0.1",
+    "lint-staged": "15.0.0",
     "mdast-util-to-string": "4.0.0",
     "next-remote-watch": "2.0.0",
     "prettier": "3.0.3",
