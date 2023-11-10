@@ -49,7 +49,7 @@ dependencies:
     version: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2)(@preact/compat@17.1.2)
   next-plugin-preact:
     specifier: 3.0.7
-    version: 3.0.7(@prefresh/babel-plugin@0.5.0)(next@12.3.4)(preact-render-to-string@6.2.2)(preact-ssr-prepass@1.2.0)(preact@10.18.2)(webpack@5.74.0)
+    version: 3.0.7(@prefresh/babel-plugin@0.5.0)(next@12.3.4)(preact-render-to-string@6.3.0)(preact-ssr-prepass@1.2.0)(preact@10.18.2)(webpack@5.74.0)
   next-sitemap:
     specifier: 4.2.3
     version: 4.2.3(next@12.3.4)
@@ -63,8 +63,8 @@ dependencies:
     specifier: 10.18.2
     version: 10.18.2
   preact-render-to-string:
-    specifier: 6.2.2
-    version: 6.2.2(preact@10.18.2)
+    specifier: 6.3.0
+    version: 6.3.0(preact@10.18.2)
   preact-ssr-prepass:
     specifier: 1.2.0
     version: 1.2.0(preact@10.18.2)
@@ -81,8 +81,8 @@ dependencies:
     specifier: 1.5.0
     version: 1.5.0
   rehype-autolink-headings:
-    specifier: 7.0.0
-    version: 7.0.0
+    specifier: 7.1.0
+    version: 7.1.0
   rehype-preset-minify:
     specifier: 7.0.0
     version: 7.0.0
@@ -140,8 +140,8 @@ devDependencies:
     specifier: 13.2.2
     version: 13.2.2
   inquirer:
-    specifier: 9.2.11
-    version: 9.2.11
+    specifier: 9.2.12
+    version: 9.2.12
   js-yaml:
     specifier: 4.1.0
     version: 4.1.0
@@ -158,8 +158,8 @@ devDependencies:
     specifier: 3.0.3
     version: 3.0.3
   prettier-plugin-tailwindcss:
-    specifier: 0.5.6
-    version: 0.5.6(prettier@3.0.3)
+    specifier: 0.5.7
+    version: 0.5.7(prettier@3.0.3)
 
 packages:
 
@@ -1601,9 +1601,11 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@ljharb/through@2.3.9:
-    resolution: {integrity: sha512-yN599ZBuMPPK4tdoToLlvgJB4CLK8fGl7ntfy0Wn7U6ttNvHYurd81bfUiK/6sMkiIwm65R6ck4L6+Y3DfVbNQ==}
+  /@ljharb/through@2.3.11:
+    resolution: {integrity: sha512-ccfcIDlogiXNq5KcbAwbaO7lMh3Tm1i3khMPYpxlK8hH/W53zN81KM9coerRLOnTGu3nfXIniAmQbRI9OxbC0w==}
     engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.2
     dev: true
 
   /@mdx-js/esbuild@2.1.3(esbuild@0.14.54):
@@ -4612,11 +4614,11 @@ packages:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
     dev: false
 
-  /inquirer@9.2.11:
-    resolution: {integrity: sha512-B2LafrnnhbRzCWfAdOXisUzL89Kg8cVJlYmhqoi3flSiV/TveO+nsXwgKr9h9PIo+J1hz7nBSk6gegRIMBBf7g==}
+  /inquirer@9.2.12:
+    resolution: {integrity: sha512-mg3Fh9g2zfuVWJn6lhST0O7x4n03k7G8Tx5nvikJkbq8/CK47WDVm+UznF0G6s5Zi0KcyUisr6DU8T67N5U+1Q==}
     engines: {node: '>=14.18.0'}
     dependencies:
-      '@ljharb/through': 2.3.9
+      '@ljharb/through': 2.3.11
       ansi-escapes: 4.3.2
       chalk: 5.3.0
       cli-cursor: 3.1.0
@@ -5801,7 +5803,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.0)(next@12.3.4)(preact-render-to-string@6.2.2)(preact-ssr-prepass@1.2.0)(preact@10.18.2)(webpack@5.74.0):
+  /next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.0)(next@12.3.4)(preact-render-to-string@6.3.0)(preact-ssr-prepass@1.2.0)(preact@10.18.2)(webpack@5.74.0):
     resolution: {integrity: sha512-8Xl+SJT3FCZHS7R/6Gana6e95o09UpiyCsK0cw8P/KW2M+lQcYIwIt4ZLZd+K9TW3JZx6KJDLqVbq0Kd6KZsIg==}
     requiresBuild: true
     peerDependencies:
@@ -5813,7 +5815,7 @@ packages:
       '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.0)(preact@10.18.2)(webpack@5.74.0)
       module-alias: 2.2.2
       preact: 10.18.2
-      preact-render-to-string: 6.2.2(preact@10.18.2)
+      preact-render-to-string: 6.3.0(preact@10.18.2)
       preact-ssr-prepass: 1.2.0(preact@10.18.2)
     transitivePeerDependencies:
       - '@prefresh/babel-plugin'
@@ -6313,8 +6315,8 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /preact-render-to-string@6.2.2(preact@10.18.2):
-    resolution: {integrity: sha512-YDfXQiVeYZutFR8/DpxLSbW3W6b7GgjBExRBxOOqcjrGq5rA9cziitQdNPMZe4RVMSdfBnf4hYqyeLs/KvtIuA==}
+  /preact-render-to-string@6.3.0(preact@10.18.2):
+    resolution: {integrity: sha512-7t5Zd8PUPeTt0+e/S16ffJBLM8+ZDsvYrt71sbMquKND/5NWtHOSZdURCvfYFyNwbXJOlWMuEjk3qzmdIFdebw==}
     peerDependencies:
       preact: '>=10'
     dependencies:
@@ -6364,8 +6366,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-tailwindcss@0.5.6(prettier@3.0.3):
-    resolution: {integrity: sha512-2Xgb+GQlkPAUCFi3sV+NOYcSI5XgduvDBL2Zt/hwJudeKXkyvRS65c38SB0yb9UB40+1rL83I6m0RtlOQ8eHdg==}
+  /prettier-plugin-tailwindcss@0.5.7(prettier@3.0.3):
+    resolution: {integrity: sha512-4v6uESAgwCni6YF6DwJlRaDjg9Z+al5zM4JfngcazMy4WEf/XkPS5TEQjbD+DZ5iNuG6RrKQLa/HuX2SYzC3kQ==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -6607,8 +6609,8 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /rehype-autolink-headings@7.0.0:
-    resolution: {integrity: sha512-DLskejGYHQP9v7vUW85BeYIclgfMQ1IwAMx+0lm8Sr3cME2NThgy2OdTfosmuBA68fqP5o4FK+dknpUMFvlxYQ==}
+  /rehype-autolink-headings@7.1.0:
+    resolution: {integrity: sha512-rItO/pSdvnvsP4QRB1pmPiNHUskikqtPojZKJPPPAVx9Hj8i8TwMBhofrrAYRhYOOBZH9tgmG5lPqDLuIWPWmw==}
     dependencies:
       '@types/hast': 3.0.0
       '@ungap/structured-clone': 1.2.0
