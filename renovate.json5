@@ -21,8 +21,8 @@
         "minor",
         "patch"
       ],
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch",
+//      "groupName": "all non-major dependencies",
+//      "groupSlug": "all-minor-patch",
       "automerge": true,
       "excludePackageNames": ["react-obfuscate-email"]
     }
