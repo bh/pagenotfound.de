@@ -49,7 +49,7 @@ dependencies:
     version: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2)(@preact/compat@17.1.2)
   next-plugin-preact:
     specifier: 3.0.7
-    version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4)(preact-render-to-string@6.3.1)(preact-ssr-prepass@1.2.1)(preact@10.19.6)(webpack@5.74.0)
+    version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4)(preact-render-to-string@6.4.0)(preact-ssr-prepass@1.2.1)(preact@10.19.6)(webpack@5.74.0)
   next-sitemap:
     specifier: 4.2.3
     version: 4.2.3(next@12.3.4)
@@ -63,8 +63,8 @@ dependencies:
     specifier: 10.19.6
     version: 10.19.6
   preact-render-to-string:
-    specifier: 6.3.1
-    version: 6.3.1(preact@10.19.6)
+    specifier: 6.4.0
+    version: 6.4.0(preact@10.19.6)
   preact-ssr-prepass:
     specifier: 1.2.1
     version: 1.2.1(preact@10.19.6)
@@ -6173,7 +6173,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4)(preact-render-to-string@6.3.1)(preact-ssr-prepass@1.2.1)(preact@10.19.6)(webpack@5.74.0):
+  /next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4)(preact-render-to-string@6.4.0)(preact-ssr-prepass@1.2.1)(preact@10.19.6)(webpack@5.74.0):
     resolution: {integrity: sha512-8Xl+SJT3FCZHS7R/6Gana6e95o09UpiyCsK0cw8P/KW2M+lQcYIwIt4ZLZd+K9TW3JZx6KJDLqVbq0Kd6KZsIg==}
     requiresBuild: true
     peerDependencies:
@@ -6185,7 +6185,7 @@ packages:
       '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.19.6)(webpack@5.74.0)
       module-alias: 2.2.2
       preact: 10.19.6
-      preact-render-to-string: 6.3.1(preact@10.19.6)
+      preact-render-to-string: 6.4.0(preact@10.19.6)
       preact-ssr-prepass: 1.2.1(preact@10.19.6)
     transitivePeerDependencies:
       - '@prefresh/babel-plugin'
@@ -6689,8 +6689,8 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /preact-render-to-string@6.3.1(preact@10.19.6):
-    resolution: {integrity: sha512-NQ28WrjLtWY6lKDlTxnFpKHZdpjfF+oE6V4tZ0rTrunHrtZp6Dm0oFrcJalt/5PNeqJz4j1DuZDS0Y6rCBoqDA==}
+  /preact-render-to-string@6.4.0(preact@10.19.6):
+    resolution: {integrity: sha512-pzDwezZaLbK371OiJjXDsZJwVOALzFX5M1wEh2Kr0pEApq5AV6bRH/DFbA/zNA7Lck/duyREPQLLvzu2G6hEQQ==}
     peerDependencies:
       preact: '>=10'
     dependencies:
