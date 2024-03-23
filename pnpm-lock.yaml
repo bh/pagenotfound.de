@@ -75,8 +75,8 @@ dependencies:
     specifier: npm:@preact/compat@17.1.2
     version: /@preact/compat@17.1.2(preact@10.20.1)
   react-obfuscate-email:
-    specifier: 1.0.16
-    version: 1.0.16(@preact/compat@17.1.2)
+    specifier: 1.1.2
+    version: 1.1.2(@preact/compat@17.1.2)
   reading-time:
     specifier: 1.5.0
     version: 1.5.0
@@ -6833,8 +6833,8 @@ packages:
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  /react-obfuscate-email@1.0.16(@preact/compat@17.1.2):
-    resolution: {integrity: sha512-uNdo7Iu1D7b4fkPM0qBxKFZOnjLTnowlSkVOV2SAduyrjZSWv+BfLQ9tVpFIT7u6ZWykHl+bZTotKA/V7IZF1Q==}
+  /react-obfuscate-email@1.1.2(@preact/compat@17.1.2):
+    resolution: {integrity: sha512-P/c35IClgLtdwkzrD4bnDlfI5SAJKiINd+jJVW9ccfQ1k7l5mB69qplZfvZ4DPvRjdtYU3YeUvOLIdECzHiR6g==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16'
