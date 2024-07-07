@@ -25,7 +25,7 @@ importers:
         version: 6.5.2
       '@fortawesome/react-fontawesome':
         specifier: 0.2.2
-        version: 0.2.2(@fortawesome/fontawesome-svg-core@6.5.2)(@preact/compat@17.1.2)
+        version: 0.2.2(@fortawesome/fontawesome-svg-core@6.5.2)(@preact/compat@17.1.2(preact@10.21.0))
       '@prefresh/babel-plugin':
         specifier: 0.5.1
         version: 0.5.1
@@ -49,16 +49,16 @@ importers:
         version: 9.2.1(esbuild@0.14.54)
       next:
         specifier: 12.3.4
-        version: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2)(@preact/compat@17.1.2)
+        version: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0))
       next-plugin-preact:
         specifier: 3.0.7
-        version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4)(preact-render-to-string@6.4.2)(preact-ssr-prepass@1.2.1)(preact@10.21.0)(webpack@5.74.0)
+        version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))(preact-render-to-string@6.4.2(preact@10.21.0))(preact-ssr-prepass@1.2.1(preact@10.21.0))(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))
       next-sitemap:
         specifier: 4.2.3
-        version: 4.2.3(next@12.3.4)
+        version: 4.2.3(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))
       next-themes:
         specifier: 0.3.0
-        version: 0.3.0(@preact/compat@17.1.2)(@preact/compat@17.1.2)
+        version: 0.3.0(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0))
       postcss:
         specifier: 8.4.38
         version: 8.4.38
@@ -79,7 +79,7 @@ importers:
         version: '@preact/compat@17.1.2(preact@10.21.0)'
       react-obfuscate-email:
         specifier: 1.0.16
-        version: 1.0.16(@preact/compat@17.1.2)
+        version: 1.0.16(@preact/compat@17.1.2(preact@10.21.0))
       reading-time:
         specifier: 1.5.0
         version: 1.5.0
@@ -137,10 +137,10 @@ importers:
         version: 9.1.0(eslint@9.6.0)
       eslint-plugin-prettier:
         specifier: 5.1.3
-        version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@9.6.0)(prettier@3.2.5)
+        version: 5.1.3(@types/eslint@8.4.6)(eslint-config-prettier@9.1.0(eslint@9.6.0))(eslint@9.6.0)(prettier@3.2.5)
       globby:
-        specifier: 14.0.1
-        version: 14.0.1
+        specifier: 14.0.2
+        version: 14.0.2
       inquirer:
         specifier: 9.2.20
         version: 9.2.20
@@ -155,7 +155,7 @@ importers:
         version: 4.0.0
       next-remote-watch:
         specifier: 2.0.0
-        version: 2.0.0(next@12.3.4)
+        version: 2.0.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))
       prettier:
         specifier: 3.2.5
         version: 3.2.5
@@ -326,90 +326,105 @@ packages:
   '@babel/plugin-proposal-async-generator-functions@7.20.7':
     resolution: {integrity: sha512-xMbiLsn/8RK7Wq7VeVytytS2L6qE69bXPB10YCmMdDZbKF4okCqY74pI/jJQ/8U0b/F6NrT2+14b8/P9/3AMGA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-async-generator-functions instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-class-properties@7.18.6':
     resolution: {integrity: sha512-cumfXOF0+nzZrrN8Rf0t7M+tF6sZc7vhQwYQck9q1/5w2OExlD+b4v4RpMJFaV1Z7WcDRgO6FqvxqxGlwo+RHQ==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-class-static-block@7.18.6':
     resolution: {integrity: sha512-+I3oIiNxrCpup3Gi8n5IGMwj0gOCAjcJUSQEcotNnCCPMEnixawOQ+KeJPlgfjzx+FKQ1QSyZOWe7wmoJp7vhw==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-static-block instead.
     peerDependencies:
       '@babel/core': ^7.12.0
 
   '@babel/plugin-proposal-dynamic-import@7.18.6':
     resolution: {integrity: sha512-1auuwmK+Rz13SJj36R+jqFPMJWyKEDd7lLSdOj4oJK0UTgGueSAtkrCvz9ewmgyU/P941Rv2fQwZJN8s6QruXw==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-dynamic-import instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-export-namespace-from@7.18.9':
     resolution: {integrity: sha512-k1NtHyOMvlDDFeb9G5PhUXuGj8m/wiwojgQVEhJ/fsVsMCpLyOP4h0uGEjYJKrRI+EVPlb5Jk+Gt9P97lOGwtA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-export-namespace-from instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-json-strings@7.18.6':
     resolution: {integrity: sha512-lr1peyn9kOdbYc0xr0OdHTZ5FMqS6Di+H0Fz2I/JwMzGmzJETNeOFq2pBySw6X/KFL5EWDjlJuMsUGRFb8fQgQ==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-json-strings instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-logical-assignment-operators@7.18.9':
     resolution: {integrity: sha512-128YbMpjCrP35IOExw2Fq+x55LMP42DzhOhX2aNNIdI9avSWl2PI0yuBWarr3RYpZBSPtabfadkH2yeRiMD61Q==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-logical-assignment-operators instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-nullish-coalescing-operator@7.18.6':
     resolution: {integrity: sha512-wQxQzxYeJqHcfppzBDnm1yAY0jSRkUXR2z8RePZYrKwMKgMlE8+Z6LUno+bd6LvbGh8Gltvy74+9pIYkr+XkKA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-numeric-separator@7.18.6':
     resolution: {integrity: sha512-ozlZFogPqoLm8WBr5Z8UckIoE4YQ5KESVcNudyXOR8uqIkliTEgJ3RoketfG6pmzLdeZF0H/wjE9/cCEitBl7Q==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-object-rest-spread@7.20.7':
     resolution: {integrity: sha512-d2S98yCiLxDVmBmE8UjGcfPvNEUbA1U5q5WxaWFUGRzJSVAZqm5W6MbPct0jxnegUZ0niLeNX+IOzEs7wYg9Dg==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-optional-catch-binding@7.18.6':
     resolution: {integrity: sha512-Q40HEhs9DJQyaZfUjjn6vE8Cv4GmMHCYuMGIWUnlxH6400VGxOuwWsPt4FxXxJkC/5eOzgn0z21M9gMT4MOhbw==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-catch-binding instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-optional-chaining@7.18.9':
     resolution: {integrity: sha512-v5nwt4IqBXihxGsW2QmCWMDS3B3bzGIk/EQVZz2ei7f3NJl8NzAJVvUmpDW5q1CRNY+Beb/k58UAH1Km1N411w==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-private-methods@7.18.6':
     resolution: {integrity: sha512-nutsvktDItsNn4rpGItSNV2sz1XwS+nfU0Rg8aCx3W3NOKVzdMjJRu0O5OkgDp3ZGICSTbgRpxZoWsxoKRvbeA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-private-property-in-object@7.18.6':
     resolution: {integrity: sha512-9Rysx7FOctvT5ouj5JODjAFAkgGoudQuLPamZb0v1TGLpapdNaftzifU8NTWQm0IRjqoYypdrSmyWgkocDQ8Dw==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-property-in-object instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-unicode-property-regex@7.18.6':
     resolution: {integrity: sha512-2BShG/d5yoZyXZfVePH91urL5wTG6ASZU9M4o03lKK8u8UW1y08OMttBSOADTcJrnPMpvDXRG3G8fyLh4ovs8w==}
     engines: {node: '>=4'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-unicode-property-regex instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
@@ -2487,6 +2502,7 @@ packages:
 
   glob@7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -2504,8 +2520,8 @@ packages:
     resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==}
     engines: {node: '>=10'}
 
-  globby@14.0.1:
-    resolution: {integrity: sha512-jOMLD2Z7MAhyG8aJpNOpmziMOP4rPLcc95oQPKXBazW82z+CEgPFBQvEpRUa1KeIMUJo4Wsm+q6uzO/Q/4BksQ==}
+  globby@14.0.2:
+    resolution: {integrity: sha512-s3Fq41ZVh7vbbe2PN3nrW7yC7U7MFVc5c98/iTl9c2GawNMKx/J648KQRW6WKkuU8GIbbh2IXfIRQjOZnXcTnw==}
     engines: {node: '>=18'}
 
   gopd@1.0.1:
@@ -2662,6 +2678,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -5359,7 +5376,7 @@ snapshots:
     dependencies:
       '@fortawesome/fontawesome-common-types': 6.5.2
 
-  '@fortawesome/react-fontawesome@0.2.2(@fortawesome/fontawesome-svg-core@6.5.2)(@preact/compat@17.1.2)':
+  '@fortawesome/react-fontawesome@0.2.2(@fortawesome/fontawesome-svg-core@6.5.2)(@preact/compat@17.1.2(preact@10.21.0))':
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.5.2
       prop-types: 15.8.1
@@ -5602,19 +5619,19 @@ snapshots:
     dependencies:
       preact: 10.21.0
 
-  '@prefresh/next@1.6.0(next@12.3.4)(preact@10.21.0)(webpack@5.74.0)':
+  '@prefresh/next@1.6.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))':
     dependencies:
       '@prefresh/babel-plugin': 0.4.3
       '@prefresh/core': 1.4.1(preact@10.21.0)
       '@prefresh/utils': 1.1.3
-      '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.4.3)(preact@10.21.0)(webpack@5.74.0)
-      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2)(@preact/compat@17.1.2)
+      '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.4.3)(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))
+      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0))
       preact: 10.21.0
       webpack: 5.74.0(esbuild@0.14.54)
 
   '@prefresh/utils@1.1.3': {}
 
-  '@prefresh/webpack@3.3.4(@prefresh/babel-plugin@0.4.3)(preact@10.21.0)(webpack@5.74.0)':
+  '@prefresh/webpack@3.3.4(@prefresh/babel-plugin@0.4.3)(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))':
     dependencies:
       '@prefresh/babel-plugin': 0.4.3
       '@prefresh/core': 1.4.1(preact@10.21.0)
@@ -5622,7 +5639,7 @@ snapshots:
       preact: 10.21.0
       webpack: 5.74.0(esbuild@0.14.54)
 
-  '@prefresh/webpack@3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.21.0)(webpack@5.74.0)':
+  '@prefresh/webpack@3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))':
     dependencies:
       '@prefresh/babel-plugin': 0.5.1
       '@prefresh/core': 1.4.1(preact@10.21.0)
@@ -5804,6 +5821,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.38.1(typescript@4.8.3)
       debug: 4.3.4
       eslint: 9.6.0
+    optionalDependencies:
       typescript: 4.8.3
     transitivePeerDependencies:
       - supports-color
@@ -5824,6 +5842,7 @@ snapshots:
       is-glob: 4.0.3
       semver: 7.6.0
       tsutils: 3.21.0(typescript@4.8.3)
+    optionalDependencies:
       typescript: 4.8.3
     transitivePeerDependencies:
       - supports-color
@@ -6661,11 +6680,12 @@ snapshots:
       '@typescript-eslint/parser': 5.38.1(eslint@9.6.0)(typescript@4.8.3)
       eslint: 9.6.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@5.38.1)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@9.6.0)
-      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@5.38.1)(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0)
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@9.6.0))(eslint@9.6.0)
+      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@9.6.0)
       eslint-plugin-react: 7.33.2(eslint@9.6.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@9.6.0)
+    optionalDependencies:
       typescript: 4.8.3
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
@@ -6683,13 +6703,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@9.6.0):
+  eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@9.6.0))(eslint@9.6.0):
     dependencies:
       debug: 4.3.4
       enhanced-resolve: 5.15.0
       eslint: 9.6.0
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0)
-      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@5.38.1)(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@9.6.0))(eslint@9.6.0))(eslint@9.6.0)
+      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.2
       is-core-module: 2.13.1
@@ -6700,19 +6720,19 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.38.1)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@9.6.0))(eslint@9.6.0))(eslint@9.6.0):
     dependencies:
-      '@typescript-eslint/parser': 5.38.1(eslint@9.6.0)(typescript@4.8.3)
       debug: 3.2.7
+    optionalDependencies:
+      '@typescript-eslint/parser': 5.38.1(eslint@9.6.0)(typescript@4.8.3)
       eslint: 9.6.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@5.38.1)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@9.6.0)
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@9.6.0))(eslint@9.6.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.0(@typescript-eslint/parser@5.38.1)(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0):
+  eslint-plugin-import@2.29.0(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0):
     dependencies:
-      '@typescript-eslint/parser': 5.38.1(eslint@9.6.0)(typescript@4.8.3)
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.3
       array.prototype.flat: 1.3.2
@@ -6721,7 +6741,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.6.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.6.0)(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@9.6.0))(eslint@9.6.0))(eslint@9.6.0)
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -6731,6 +6751,8 @@ snapshots:
       object.values: 1.1.7
       semver: 6.3.1
       tsconfig-paths: 3.14.2
+    optionalDependencies:
+      '@typescript-eslint/parser': 5.38.1(eslint@9.6.0)(typescript@4.8.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -6756,13 +6778,15 @@ snapshots:
       object.entries: 1.1.7
       object.fromentries: 2.0.7
 
-  eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0)(eslint@9.6.0)(prettier@3.2.5):
+  eslint-plugin-prettier@5.1.3(@types/eslint@8.4.6)(eslint-config-prettier@9.1.0(eslint@9.6.0))(eslint@9.6.0)(prettier@3.2.5):
     dependencies:
       eslint: 9.6.0
-      eslint-config-prettier: 9.1.0(eslint@9.6.0)
       prettier: 3.2.5
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.8
+    optionalDependencies:
+      '@types/eslint': 8.4.6
+      eslint-config-prettier: 9.1.0(eslint@9.6.0)
 
   eslint-plugin-react-hooks@4.6.0(eslint@9.6.0):
     dependencies:
@@ -7135,7 +7159,7 @@ snapshots:
       merge2: 1.4.1
       slash: 3.0.0
 
-  globby@14.0.1:
+  globby@14.0.2:
     dependencies:
       '@sindresorhus/merge-streams': 2.1.0
       fast-glob: 3.3.2
@@ -8211,10 +8235,10 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4)(preact-render-to-string@6.4.2)(preact-ssr-prepass@1.2.1)(preact@10.21.0)(webpack@5.74.0):
+  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))(preact-render-to-string@6.4.2(preact@10.21.0))(preact-ssr-prepass@1.2.1(preact@10.21.0))(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54)):
     dependencies:
-      '@prefresh/next': 1.6.0(next@12.3.4)(preact@10.21.0)(webpack@5.74.0)
-      '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.21.0)(webpack@5.74.0)
+      '@prefresh/next': 1.6.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))
+      '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))
       module-alias: 2.2.2
       preact: 10.21.0
       preact-render-to-string: 6.4.2(preact@10.21.0)
@@ -8224,30 +8248,30 @@ snapshots:
       - next
       - webpack
 
-  next-remote-watch@2.0.0(next@12.3.4):
+  next-remote-watch@2.0.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0))):
     dependencies:
       chalk: 4.1.2
       chokidar: 3.5.3
       commander: 5.1.0
       express: 4.18.1
-      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2)(@preact/compat@17.1.2)
+      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0))
     transitivePeerDependencies:
       - supports-color
 
-  next-sitemap@4.2.3(next@12.3.4):
+  next-sitemap@4.2.3(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0))):
     dependencies:
       '@corex/deepmerge': 4.0.43
       '@next/env': 13.4.7
       fast-glob: 3.3.0
       minimist: 1.2.8
-      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2)(@preact/compat@17.1.2)
+      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0))
 
-  next-themes@0.3.0(@preact/compat@17.1.2)(@preact/compat@17.1.2):
+  next-themes@0.3.0(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)):
     dependencies:
       react: '@preact/compat@17.1.2(preact@10.21.0)'
       react-dom: '@preact/compat@17.1.2(preact@10.21.0)'
 
-  next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2)(@preact/compat@17.1.2):
+  next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)):
     dependencies:
       '@next/env': 12.3.4
       '@swc/helpers': 0.4.11
@@ -8255,8 +8279,8 @@ snapshots:
       postcss: 8.4.14
       react: '@preact/compat@17.1.2(preact@10.21.0)'
       react-dom: '@preact/compat@17.1.2(preact@10.21.0)'
-      styled-jsx: 5.0.7(@babel/core@7.21.3)(@preact/compat@17.1.2)
-      use-sync-external-store: 1.2.0(@preact/compat@17.1.2)
+      styled-jsx: 5.0.7(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))
+      use-sync-external-store: 1.2.0(@preact/compat@17.1.2(preact@10.21.0))
     optionalDependencies:
       '@next/swc-android-arm-eabi': 12.3.4
       '@next/swc-android-arm64': 12.3.4
@@ -8479,8 +8503,9 @@ snapshots:
   postcss-load-config@4.0.1(postcss@8.4.38):
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.38
       yaml: 2.3.4
+    optionalDependencies:
+      postcss: 8.4.38
 
   postcss-nested@6.0.1(postcss@8.4.38):
     dependencies:
@@ -8576,7 +8601,7 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-obfuscate-email@1.0.16(@preact/compat@17.1.2):
+  react-obfuscate-email@1.0.16(@preact/compat@17.1.2(preact@10.21.0)):
     dependencies:
       react: '@preact/compat@17.1.2(preact@10.21.0)'
 
@@ -9213,10 +9238,11 @@ snapshots:
     dependencies:
       inline-style-parser: 0.1.1
 
-  styled-jsx@5.0.7(@babel/core@7.21.3)(@preact/compat@17.1.2):
+  styled-jsx@5.0.7(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0)):
     dependencies:
-      '@babel/core': 7.21.3
       react: '@preact/compat@17.1.2(preact@10.21.0)'
+    optionalDependencies:
+      '@babel/core': 7.21.3
 
   sucrase@3.32.0:
     dependencies:
@@ -9287,15 +9313,16 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  terser-webpack-plugin@5.3.6(esbuild@0.14.54)(webpack@5.74.0):
+  terser-webpack-plugin@5.3.6(esbuild@0.14.54)(webpack@5.74.0(esbuild@0.14.54)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.17
-      esbuild: 0.14.54
       jest-worker: 27.5.1
       schema-utils: 3.1.1
       serialize-javascript: 6.0.0
       terser: 5.15.0
       webpack: 5.74.0(esbuild@0.14.54)
+    optionalDependencies:
+      esbuild: 0.14.54
 
   terser@5.15.0:
     dependencies:
@@ -9509,7 +9536,7 @@ snapshots:
     dependencies:
       punycode: 2.1.1
 
-  use-sync-external-store@1.2.0(@preact/compat@17.1.2):
+  use-sync-external-store@1.2.0(@preact/compat@17.1.2(preact@10.21.0)):
     dependencies:
       react: '@preact/compat@17.1.2(preact@10.21.0)'
 
@@ -9618,7 +9645,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.1.1
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.6(esbuild@0.14.54)(webpack@5.74.0)
+      terser-webpack-plugin: 5.3.6(esbuild@0.14.54)(webpack@5.74.0(esbuild@0.14.54))
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
