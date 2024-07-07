@@ -15,7 +15,7 @@
     "@fortawesome/fontawesome-svg-core": "6.5.2",
     "@fortawesome/free-brands-svg-icons": "6.5.2",
     "@fortawesome/free-solid-svg-icons": "6.5.2",
-    "@fortawesome/react-fontawesome": "0.2.0",
+    "@fortawesome/react-fontawesome": "0.2.2",
     "@prefresh/babel-plugin": "0.5.1",
     "@tailwindcss/typography": "0.5.13",
     "autoprefixer": "10.4.19",
