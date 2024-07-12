@@ -52,7 +52,7 @@ importers:
         version: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0))
       next-plugin-preact:
         specifier: 3.0.7
-        version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))(preact-render-to-string@6.4.2(preact@10.21.0))(preact-ssr-prepass@1.2.1(preact@10.21.0))(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))
+        version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))(preact-render-to-string@6.5.5(preact@10.21.0))(preact-ssr-prepass@1.2.1(preact@10.21.0))(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))
       next-sitemap:
         specifier: 4.2.3
         version: 4.2.3(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))
@@ -66,8 +66,8 @@ importers:
         specifier: 10.21.0
         version: 10.21.0
       preact-render-to-string:
-        specifier: 6.4.2
-        version: 6.4.2(preact@10.21.0)
+        specifier: 6.5.5
+        version: 6.5.5(preact@10.21.0)
       preact-ssr-prepass:
         specifier: 1.2.1
         version: 1.2.1(preact@10.21.0)
@@ -3586,8 +3586,8 @@ packages:
     resolution: {integrity: sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==}
     engines: {node: ^10 || ^12 || >=14}
 
-  preact-render-to-string@6.4.2:
-    resolution: {integrity: sha512-Sio5SvlyZSAXHuvnMgYzVQd67lNIuQe4uSjJ+2gfpJNC6L8zoHQR5xV7B/EjIqrAYWVyJ2eACkTCxVrIzZi6Vw==}
+  preact-render-to-string@6.5.5:
+    resolution: {integrity: sha512-KiMFTKNTmT/ccE79BURR/r6XRc2I2TCTZ0MpeWqHW2XnllbeghXvwGsdAfF/MzMilUcTfODtSmMxgoRFL9TM5g==}
     peerDependencies:
       preact: '>=10'
 
@@ -3663,9 +3663,6 @@ packages:
     resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
-
-  pretty-format@3.8.0:
-    resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==}
 
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -8237,13 +8234,13 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))(preact-render-to-string@6.4.2(preact@10.21.0))(preact-ssr-prepass@1.2.1(preact@10.21.0))(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54)):
+  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))(preact-render-to-string@6.5.5(preact@10.21.0))(preact-ssr-prepass@1.2.1(preact@10.21.0))(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54)):
     dependencies:
       '@prefresh/next': 1.6.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.21.0))(@preact/compat@17.1.2(preact@10.21.0)))(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))
       '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.21.0)(webpack@5.74.0(esbuild@0.14.54))
       module-alias: 2.2.2
       preact: 10.21.0
-      preact-render-to-string: 6.4.2(preact@10.21.0)
+      preact-render-to-string: 6.5.5(preact@10.21.0)
       preact-ssr-prepass: 1.2.1(preact@10.21.0)
     transitivePeerDependencies:
       - '@prefresh/babel-plugin'
@@ -8540,10 +8537,9 @@ snapshots:
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
-  preact-render-to-string@6.4.2(preact@10.21.0):
+  preact-render-to-string@6.5.5(preact@10.21.0):
     dependencies:
       preact: 10.21.0
-      pretty-format: 3.8.0
 
   preact-ssr-prepass@1.2.1(preact@10.21.0):
     dependencies:
@@ -8562,8 +8558,6 @@ snapshots:
       prettier: 3.2.5
 
   prettier@3.2.5: {}
-
-  pretty-format@3.8.0: {}
 
   prop-types@15.8.1:
     dependencies:
