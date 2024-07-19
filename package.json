@@ -12,9 +12,9 @@
   "dependencies": {
     "@fontsource/inter": "5.0.19",
     "@fontsource/noto-sans-mono": "5.0.20",
-    "@fortawesome/fontawesome-svg-core": "6.5.2",
-    "@fortawesome/free-brands-svg-icons": "6.5.2",
-    "@fortawesome/free-solid-svg-icons": "6.5.2",
+    "@fortawesome/fontawesome-svg-core": "6.6.0",
+    "@fortawesome/free-brands-svg-icons": "6.6.0",
+    "@fortawesome/free-solid-svg-icons": "6.6.0",
     "@fortawesome/react-fontawesome": "0.2.2",
     "@prefresh/babel-plugin": "0.5.1",
     "@tailwindcss/typography": "0.5.13",
