@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fontsource/inter':
-        specifier: 5.0.19
-        version: 5.0.19
+        specifier: 5.0.20
+        version: 5.0.20
       '@fontsource/noto-sans-mono':
         specifier: 5.0.20
         version: 5.0.20
@@ -840,8 +840,8 @@ packages:
   '@fal-works/esbuild-plugin-global-externals@2.1.2':
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
 
-  '@fontsource/inter@5.0.19':
-    resolution: {integrity: sha512-tVU77yjKnsoUotrXGYbbYxmL9nbm/MSo3deZietmf8V2FEDlbi9fvkJHMrYbo7ZsOqR1AYBBqRYmemz4pSE5Mg==}
+  '@fontsource/inter@5.0.20':
+    resolution: {integrity: sha512-rtw2F7xfM7rJmmnncXnR4ADr5wXsp4GyN1O1jmQJ1PMjAK+bm620/ZkQkeOYOkGoa09OksGinOeMA+Mkt6K9PQ==}
 
   '@fontsource/noto-sans-mono@5.0.20':
     resolution: {integrity: sha512-4+t+dAnKvihf/uxLw7ZTQc6sTzLvz7PR+p6S9+nHWT8ym05QQiYoUj9L8xwaAACf23SyfCifbhc7EN/RdFwxHw==}
@@ -5359,7 +5359,7 @@ snapshots:
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2': {}
 
-  '@fontsource/inter@5.0.19': {}
+  '@fontsource/inter@5.0.20': {}
 
   '@fontsource/noto-sans-mono@5.0.20': {}
 
