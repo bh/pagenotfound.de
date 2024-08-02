@@ -10,7 +10,7 @@
     "lint": "next lint --fix --dir . --dir pages --dir components --dir lib --dir layouts --dir scripts"
   },
   "dependencies": {
-    "@fontsource/inter": "5.0.19",
+    "@fontsource/inter": "5.0.20",
     "@fontsource/noto-sans-mono": "5.0.20",
     "@fortawesome/fontawesome-svg-core": "6.6.0",
     "@fortawesome/free-brands-svg-icons": "6.6.0",
