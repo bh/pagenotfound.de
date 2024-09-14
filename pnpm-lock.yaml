@@ -52,7 +52,7 @@ importers:
         version: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))
       next-plugin-preact:
         specifier: 3.0.7
-        version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))(preact-render-to-string@6.5.10(preact@10.23.2))(preact-ssr-prepass@1.2.2(preact@10.23.2))(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))
+        version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))(preact-render-to-string@6.5.11(preact@10.23.2))(preact-ssr-prepass@1.2.2(preact@10.23.2))(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))
       next-sitemap:
         specifier: 4.2.3
         version: 4.2.3(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))
@@ -66,8 +66,8 @@ importers:
         specifier: 10.23.2
         version: 10.23.2
       preact-render-to-string:
-        specifier: 6.5.10
-        version: 6.5.10(preact@10.23.2)
+        specifier: 6.5.11
+        version: 6.5.11(preact@10.23.2)
       preact-ssr-prepass:
         specifier: 1.2.2
         version: 1.2.2(preact@10.23.2)
@@ -3671,8 +3671,8 @@ packages:
     resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  preact-render-to-string@6.5.10:
-    resolution: {integrity: sha512-BJdypTQaBA5UbTF9NKZS3zP93Sw33tZOxNXIfuHofqOZFoMdsquNkVebs/HkEw0in/Qbi6Ep/Anngnj+VsHeBQ==}
+  preact-render-to-string@6.5.11:
+    resolution: {integrity: sha512-ubnauqoGczeGISiOh6RjX0/cdaF8v/oDXIjO85XALCQjwQP+SB4RDXXtvZ6yTYSjG+PC1QRP2AhPgCEsM2EvUw==}
     peerDependencies:
       preact: '>=10'
 
@@ -8433,13 +8433,13 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))(preact-render-to-string@6.5.10(preact@10.23.2))(preact-ssr-prepass@1.2.2(preact@10.23.2))(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54)):
+  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))(preact-render-to-string@6.5.11(preact@10.23.2))(preact-ssr-prepass@1.2.2(preact@10.23.2))(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54)):
     dependencies:
       '@prefresh/next': 1.6.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))
       '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))
       module-alias: 2.2.2
       preact: 10.23.2
-      preact-render-to-string: 6.5.10(preact@10.23.2)
+      preact-render-to-string: 6.5.11(preact@10.23.2)
       preact-ssr-prepass: 1.2.2(preact@10.23.2)
     transitivePeerDependencies:
       - '@prefresh/babel-plugin'
@@ -8742,7 +8742,7 @@ snapshots:
       picocolors: 1.1.0
       source-map-js: 1.2.1
 
-  preact-render-to-string@6.5.10(preact@10.23.2):
+  preact-render-to-string@6.5.11(preact@10.23.2):
     dependencies:
       preact: 10.23.2
 
