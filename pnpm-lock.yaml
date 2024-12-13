@@ -142,8 +142,8 @@ importers:
         specifier: 14.0.2
         version: 14.0.2
       inquirer:
-        specifier: 9.3.6
-        version: 9.3.6
+        specifier: 9.3.7
+        version: 9.3.7
       js-yaml:
         specifier: 4.1.0
         version: 4.1.0
@@ -1471,6 +1471,7 @@ packages:
 
   acorn-import-assertions@1.8.0:
     resolution: {integrity: sha512-m7VZ3jwz4eK6A4Vtt8Ew1/mNbP24u0FhdyfA7fSvnJR6LMdfOYnmuIrrJAgrYfYJ10F/otaHTtrtrtmHdMNzEw==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
 
@@ -2759,8 +2760,8 @@ packages:
   inline-style-parser@0.1.1:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
 
-  inquirer@9.3.6:
-    resolution: {integrity: sha512-riK/iQB2ctwkpWYgjjWIRv3MBLt2gzb2Sj0JNQNbyTXgyXsLWcDPJ5WS5ZDTCx7BRFnJsARtYh+58fjP5M2Y0Q==}
+  inquirer@9.3.7:
+    resolution: {integrity: sha512-LJKFHCSeIRq9hanN14IlOtPSTe3lNES7TYDTE2xxdAy1LS5rYphajK1qtwvj3YmQXvvk0U2Vbmcni8P9EIQW9w==}
     engines: {node: '>=18'}
 
   internal-slot@1.0.6:
@@ -7585,7 +7586,7 @@ snapshots:
 
   inline-style-parser@0.1.1: {}
 
-  inquirer@9.3.6:
+  inquirer@9.3.7:
     dependencies:
       '@inquirer/figures': 1.0.3
       ansi-escapes: 4.3.2
