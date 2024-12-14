@@ -57,8 +57,8 @@ importers:
         specifier: 4.2.3
         version: 4.2.3(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))
       next-themes:
-        specifier: 0.3.0
-        version: 0.3.0(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))
+        specifier: 0.4.4
+        version: 0.4.4(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -3429,11 +3429,11 @@ packages:
     peerDependencies:
       next: '*'
 
-  next-themes@0.3.0:
-    resolution: {integrity: sha512-/QHIrsYpd6Kfk7xakK4svpDI5mmXP0gfvCoJdGpZQ2TOrQZmsW0QxjaiLn8wbIKjtm4BTSqLoix4lxYYOnLJ/w==}
+  next-themes@0.4.4:
+    resolution: {integrity: sha512-LDQ2qIOJF0VnuVrrMSMLrWGjRMkq+0mpgl6e0juCLqdJ+oo8Q84JRWT6Wh11VDQKkMMe+dVzDKLWs5n87T+PkQ==}
     peerDependencies:
-      react: ^16.8 || ^17 || ^18
-      react-dom: ^16.8 || ^17 || ^18
+      react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
 
   next@12.3.4:
     resolution: {integrity: sha512-VcyMJUtLZBGzLKo3oMxrEF0stxh8HwuW976pAzlHhI3t8qJ4SROjCrSh1T24bhrbjw55wfZXAbXPGwPt5FLRfQ==}
@@ -6953,7 +6953,7 @@ snapshots:
       debug: 4.4.0
       enhanced-resolve: 5.15.0
       eslint: 9.17.0(jiti@1.21.6)
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@9.17.0(jiti@1.21.6)))(eslint@9.17.0(jiti@1.21.6))
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.17.0(jiti@1.21.6))
       eslint-plugin-import: 2.29.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-typescript@3.6.1)(eslint@9.17.0(jiti@1.21.6))
       fast-glob: 3.3.2
       get-tsconfig: 4.7.2
@@ -6965,7 +6965,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@9.17.0(jiti@1.21.6)))(eslint@9.17.0(jiti@1.21.6)):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.17.0(jiti@1.21.6)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6986,7 +6986,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.17.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@9.17.0(jiti@1.21.6)))(eslint@9.17.0(jiti@1.21.6))
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.17.0(jiti@1.21.6))
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -8502,7 +8502,7 @@ snapshots:
       minimist: 1.2.8
       next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))
 
-  next-themes@0.3.0(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)):
+  next-themes@0.4.4(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)):
     dependencies:
       react: '@preact/compat@17.1.2(preact@10.23.2)'
       react-dom: '@preact/compat@17.1.2(preact@10.23.2)'
