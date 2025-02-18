@@ -25,7 +25,7 @@ importers:
         version: 6.7.1
       '@fortawesome/react-fontawesome':
         specifier: 0.2.2
-        version: 0.2.2(@fortawesome/fontawesome-svg-core@6.7.1)(@preact/compat@17.1.2(preact@10.23.2))
+        version: 0.2.2(@fortawesome/fontawesome-svg-core@6.7.1)(@preact/compat@17.1.2(preact@10.26.2))
       '@prefresh/babel-plugin':
         specifier: 0.5.1
         version: 0.5.1
@@ -49,37 +49,37 @@ importers:
         version: 9.2.1(esbuild@0.14.54)
       next:
         specifier: 12.3.4
-        version: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))
+        version: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2))
       next-plugin-preact:
         specifier: 3.0.7
-        version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))(preact-render-to-string@6.5.12(preact@10.23.2))(preact-ssr-prepass@1.2.2(preact@10.23.2))(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))
+        version: 3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2)))(preact-render-to-string@6.5.12(preact@10.26.2))(preact-ssr-prepass@1.2.2(preact@10.26.2))(preact@10.26.2)(webpack@5.74.0(esbuild@0.14.54))
       next-sitemap:
         specifier: 4.2.3
-        version: 4.2.3(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))
+        version: 4.2.3(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2)))
       next-themes:
         specifier: 0.3.0
-        version: 0.3.0(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))
+        version: 0.3.0(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2))
       postcss:
         specifier: 8.4.49
         version: 8.4.49
       preact:
-        specifier: 10.23.2
-        version: 10.23.2
+        specifier: 10.26.2
+        version: 10.26.2
       preact-render-to-string:
         specifier: 6.5.12
-        version: 6.5.12(preact@10.23.2)
+        version: 6.5.12(preact@10.26.2)
       preact-ssr-prepass:
         specifier: 1.2.2
-        version: 1.2.2(preact@10.23.2)
+        version: 1.2.2(preact@10.26.2)
       react:
         specifier: npm:@preact/compat@17.1.2
-        version: '@preact/compat@17.1.2(preact@10.23.2)'
+        version: '@preact/compat@17.1.2(preact@10.26.2)'
       react-dom:
         specifier: npm:@preact/compat@17.1.2
-        version: '@preact/compat@17.1.2(preact@10.23.2)'
+        version: '@preact/compat@17.1.2(preact@10.26.2)'
       react-obfuscate-email:
         specifier: 1.0.16
-        version: 1.0.16(@preact/compat@17.1.2(preact@10.23.2))
+        version: 1.0.16(@preact/compat@17.1.2(preact@10.26.2))
       reading-time:
         specifier: 1.5.0
         version: 1.5.0
@@ -155,7 +155,7 @@ importers:
         version: 4.0.0
       next-remote-watch:
         specifier: 2.0.0
-        version: 2.0.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))
+        version: 2.0.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2)))
       prettier:
         specifier: 3.4.2
         version: 3.4.2
@@ -3704,8 +3704,8 @@ packages:
     peerDependencies:
       preact: '>=10 || ^10.0.0-beta.0 || ^10.0.0-alpha.0'
 
-  preact@10.23.2:
-    resolution: {integrity: sha512-kKYfePf9rzKnxOAKDpsWhg/ysrHPqT+yQ7UW4JjdnqjFIeNUnNcEJvhuA8fDenxAGWzUqtd51DfVg7xp/8T9NA==}
+  preact@10.26.2:
+    resolution: {integrity: sha512-0gNmv4qpS9HaN3+40CLBAnKe0ZfyE4ZWo5xKlC1rVrr0ckkEvJvAQqKaHANdFKsGstoxrY4AItZ7kZSGVoVjgg==}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -5497,11 +5497,11 @@ snapshots:
     dependencies:
       '@fortawesome/fontawesome-common-types': 6.7.1
 
-  '@fortawesome/react-fontawesome@0.2.2(@fortawesome/fontawesome-svg-core@6.7.1)(@preact/compat@17.1.2(preact@10.23.2))':
+  '@fortawesome/react-fontawesome@0.2.2(@fortawesome/fontawesome-svg-core@6.7.1)(@preact/compat@17.1.2(preact@10.26.2))':
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.7.1
       prop-types: 15.8.1
-      react: '@preact/compat@17.1.2(preact@10.23.2)'
+      react: '@preact/compat@17.1.2(preact@10.26.2)'
 
   '@humanfs/core@0.19.1': {}
 
@@ -5733,44 +5733,44 @@ snapshots:
 
   '@polka/url@1.0.0-next.24': {}
 
-  '@preact/compat@17.1.2(preact@10.23.2)':
+  '@preact/compat@17.1.2(preact@10.26.2)':
     dependencies:
-      preact: 10.23.2
+      preact: 10.26.2
 
   '@prefresh/babel-plugin@0.4.3': {}
 
   '@prefresh/babel-plugin@0.5.1': {}
 
-  '@prefresh/core@1.4.1(preact@10.23.2)':
+  '@prefresh/core@1.4.1(preact@10.26.2)':
     dependencies:
-      preact: 10.23.2
+      preact: 10.26.2
 
-  '@prefresh/next@1.6.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))':
+  '@prefresh/next@1.6.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2)))(preact@10.26.2)(webpack@5.74.0(esbuild@0.14.54))':
     dependencies:
       '@prefresh/babel-plugin': 0.4.3
-      '@prefresh/core': 1.4.1(preact@10.23.2)
+      '@prefresh/core': 1.4.1(preact@10.26.2)
       '@prefresh/utils': 1.1.3
-      '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.4.3)(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))
-      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))
-      preact: 10.23.2
+      '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.4.3)(preact@10.26.2)(webpack@5.74.0(esbuild@0.14.54))
+      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2))
+      preact: 10.26.2
       webpack: 5.74.0(esbuild@0.14.54)
 
   '@prefresh/utils@1.1.3': {}
 
-  '@prefresh/webpack@3.3.4(@prefresh/babel-plugin@0.4.3)(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))':
+  '@prefresh/webpack@3.3.4(@prefresh/babel-plugin@0.4.3)(preact@10.26.2)(webpack@5.74.0(esbuild@0.14.54))':
     dependencies:
       '@prefresh/babel-plugin': 0.4.3
-      '@prefresh/core': 1.4.1(preact@10.23.2)
+      '@prefresh/core': 1.4.1(preact@10.26.2)
       '@prefresh/utils': 1.1.3
-      preact: 10.23.2
+      preact: 10.26.2
       webpack: 5.74.0(esbuild@0.14.54)
 
-  '@prefresh/webpack@3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))':
+  '@prefresh/webpack@3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.26.2)(webpack@5.74.0(esbuild@0.14.54))':
     dependencies:
       '@prefresh/babel-plugin': 0.5.1
-      '@prefresh/core': 1.4.1(preact@10.23.2)
+      '@prefresh/core': 1.4.1(preact@10.26.2)
       '@prefresh/utils': 1.1.3
-      preact: 10.23.2
+      preact: 10.26.2
       webpack: 5.74.0(esbuild@0.14.54)
 
   '@rushstack/eslint-patch@1.6.0': {}
@@ -6953,7 +6953,7 @@ snapshots:
       debug: 4.4.0
       enhanced-resolve: 5.15.0
       eslint: 9.17.0(jiti@1.21.6)
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@9.17.0(jiti@1.21.6)))(eslint@9.17.0(jiti@1.21.6))
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.17.0(jiti@1.21.6))
       eslint-plugin-import: 2.29.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-typescript@3.6.1)(eslint@9.17.0(jiti@1.21.6))
       fast-glob: 3.3.2
       get-tsconfig: 4.7.2
@@ -6965,7 +6965,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@9.17.0(jiti@1.21.6)))(eslint@9.17.0(jiti@1.21.6)):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.17.0(jiti@1.21.6)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6986,7 +6986,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.17.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@9.17.0(jiti@1.21.6)))(eslint@9.17.0(jiti@1.21.6))
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.38.1(eslint@9.17.0(jiti@1.21.6))(typescript@4.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.17.0(jiti@1.21.6))
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -8471,52 +8471,52 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))(preact-render-to-string@6.5.12(preact@10.23.2))(preact-ssr-prepass@1.2.2(preact@10.23.2))(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54)):
+  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.1)(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2)))(preact-render-to-string@6.5.12(preact@10.26.2))(preact-ssr-prepass@1.2.2(preact@10.26.2))(preact@10.26.2)(webpack@5.74.0(esbuild@0.14.54)):
     dependencies:
-      '@prefresh/next': 1.6.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)))(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))
-      '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.23.2)(webpack@5.74.0(esbuild@0.14.54))
+      '@prefresh/next': 1.6.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2)))(preact@10.26.2)(webpack@5.74.0(esbuild@0.14.54))
+      '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.1)(preact@10.26.2)(webpack@5.74.0(esbuild@0.14.54))
       module-alias: 2.2.2
-      preact: 10.23.2
-      preact-render-to-string: 6.5.12(preact@10.23.2)
-      preact-ssr-prepass: 1.2.2(preact@10.23.2)
+      preact: 10.26.2
+      preact-render-to-string: 6.5.12(preact@10.26.2)
+      preact-ssr-prepass: 1.2.2(preact@10.26.2)
     transitivePeerDependencies:
       - '@prefresh/babel-plugin'
       - next
       - webpack
 
-  next-remote-watch@2.0.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))):
+  next-remote-watch@2.0.0(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2))):
     dependencies:
       chalk: 4.1.2
       chokidar: 3.5.3
       commander: 5.1.0
       express: 4.18.1
-      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))
+      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2))
     transitivePeerDependencies:
       - supports-color
 
-  next-sitemap@4.2.3(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))):
+  next-sitemap@4.2.3(next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2))):
     dependencies:
       '@corex/deepmerge': 4.0.43
       '@next/env': 13.4.7
       fast-glob: 3.3.0
       minimist: 1.2.8
-      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2))
+      next: 12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2))
 
-  next-themes@0.3.0(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)):
+  next-themes@0.3.0(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2)):
     dependencies:
-      react: '@preact/compat@17.1.2(preact@10.23.2)'
-      react-dom: '@preact/compat@17.1.2(preact@10.23.2)'
+      react: '@preact/compat@17.1.2(preact@10.26.2)'
+      react-dom: '@preact/compat@17.1.2(preact@10.26.2)'
 
-  next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))(@preact/compat@17.1.2(preact@10.23.2)):
+  next@12.3.4(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))(@preact/compat@17.1.2(preact@10.26.2)):
     dependencies:
       '@next/env': 12.3.4
       '@swc/helpers': 0.4.11
       caniuse-lite: 1.0.30001426
       postcss: 8.4.14
-      react: '@preact/compat@17.1.2(preact@10.23.2)'
-      react-dom: '@preact/compat@17.1.2(preact@10.23.2)'
-      styled-jsx: 5.0.7(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2))
-      use-sync-external-store: 1.2.0(@preact/compat@17.1.2(preact@10.23.2))
+      react: '@preact/compat@17.1.2(preact@10.26.2)'
+      react-dom: '@preact/compat@17.1.2(preact@10.26.2)'
+      styled-jsx: 5.0.7(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2))
+      use-sync-external-store: 1.2.0(@preact/compat@17.1.2(preact@10.26.2))
     optionalDependencies:
       '@next/swc-android-arm-eabi': 12.3.4
       '@next/swc-android-arm64': 12.3.4
@@ -8776,15 +8776,15 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  preact-render-to-string@6.5.12(preact@10.23.2):
+  preact-render-to-string@6.5.12(preact@10.26.2):
     dependencies:
-      preact: 10.23.2
+      preact: 10.26.2
 
-  preact-ssr-prepass@1.2.2(preact@10.23.2):
+  preact-ssr-prepass@1.2.2(preact@10.26.2):
     dependencies:
-      preact: 10.23.2
+      preact: 10.26.2
 
-  preact@10.23.2: {}
+  preact@10.26.2: {}
 
   prelude-ls@1.2.1: {}
 
@@ -8838,9 +8838,9 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-obfuscate-email@1.0.16(@preact/compat@17.1.2(preact@10.23.2)):
+  react-obfuscate-email@1.0.16(@preact/compat@17.1.2(preact@10.26.2)):
     dependencies:
-      react: '@preact/compat@17.1.2(preact@10.23.2)'
+      react: '@preact/compat@17.1.2(preact@10.26.2)'
 
   read-cache@1.0.0:
     dependencies:
@@ -9471,9 +9471,9 @@ snapshots:
     dependencies:
       inline-style-parser: 0.1.1
 
-  styled-jsx@5.0.7(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.23.2)):
+  styled-jsx@5.0.7(@babel/core@7.21.3)(@preact/compat@17.1.2(preact@10.26.2)):
     dependencies:
-      react: '@preact/compat@17.1.2(preact@10.23.2)'
+      react: '@preact/compat@17.1.2(preact@10.26.2)'
     optionalDependencies:
       '@babel/core': 7.21.3
 
@@ -9775,9 +9775,9 @@ snapshots:
     dependencies:
       punycode: 2.1.1
 
-  use-sync-external-store@1.2.0(@preact/compat@17.1.2(preact@10.23.2)):
+  use-sync-external-store@1.2.0(@preact/compat@17.1.2(preact@10.26.2)):
     dependencies:
-      react: '@preact/compat@17.1.2(preact@10.23.2)'
+      react: '@preact/compat@17.1.2(preact@10.26.2)'
 
   util-deprecate@1.0.2: {}
 
