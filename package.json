@@ -53,7 +53,7 @@
     "esbuild": "^0.14.54",
     "eslint": "9.21.0",
     "eslint-config-next": "14.2.24",
-    "eslint-config-prettier": "9.1.0",
+    "eslint-config-prettier": "10.0.2",
     "eslint-plugin-prettier": "5.2.3",
     "globby": "14.1.0",
     "inquirer": "9.3.7",
