@@ -33,7 +33,7 @@
     "preact-ssr-prepass": "1.2.2",
     "react": "npm:@preact/compat@17.1.2",
     "react-dom": "npm:@preact/compat@17.1.2",
-    "react-obfuscate-email": "1.0.16",
+    "react-obfuscate-email": "1.1.5",
     "reading-time": "1.5.0",
     "rehype-autolink-headings": "7.1.0",
     "rehype-preset-minify": "7.0.1",
